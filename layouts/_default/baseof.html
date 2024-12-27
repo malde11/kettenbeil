@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
 
-    <!-- HEAD START -->
+<head>
     {{ partial "head.html" . }}
-    <!-- HEAD END -->
+</head>
 
 <body>
     <!-- NAVBAR START -->
     {{ partial "navbar.html" . }}
     <!-- NAVBAR END -->
 
-    <!-- CONTENT START -->
-    {{ .Content }}
-    <!-- CONTENT END -->
+    <!-- MAIN START -->
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <!-- MAIN END-->
 
     <!-- FOOTER START -->
     {{ partial "footer.html" . }}
