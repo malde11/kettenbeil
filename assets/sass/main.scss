@@ -13,9 +13,8 @@
   /* Style navigation menu links */
   .topnav a {
     color: white;
-    padding: 14px 16px;
+    padding: 10px 15px 18px 15px;
     text-decoration: none;
-    font-size: 17px;
     display: block;
   }
   
@@ -26,6 +25,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    padding-top: 16px;
   }
   
   /* Add a grey background color on mouse-over */
@@ -38,7 +38,12 @@
   .active {
     background-color: #04AA6D;
     color: white;
-  } 
+  }
+
+  #brand-name {
+    font-size: 32px;
+    padding-top: 22px;
+  }
 
 
 
