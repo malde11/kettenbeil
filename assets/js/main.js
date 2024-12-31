@@ -1,12 +1,18 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-addEventListener("click", (event) => {
+window.onload=function() {
 
-  const x = document.getElementById("myLinks");
+  const x = document.getElementById("myTopnav");
+  const burger = document.getElementById("burger");
+
+  console.log(burger);
+
+  burger.addEventListener("click", () => {
+
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
     
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-  
-});
+  });
+
+};
