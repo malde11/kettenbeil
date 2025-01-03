@@ -2,7 +2,42 @@
   margin: 0;
   padding: 0; }
 
+/* TEMPLATE CONTAINER */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 100% 250px 250px 250px 1fr;
+  grid-template-areas: "nav" "main" "content1" "content2" "content3" "footer"; }
+
+nav {
+  grid-area: nav;
+  background-color: darkcyan; }
+
+main {
+  grid-area: main;
+  background-color: chocolate; }
+
+#content1 {
+  grid-area: content1;
+  background-color: aqua; }
+
+#content2 {
+  grid-area: content2;
+  background-color: blue; }
+
+#content3 {
+  grid-area: content3;
+  background-color: brown; }
+
+footer {
+  grid-area: footer;
+  background-color: cornflowerblue; }
+
+/* NAVBAR */
 .topnav {
+  position: fixed;
+  width: 100vw;
   overflow: hidden;
   background-color: #333; }
 
@@ -46,6 +81,14 @@
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  /* TEMPLATE CONTAINER */
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 100% 2fr 1fr;
+    grid-template-areas: "nav nav nav" "main main main" "content1 content2 content3" "footer footer footer"; }
+  /* NAVBAR */
   .topnav a:not(:first-child) {
     display: block; }
   .topnav a.icon {

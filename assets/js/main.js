@@ -6,7 +6,4 @@ window.onload = function() {
 
   burgerMenu.addEventListener("click", () => { topNav.classList.toggle("responsive"); });
 
-
-
-
 };
