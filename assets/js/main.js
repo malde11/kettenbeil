@@ -1,18 +1,12 @@
-window.onload=function() {
+window.onload = function() {
 
-  const x = document.getElementById("myTopnav");
-  const burger = document.getElementById("burger");
+  /* Burger menu toggle nav */
+  const topNav      = document.getElementById("myTopnav");
+  const burgerMenu  = document.getElementById("burgerMenu");
 
-  console.log(burger);
+  burgerMenu.addEventListener("click", () => { topNav.classList.toggle("responsive"); });
 
-  burger.addEventListener("click", () => {
 
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-    
-  });
+
 
 };
