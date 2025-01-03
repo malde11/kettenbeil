@@ -1,21 +1,24 @@
+/**********************************************
+  Kettenbeil.com
+  main.css
+**********************************************/
+
 * {
   margin: 0;
   padding: 0;
 }
 
-
-/* TEMPLATE CONTAINER */
+/***********************************************
+  TEMPLATE CONTAINER
+***********************************************/
 .container {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 100% 250px 250px 250px 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas:
     "nav"
     "main"
-    "content1"
-    "content2"
-    "content3"
     "footer";
 }
 
@@ -29,21 +32,6 @@ main {
   background-color: chocolate;
 }
 
-#content1 {
-  grid-area: content1;
-  background-color: aqua;
-}
-
-#content2 {
-  grid-area: content2;
-  background-color:blue;
-}
-
-#content3 {
-  grid-area: content3;
-  background-color:brown;
-}
-
 footer {
   grid-area: footer;
   background-color: cornflowerblue;
@@ -51,7 +39,9 @@ footer {
 
 
 
-/* NAVBAR */
+/***********************************************
+  Navbar
+***********************************************/
 .topnav {
   position: fixed;
   width: 100vw;
@@ -79,7 +69,6 @@ footer {
   color: white;
   display: block;
   float: left;
-
 }
 
 .topnav .icon {
@@ -102,6 +91,52 @@ footer {
 }
 
 
+/*******************************************************
+  Home (Background)
+*******************************************************/
+#video-wrapper {
+  background: url(/images/backgrounds/background.webp);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+/*
+video {
+  display: inline;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: .6;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.video-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
 /*  X-Small devices (portrait phones, less than 576px)
       No media query for `xs` since this is the default in Bootstrap
   */
@@ -119,11 +154,10 @@ footer {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 100% 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "nav nav nav"
       "main main main"
-      "content1 content2 content3"
       "footer footer footer";
   }
 
