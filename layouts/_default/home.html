@@ -1,7 +1,9 @@
-<header>
-    {{ partial "video.html" . }}
-</header>
-
 {{ define "main" }}
-hljjljlö
+
+<!-- VIDEO START -->
+{{ partial "video.html" . }}
+<!-- VIDEO END -->
+
+{{ .Content }}
+
 {{ end }}

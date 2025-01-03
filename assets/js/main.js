@@ -8,7 +8,7 @@ window.onload = function() {
 
 
 
-  /* Homepage Video switch
+  /* Homepage Video switch */
   const mainVideo = document.getElementById('myVideo');
   const medi      = "/videos/ground_540p.mp4";
   const large     = "/videos/ground_1080p.mp4";
@@ -23,5 +23,5 @@ window.onload = function() {
         break;
         
       }
-*/
+
 };

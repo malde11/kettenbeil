@@ -13,7 +13,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   grid-template-areas: "nav" "main" "footer"; }
 
 nav {
@@ -35,7 +35,8 @@ footer {
   position: fixed;
   width: 100vw;
   overflow: hidden;
-  background-color: #333; }
+  background-color: #333;
+  z-index: 1; }
 
 .topnav a {
   float: right;
@@ -88,7 +89,6 @@ footer {
   position: absolute;
   z-index: -2; }
 
-/*
 video {
   display: inline;
   background-size: cover;
@@ -102,8 +102,7 @@ video {
   top: 0;
   bottom: 0;
   position: absolute;
-  z-index: -1;
-}
+  z-index: -1; }
 
 .video-section {
   position: relative;
@@ -112,9 +111,8 @@ video {
   background-position: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-*/
+  justify-content: center; }
+
 /*  X-Small devices (portrait phones, less than 576px)
       No media query for `xs` since this is the default in Bootstrap
   */

@@ -15,7 +15,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   grid-template-areas:
     "nav"
     "main"
@@ -47,6 +47,7 @@ footer {
   width: 100vw;
   overflow: hidden;
   background-color: #333;
+  z-index: 1;
 }
 
 .topnav a {
@@ -109,7 +110,6 @@ footer {
   z-index: -2;
 }
 
-/*
 video {
   display: inline;
   background-size: cover;
@@ -135,7 +135,7 @@ video {
   align-items: center;
   justify-content: center;
 }
-*/
+
 
 /*  X-Small devices (portrait phones, less than 576px)
       No media query for `xs` since this is the default in Bootstrap
