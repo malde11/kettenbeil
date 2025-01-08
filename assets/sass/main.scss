@@ -15,15 +15,21 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr;
   grid-template-areas:
     "nav"
+    "header"
     "main"
     "footer";
 }
 
 nav {
   grid-area: nav;
+  background-color:blue;
+}
+
+header {
+  grid-area: header;
   background-color: darkcyan;
 }
 
@@ -91,6 +97,13 @@ footer {
   padding: 10px 15px 7px 15px;
 }
 
+.toggleMenu {
+  content:url("/images/svg/menu-close.svg");
+  padding: 10px 15px 7px 15px;
+  width: 32px;
+  height: 32px;
+}
+
 
 /*******************************************************
   Home (Background)
@@ -107,7 +120,7 @@ footer {
   top: 0;
   bottom: 0;
   position: absolute;
-  z-index: -2;
+  z-index: 0;
 }
 
 video {

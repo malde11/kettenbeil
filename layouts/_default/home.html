@@ -1,8 +1,12 @@
-{{ define "main" }}
+{{ define "header" }}
 
 <!-- VIDEO START -->
 {{ partial "video.html" . }}
 <!-- VIDEO END -->
+
+{{ end }}
+
+{{ define "main" }}
 
 {{ .Content }}
 

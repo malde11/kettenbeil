@@ -3,8 +3,11 @@ window.onload = function() {
   /* Burger menu toggle nav */
   const topNav      = document.getElementById("myTopnav");
   const burgerMenu  = document.getElementById("burgerMenu");
-
-  burgerMenu.addEventListener("click", () => { topNav.classList.toggle("responsive"); });
+  
+  burgerMenu.addEventListener("click", () => { 
+    topNav.classList.toggle("responsive");
+    burgerMenu.classList.toggle("toggleMenu");
+  });
 
 
 
@@ -21,7 +24,6 @@ window.onload = function() {
       case window.innerWidth >= 720:
         mainVideo.append("<source type='video/mp4' src='" + medi + "' />");
         break;
-        
-      }
+    }
 
 };
