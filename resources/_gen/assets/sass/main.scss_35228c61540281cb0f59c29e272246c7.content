@@ -52,7 +52,6 @@ footer {
   font-size: 24px; }
 
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
   padding: 15px 15px 16px 15px; }
 
@@ -74,13 +73,29 @@ footer {
   float: none; }
 
 #burgerMenu {
-  padding: 10px 15px 7px 15px; }
+  padding: 15px 15px 14px 15px; }
 
 .toggleMenu {
   content: url("/images/svg/menu-close.svg");
-  padding: 10px 15px 7px 15px;
+  padding: 15px 15px 14px 15px;
   width: 32px;
-  height: 32px; }
+  height: 32px;
+  transition: width 0.1s; }
+
+.toggleMenu:hover {
+  width: 20px; }
+
+.nav-link:hover::before {
+  content: "[";
+  left: -10px;
+  position: absolute;
+  color: black; }
+
+.nav-link:hover::after {
+  content: "]";
+  right: -10px;
+  position: absolute;
+  color: black; }
 
 /*******************************************************
   Home (Background)
