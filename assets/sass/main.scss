@@ -9,6 +9,20 @@
 }
 
 /***********************************************
+  Colors
+***********************************************/
+
+$primary: rgb(0, 162, 255);
+$secondary: #333;
+
+:root{ 
+  --data-color-primary:#{$primary};
+  --data-color-secondary:#{$secondary};
+}
+
+
+
+/***********************************************
   TEMPLATE CONTAINER
 ***********************************************/
 .container {
@@ -55,20 +69,20 @@ nav {
   left: 0;
   right: 0;
   width: 100vw;
-  background-color: #333;
+  background-color: $secondary;
   z-index: 1;
 }
 
 #burgerMenu {
   display: inline;
   float: right;
-  padding: 15px;
+  padding-top: 2px;
 }
 
 .topnav a {
   float: right;
   display: none;
-  color: #f2f2f2;
+  color: white;
   text-decoration: none;
   font-size: 24px;
 }
@@ -87,7 +101,6 @@ nav {
 
 .toggleMenu {
   content:url("/images/svg/menu-close.svg");
-  padding: 15px;
   width: 32px;
   height: 32px;
 }
@@ -97,8 +110,8 @@ nav {
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
-  text-shadow: 10px 0px 20px rgb(0, 162, 255),
-               10px 0px 20px rgb(0, 162, 255);
+  text-shadow: 10px 0px 20px $primary,
+               10px 0px 20px $primary;
 }
 
 .nav-link {
@@ -107,19 +120,22 @@ nav {
 
 .navbar-brand {
   font-size: 1.8rem;
-  text-shadow: 10px 0px 20px rgb(0, 162, 255),
-               10px 0px 20px rgb(0, 162, 255);
+  text-shadow: 10px 0px 20px $primary,
+               10px 0px 20px $primary;
+}
+
+.logo-brand-wrapper {
+  padding: 20px 15px;
 }
 
 .brand-logo {
-  padding: 15px;
   text-shadow: 1px 1px 2px black,
-               0 0 25px rgb(0, 162, 255),
+               0 0 25px $primary,
                10px 0px 20px #004f7c;
 }
 
 .brand-name {
-  color: rgb(0, 162, 255);
+  color: $primary;
 }
 
 
@@ -176,12 +192,10 @@ video {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 
-@media (min-width: 576px) {}
-
-
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
@@ -194,8 +208,6 @@ video {
       "footer footer footer";
   }
 
-  
-
   /* NAVBAR */
   .topnav a {
     display: inline;
@@ -205,12 +217,6 @@ video {
     display: none;
   }
 }
-
-@media (min-width: 768px) {
-  
-}
-
-
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
