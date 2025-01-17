@@ -1,3 +1,69 @@
 baseURL = 'https://kettenbeil.com/'
 languageCode = 'de-DE'
 title = 'Kettenbeil'
+
+####
+
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.de]
+    languageCode = 'de-DE'
+    languageName = 'Deutsch 🇩🇪'
+    contentDir = 'content/de'
+    weight = 1
+
+    [languages.de.menus]
+      [[languages.de.menus.main]]
+        name = 'Logos'
+        pageRef = '/logos'
+        weight = 10
+        [[languages.de.menus.main]]
+        name = 'Sketches'
+        pageRef = '/sketches'
+        weight = 20
+        [[languages.de.menus.main]]
+        name = 'Fotos'
+        pageRef = '/fotos'
+        weight = 30
+        [[languages.de.menus.main]]
+        name = 'Tutorials'
+        pageRef = '/tutorials'
+        weight = 40
+        [[languages.de.menus.main]]
+        name = 'Kontakt'
+        pageRef = '/kontakt'
+        weight = 50
+
+
+
+
+
+[languages.en]
+    languageCode = 'en-US'
+    languageName = 'English 🇬🇧'
+    contentDir = 'content/en'
+    weight = 2
+
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'Logos'
+        pageRef = '/logos'
+        weight = 10
+    [[languages.en.menus.main]]
+        name = 'Sketches'
+        pageRef = '/sketches'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Photos'
+        pageRef = '/fotos'
+        weight = 30
+        [[languages.en.menus.main]]
+        name = 'Tutorials'
+        pageRef = '/tutorials'
+        weight = 40
+        [[languages.en.menus.main]]
+        name = 'Contact'
+        pageRef = '/kontakt'
+        weight = 50

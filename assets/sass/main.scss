@@ -48,47 +48,36 @@ footer {
 /***********************************************
   Navbar
 ***********************************************/
-.topnav {
+
+nav {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
-  overflow: hidden;
   background-color: #333;
   z-index: 1;
+}
+
+#burgerMenu {
+  display: inline;
+  float: right;
+  padding: 15px;
 }
 
 .topnav a {
   float: right;
   display: none;
   color: #f2f2f2;
-  text-align: left;
-  padding: 15px;
   text-decoration: none;
   font-size: 24px;
-}
-
-.topnav a.visited {
-  
-}
-
-.topnav a:hover {
-  color: black;
-  padding: 15px 15px 16px 15px;
-}
-
-.topnav a.active {
-  color: white;
-  display: block;
-  float: left;
-}
-
-.topnav .icon {
-  display: block;
 }
 
 .topnav.responsive .icon {
   position: absolute;
   right: 0px;
   top: 0px;
+  z-index: 2;
 }
 
 .topnav.responsive a {
@@ -96,35 +85,45 @@ footer {
   float: none;
 }
 
-#burgerMenu {
-  padding: 15px 15px 14px 15px;
-}
-
 .toggleMenu {
   content:url("/images/svg/menu-close.svg");
-  padding: 15px 15px 14px 15px;
+  padding: 15px;
   width: 32px;
   height: 32px;
-  transition: width 0.1s;
 }
 
-.toggleMenu:hover {
-  width: 20px;
+.nav-item {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 10px 0px 20px rgb(0, 162, 255),
+               10px 0px 20px rgb(0, 162, 255);
 }
 
-.nav-link:hover::before {
-  content: "[";
-  left: -10px;
-  position: absolute;
-  color: black;
+.nav-link {
+  text-decoration: none;
 }
 
-.nav-link:hover::after {
-  content: "]";
-  right:-10px;
-  position: absolute;
-  color: black;
+.navbar-brand {
+  font-size: 1.8rem;
+  text-shadow: 10px 0px 20px rgb(0, 162, 255),
+               10px 0px 20px rgb(0, 162, 255);
 }
+
+.brand-logo {
+  padding: 15px;
+  text-shadow: 1px 1px 2px black,
+               0 0 25px rgb(0, 162, 255),
+               10px 0px 20px #004f7c;
+}
+
+.brand-name {
+  color: rgb(0, 162, 255);
+}
+
+
+
 
 
 /*******************************************************
@@ -166,7 +165,6 @@ video {
   height: 100vh;
   background-size: cover;
   background-position: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -199,33 +197,17 @@ video {
   
 
   /* NAVBAR */
-  .topnav a:not(:first-child) {
-    display: block;
+  .topnav a {
+    display: inline;
   }
 
-  .topnav a.icon {
-    float: right;
+  #burgerMenu {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+  
 }
 
 
