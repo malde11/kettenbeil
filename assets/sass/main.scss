@@ -76,11 +76,10 @@ nav {
 #burgerMenu {
   display: inline;
   float: right;
-  padding-top: 2px;
+  padding: 15px;
 }
 
 .topnav a {
-  float: right;
   display: none;
   color: white;
   text-decoration: none;
@@ -97,6 +96,11 @@ nav {
 .topnav.responsive a {
   display: block;
   float: none;
+  padding: 16px 0px;
+}
+
+.responsive {
+  padding: 20px;
 }
 
 .toggleMenu {
@@ -106,7 +110,7 @@ nav {
 }
 
 .nav-item {
-  display: block;
+  display: inline;
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
@@ -125,10 +129,11 @@ nav {
 }
 
 .logo-brand-wrapper {
-  padding: 20px 15px;
+  display: inline;
 }
 
 .brand-logo {
+  padding: 15px 5px 0px 15px;
   text-shadow: 1px 1px 2px black,
                0 0 25px $primary,
                10px 0px 20px #004f7c;
@@ -209,6 +214,12 @@ video {
   }
 
   /* NAVBAR */
+  .topnav {
+    float: right;
+    padding: 15px;
+    
+  }
+
   .topnav a {
     display: inline;
   }
