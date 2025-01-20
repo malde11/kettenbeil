@@ -52,15 +52,18 @@ nav {
   z-index: 1; }
 
 #burgerMenu {
-  display: inline;
+  display: inline-block;
   float: right;
-  padding: 15px; }
+  padding: 20px 15px 15px 15px; }
+
+.dot-arrow {
+  padding-right: 10px; }
 
 .topnav a {
   display: none;
   color: white;
   text-decoration: none;
-  font-size: 24px; }
+  font-size: 20px; }
 
 .topnav.responsive .icon {
   position: absolute;
@@ -74,7 +77,9 @@ nav {
   padding: 16px 0px; }
 
 .responsive {
-  padding: 20px; }
+  margin-top: 28px;
+  padding: 0 0 10px 25px;
+  background-color: black; }
 
 .toggleMenu {
   content: url("/images/svg/menu-close.svg");
@@ -83,6 +88,7 @@ nav {
 
 .nav-item {
   display: inline;
+  padding: 0 10px 10px 10px;
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
@@ -92,6 +98,8 @@ nav {
   text-decoration: none; }
 
 .navbar-brand {
+  color: white;
+  text-decoration: none;
   font-size: 1.8rem;
   text-shadow: 10px 0px 20px #00a2ff, 10px 0px 20px #00a2ff; }
 
@@ -103,6 +111,30 @@ nav {
   text-shadow: 1px 1px 2px black, 0 0 25px #00a2ff, 10px 0px 20px #004f7c; }
 
 .brand-name {
+  color: #00a2ff; }
+
+.nav-link:link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.nav-link:visited {
+  color: white; }
+
+.nav-link:hover {
+  color: white; }
+
+.nav-link:active {
+  color: white; }
+
+.nav-link:hover::before {
+  content: "[";
+  left: -10px;
+  color: #00a2ff; }
+
+.nav-link:hover::after {
+  content: "]";
+  right: -10px;
   color: #00a2ff; }
 
 /*******************************************************
@@ -165,6 +197,8 @@ video {
   .topnav a {
     display: inline; }
   #burgerMenu {
+    display: none; }
+  .dot-arrow {
     display: none; } }
 
 /* Large devices (desktops, 992px and up) */

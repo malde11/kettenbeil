@@ -22,6 +22,8 @@ $secondary: #333;
 
 
 
+
+
 /***********************************************
   TEMPLATE CONTAINER
 ***********************************************/
@@ -74,16 +76,20 @@ nav {
 }
 
 #burgerMenu {
-  display: inline;
+  display: inline-block;
   float: right;
-  padding: 15px;
+  padding: 20px 15px 15px 15px;
+}
+
+.dot-arrow {
+  padding-right: 10px;
 }
 
 .topnav a {
   display: none;
   color: white;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .topnav.responsive .icon {
@@ -100,7 +106,9 @@ nav {
 }
 
 .responsive {
-  padding: 20px;
+  margin-top: 28px;
+  padding: 0 0 10px 25px;
+  background-color: black;
 }
 
 .toggleMenu {
@@ -111,6 +119,7 @@ nav {
 
 .nav-item {
   display: inline;
+  padding: 0 10px 10px 10px;
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
@@ -123,6 +132,8 @@ nav {
 }
 
 .navbar-brand {
+  color: white;
+  text-decoration: none;
   font-size: 1.8rem;
   text-shadow: 10px 0px 20px $primary,
                10px 0px 20px $primary;
@@ -143,7 +154,35 @@ nav {
   color: $primary;
 }
 
+.nav-link:link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
+.nav-link:visited {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white
+}
+
+.nav-link:active {
+  color: white;
+}
+
+.nav-link:hover::before {
+  content: "[";
+  left:-10px;
+  color: $primary;
+}
+
+.nav-link:hover::after {
+  content: "]";
+  right:-10px;
+  color: $primary;
+}
 
 
 
@@ -225,6 +264,10 @@ video {
   }
 
   #burgerMenu {
+    display: none;
+  }
+
+  .dot-arrow {
     display: none;
   }
 }
