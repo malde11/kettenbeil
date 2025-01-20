@@ -48,7 +48,7 @@ nav {
   left: 0;
   right: 0;
   width: 100vw;
-  background-color: #333;
+  background-color: #2c2c2c;
   z-index: 1; }
 
 #burgerMenu {
@@ -79,7 +79,7 @@ nav {
 .responsive {
   margin-top: 28px;
   padding: 0 0 10px 25px;
-  background-color: black; }
+  background-color: #161616; }
 
 .toggleMenu {
   content: url("/images/svg/menu-close.svg");
