@@ -21,6 +21,25 @@ $secondary: #333;
 }
 
 
+/***********************************************
+  FONTS
+***********************************************/
+
+@font-face {
+  font-family: "Smooch Sans";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/SmoochSans-Medium.ttf');
+}
+
+
+/*.smooch-sans-<uniquifier> {
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}*/
 
 
 
@@ -76,9 +95,8 @@ nav {
 }
 
 #burgerMenu {
-  display: inline-block;
   float: right;
-  padding: 20px 15px 15px 15px;
+  padding: 28px 15px 15px 15px;
 }
 
 .dot-arrow {
@@ -107,7 +125,7 @@ nav {
 
 .responsive {
   margin-top: 28px;
-  padding: 0 0 10px 25px;
+  padding: 0 0 10px 20px;
   background-color: #161616;
 }
 
@@ -131,10 +149,15 @@ nav {
   text-decoration: none;
 }
 
+.dot-arrow {
+  padding-right: 10px;
+}
+
 .navbar-brand {
+  font-family: "Smooch Sans", serif;
   color: white;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-shadow: 10px 0px 20px $primary,
                10px 0px 20px $primary;
 }
@@ -144,7 +167,7 @@ nav {
 }
 
 .brand-logo {
-  padding: 15px 5px 0px 15px;
+  padding: 25px 5px 0px 15px;;
   text-shadow: 1px 1px 2px black,
                0 0 25px $primary,
                10px 0px 20px #004f7c;
@@ -157,7 +180,6 @@ nav {
 .nav-link:link {
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .nav-link:visited {
@@ -174,13 +196,13 @@ nav {
 
 .nav-link:hover::before {
   content: "[";
-  left:-10px;
+  display: none;
   color: $primary;
 }
 
 .nav-link:hover::after {
   content: "]";
-  right:-10px;
+  display: none;
   color: $primary;
 }
 
@@ -234,11 +256,31 @@ video {
       No media query for `xs` since this is the default in Bootstrap
   */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+  .nav-item {
+    font-size: 0.8rem;
+  }
+
+  .topnav.responsive a {
+    padding: 5px 0px;
+  }
+
+
+}
 
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .topnav.responsive a {
+    padding: 5px 0px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
   /* TEMPLATE CONTAINER */
   .container {
@@ -255,25 +297,41 @@ video {
   /* NAVBAR */
   .topnav {
     float: right;
-    padding: 15px;
+    padding: 20px;
     
   }
 
   .topnav a {
     display: inline;
+    font-size: 1.3rem;
   }
 
   #burgerMenu {
     display: none;
   }
 
+  .brand-logo {
+    padding: 13px 5px 0px 15px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-brand {
+    font-size: 2.3rem;
+  }
+
   .dot-arrow {
     display: none;
   }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+  .nav-link:hover::before {
+    display: inline;
+  }
+  
+  .nav-link:hover::after {
+    display: inline;
+  }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
