@@ -326,10 +326,13 @@ video {
 
   .nav-link:hover::before {
     display: inline;
+    position: absolute;
+    
   }
   
   .nav-link:hover::after {
     display: inline;
+    position: absolute;
   }
 }
 
