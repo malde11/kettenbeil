@@ -331,19 +331,15 @@ video {
   .nav-link:hover::before {
     content: "[";
     display: inline;
-    color: #primary;
     position: absolute;
     left: -2px;
-    /* Adjust for left position */
   }
 
   .nav-link:hover::after {
     content: "]";
     display: inline;
-    color: #primary;
     position: absolute;
     right: 2px;
-    /* Adjust for right position */
   }
 }
 
