@@ -236,12 +236,22 @@ video {
     font-size: 2.3rem; }
   .dot-arrow {
     display: none; }
+  .nav-item {
+    position: relative; }
   .nav-link:hover::before {
+    content: "[";
     display: inline;
-    position: absolute; }
+    color: #primary;
+    position: absolute;
+    left: -2px;
+    /* Adjust for left position */ }
   .nav-link:hover::after {
+    content: "]";
     display: inline;
-    position: absolute; } }
+    color: #primary;
+    position: absolute;
+    right: 2px;
+    /* Adjust for right position */ } }
 
 /* X-Large devices (large desktops, 1200px and up) */
 /* XX-Large devices (larger desktops, 1400px and up) */
