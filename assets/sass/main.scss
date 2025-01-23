@@ -219,7 +219,7 @@ nav {
 }
 
 video {
-  display: inline;
+  display: none;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -288,6 +288,10 @@ video {
     padding: 5px 0px;
   }
 
+  video {
+    display: inline;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -332,8 +336,6 @@ video {
     font-size: 2.3rem;
   }
 
-
-
   .dot-arrow {
     display: none;
   }
@@ -354,6 +356,11 @@ video {
     display: inline;
     position: absolute;
     right: 2px;
+  }
+
+  /* Video */
+  video {
+    src: url("/videos/ground_1080p.mp4");
   }
 }
 

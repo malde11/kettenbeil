@@ -168,7 +168,7 @@ nav {
   z-index: -2; }
 
 video {
-  display: inline;
+  display: none;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -221,7 +221,9 @@ video {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .topnav.responsive a {
-    padding: 5px 0px; } }
+    padding: 5px 0px; }
+  video {
+    display: inline; } }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -260,7 +262,10 @@ video {
     content: "]";
     display: inline;
     position: absolute;
-    right: 2px; } }
+    right: 2px; }
+  /* Video */
+  video {
+    src: url("/videos/ground_1080p.mp4"); } }
 
 /* X-Large devices (large desktops, 1200px and up) */
 /* XX-Large devices (larger desktops, 1400px and up) */
