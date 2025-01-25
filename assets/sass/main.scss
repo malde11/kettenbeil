@@ -242,15 +242,6 @@ video {
   justify-content: center;
 }
 
-#small-video {
-  display: none;
-}
-
-#large-video {
-  display: none;
-}
-
-
 /*
 .arrow-box {
   position: absolute;
@@ -293,10 +284,6 @@ video {
 
   .topnav.responsive a {
     padding: 5px 0px;
-  }
-
-  #small-video {
-    display: block;
   }
 
 }
@@ -368,18 +355,7 @@ video {
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /* Video */
-
-  #small-video {
-    display: none;
-  }
-
-  #large-video {
-    display: block;
-    content:url("/videos/ground_1080p.mp4");
-  }
-}
+@media (min-width: 1200px) {}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}
