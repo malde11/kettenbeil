@@ -35,11 +35,11 @@
 
 nav {
   grid-area: nav;
-  background-color: blue; }
+  background-color: black; }
 
 header {
   grid-area: header;
-  background-color: darkcyan;
+  background-color: black;
   z-index: -3; }
 
 main {
