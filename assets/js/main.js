@@ -1,4 +1,5 @@
 window.onload = function() {
+  
 "use strict";
 
   /* Burger menu toggle nav */
