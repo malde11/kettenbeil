@@ -12,12 +12,12 @@
 
 
         {{ "<!-- PRELOADER START -->" | safeHTML }}
-            {{ partial "preloader.html" . }}
+            {{ partialCached "preloader.html" . }}
         
 
 
         {{ "<!-- NAVBAR START -->" | safeHTML }}
-            {{ partial "navbar.html" . }}
+            {{ partialCached "navbar.html" . }}
         
 
 
@@ -36,7 +36,7 @@
 
 
         {{ "<!-- FOOTER START -->" | safeHTML }}
-            {{ partial "footer.html" . }}
+            {{ partialCached "footer.html" . }}
         
         
 
