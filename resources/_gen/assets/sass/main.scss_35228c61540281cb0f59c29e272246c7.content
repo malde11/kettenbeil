@@ -101,7 +101,7 @@ nav {
   float: right;
   padding: 28px 15px 15px 15px; }
 
-.dot-arrow {
+.menu-dot-arrow {
   padding-right: 10px; }
 
 .topnav a {
@@ -142,7 +142,7 @@ nav {
 .nav-link {
   text-decoration: none; }
 
-.dot-arrow {
+.menu-dot-arrow {
   padding-right: 10px; }
 
 .navbar-brand {
@@ -299,7 +299,7 @@ video {
     height: 30px; }
   .navbar-brand {
     font-size: 2.3rem; }
-  .dot-arrow {
+  .menu-dot-arrow {
     display: none; }
   .nav-item {
     position: relative; }
