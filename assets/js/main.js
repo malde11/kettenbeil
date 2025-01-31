@@ -2,15 +2,12 @@
 
 window.onload = function() {
 
-/* Preloader hide */
-  const preloaderBg = document.getElementById("loader-background");
-  const preloader   = document.getElementById("loader");
+  /* Hide Preloader */
+  document.getElementById("loader-background").style.display = 'none';
+  document.getElementById("loader").style.display = 'none';
 
-  const myTimeoutBg = setTimeout(preloaderBg, 5000);
-  const myTimeout   = setTimeout(preloader, 5000);
   
-
-  /* Burger menu toggle nav */
+  /* Burger-Menu toggle nav */
   const topNav      = document.getElementById("myTopnav");
   const burgerMenu  = document.getElementById("burgerMenu");
   

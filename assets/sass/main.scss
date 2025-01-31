@@ -96,12 +96,17 @@ footer {
   background-image: url(/images/preloader/loader_small.svg);
   background-repeat: no-repeat;
   z-index: 999;
-  -webkit-animation: fadein 2s infinite;
-  /* Safari, Chrome and Opera > 12.1 */
-  /* Firefox < 16 */
-  /* Internet Explorer */
-  /* Opera < 12.1 */
-  animation: fadein 2s infinite;
+  -webkit-animation: fadeinout 4s infinite forwards;
+    animation: fadeinout 4s infinite forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
 }
 
 
