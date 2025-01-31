@@ -6,35 +6,42 @@
 </head>
 
 <body>
-    <!-- CONTAINER START -->
+
+    {{ "<!-- CONTAINER START -->" | safeHTML }}
     <div class="container">
 
-        <!-- PRELOADER START -->
-        {{ partial "preloader.html" . }}
-        <!-- PRELOADER END -->
 
-        <!-- NAVBAR START -->
-        {{ partial "navbar.html" . }}
-        <!-- NAVBAR END -->
-
-        <!-- MAIN START -->
-        <header>
-            {{ block "header" . }}{{ end }}
-        </header>
-        <!-- MAIN END-->
-
-        <!-- MAIN START -->
-        <main>
-            {{ block "main" . }}{{ end }}
-        </main>
-        <!-- MAIN END-->
-
-        <!-- FOOTER START -->
-        {{ partial "footer.html" . }}
-        <!-- FOOTER END -->
+        {{ "<!-- PRELOADER START -->" | safeHTML }}
+            {{ partial "preloader.html" . }}
         
+
+
+        {{ "<!-- NAVBAR START -->" | safeHTML }}
+            {{ partial "navbar.html" . }}
+        
+
+
+        {{ "<!-- HEADER START -->" | safeHTML }}
+            <header>
+                {{ block "header" . }}{{ end }}
+            </header>
+        
+
+
+        {{ "<!-- MAIN START -->" | safeHTML }}
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+        
+
+
+        {{ "<!-- FOOTER START -->" | safeHTML }}
+            {{ partial "footer.html" . }}
+        
+        
+
     </div>
-    <!-- CONTAINER END -->
+
 </body>
 
 </html>

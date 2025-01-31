@@ -1,5 +1,6 @@
 <nav>
-  <!-- Logo and Brand -->
+
+  {{ "<!-- LOGO AND BRAND -->" | safeHTML }}
   <div class="logo-brand-wrapper">
     <a href="{{ .Site.BaseURL | relLangURL }}">
         {{ partial "logo.html" . }}
@@ -10,13 +11,15 @@
       </a>
     </h1>
 
-  <!-- Burger Menu -->
+
+    {{ "<!-- BURGER MENU -->" | safeHTML }}
     <a href="#" id="burgerMenu" class="icon">
       {{ partial "burger-menu.html" . }}
     </a>
   </div>
 
-  <!-- Top Navigation Menu -->
+
+  {{ "<!-- TOP NAVIGATION MENU -->" | safeHTML }}
   <ul class="topnav" id="myTopnav">
     {{ range site.Menus.main }}
       <li class="nav-item">
@@ -27,4 +30,5 @@
       </li>
     {{ end }}
   </ul>
+  
 </nav>

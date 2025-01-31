@@ -1,7 +1,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- START INCLUDE SASS/CSS -->
+
+{{ "<!-- START INCLUDE SASS/CSS -->" | safeHTML }}
 {{ with resources.Get "sass/main.scss" }}
   {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
   {{ with . | toCSS $opts }}
@@ -14,9 +15,10 @@
     {{ end }}
   {{ end }}
 {{ end }}
-<!-- END SASS/CSS -->
 
-<!-- START INCLUDE JAVASCRIPT -->
+
+
+{{ "<!-- START INCLUDE JAVASCRIPT -->" | safeHTML }}
 {{ with resources.Get "js/main.js" }}
   {{ if hugo.IsDevelopment }}
     {{ with . | js.Build }}
@@ -29,7 +31,6 @@
     {{ end }}
   {{ end }}
 {{ end }}
-<!-- END JAVASCRIPT -->
 
 
 <title>{{.Title}}</title>
