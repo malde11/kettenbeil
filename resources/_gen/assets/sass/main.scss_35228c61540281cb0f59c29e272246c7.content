@@ -333,7 +333,29 @@ video {
     height: 360px;
     background-image: url(/images/preloader/loader.svg); } }
 
-/* XXX-Large devices (larger desktops 4K, 3800px and up) */
+/* XXX-Large devices (larger desktops, 2000px and up) */
+@media (min-width: 2000px) {
+  /* PRELOADER */
+  #loader {
+    top: 45%;
+    left: 40%; }
+  /* NAVBAR */
+  .topnav {
+    padding: 35px; }
+  .topnav a {
+    font-size: 2.5rem;
+    padding: 0 25px; }
+  .brand-logo {
+    width: 70px;
+    height: 70px; }
+  .navbar-brand {
+    font-size: 5rem; }
+  .nav-link:hover::before {
+    left: -4px; }
+  .nav-link:hover::after {
+    right: 4px; } }
+
+/* XXXX-Large devices (larger desktops 4K, 3800px and up) */
 @media (min-width: 3800px) {
   /* PRELOADER */
   #loader {
