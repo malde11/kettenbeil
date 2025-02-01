@@ -111,7 +111,7 @@ nav {
   display: none;
   color: white;
   text-decoration: none;
-  font-size: 20px; }
+  font-size: 2rem; }
 
 .topnav.responsive .icon {
   position: absolute;
@@ -125,7 +125,7 @@ nav {
   padding: 16px 0px; }
 
 .responsive {
-  margin-top: 28px;
+  margin-top: 19px;
   padding: 0 0 10px 20px;
   background-color: #161616; }
 
@@ -136,8 +136,8 @@ nav {
 
 .nav-item {
   display: inline;
-  padding: 0 10px 10px 10px;
-  font-size: 1.5rem;
+  padding: 0 10px;
+  font-family: "Smooch Sans";
   color: white;
   text-transform: uppercase;
   text-shadow: 10px 0px 20px #00a2ff, 10px 0px 20px #00a2ff; }
@@ -245,9 +245,6 @@ video {
   text-decoration: none;
 }
 */
-/*  X-Small devices (portrait phones, less than 576px)
-      No media query for `xs` since this is the default in Bootstrap
-  */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* PRELOADER */
@@ -255,8 +252,8 @@ video {
     top: 30%;
     left: 37%; }
   /* NAVBAR */
-  .nav-item {
-    font-size: 0.8rem; }
+  .topnav a {
+    font-size: 1.2rem; }
   .topnav.responsive a {
     padding: 5px 0px; } }
 
@@ -269,6 +266,8 @@ video {
     width: 360px;
     height: 360px; }
   /* NAVBAR */
+  .topnav a {
+    font-size: 1.5rem; }
   .topnav.responsive a {
     padding: 5px 0px; } }
 
@@ -293,15 +292,15 @@ video {
     padding: 20px; }
   .topnav a {
     display: inline;
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
   #burgerMenu {
     display: none; }
   .brand-logo {
-    padding: 13px 5px 0px 15px;
+    padding: 17px 5px 0px 15px;
     width: 30px;
     height: 30px; }
   .navbar-brand {
-    font-size: 2.3rem; }
+    font-size: 2rem; }
   .menu-dot-arrow {
     display: none; }
   .nav-item {
@@ -324,7 +323,10 @@ video {
     top: 29%;
     left: 36%;
     width: 360px;
-    height: 360px; } }
+    height: 360px; }
+  /* NAVBAR */
+  .topnav a {
+    font-size: 1.8rem; } }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -334,7 +336,10 @@ video {
     left: 38%;
     width: 360px;
     height: 360px;
-    background-image: url(/images/preloader/loader.svg); } }
+    background-image: url(/images/preloader/loader.svg); }
+  /* NAVBAR */
+  .topnav a {
+    font-size: 2rem; } }
 
 /* XXX-Large devices (larger desktops, 2000px and up) */
 @media (min-width: 2000px) {
@@ -346,7 +351,7 @@ video {
   .topnav {
     padding: 35px; }
   .topnav a {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0 25px; }
   .brand-logo {
     width: 70px;
@@ -368,7 +373,7 @@ video {
   .topnav {
     padding: 32px; }
   .topnav a {
-    font-size: 3.5rem;
+    font-size: 4rem;
     padding: 0 25px; }
   .brand-logo {
     width: 80px;

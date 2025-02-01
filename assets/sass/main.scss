@@ -2,16 +2,15 @@
   Kettenbeil.com
   main.css
 **********************************************/
-
 * {
   margin: 0;
   padding: 0;
 }
 
+
 /***********************************************
   Colors
 ***********************************************/
-
 $primary: rgb(0, 162, 255);
 $secondary: #333;
 
@@ -24,7 +23,6 @@ $secondary: #333;
 /***********************************************
   FONTS
 ***********************************************/
-
 @font-face {
   font-family: "Smooch Sans";
   font-optical-sizing: auto;
@@ -74,7 +72,6 @@ footer {
 /********************************************
 * Preloader
 *********************************************/
-
 #loader-background {
   position: fixed;
   display: block;
@@ -114,7 +111,6 @@ footer {
 /***********************************************
   Navbar
 ***********************************************/
-
 nav {
   position: fixed;
   top: 0;
@@ -142,7 +138,7 @@ nav {
   display: none;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .topnav.responsive .icon {
@@ -159,7 +155,7 @@ nav {
 }
 
 .responsive {
-  margin-top: 28px;
+  margin-top: 19px;
   padding: 0 0 10px 20px;
   background-color: #161616;
 }
@@ -172,8 +168,8 @@ nav {
 
 .nav-item {
   display: inline;
-  padding: 0 10px 10px 10px;
-  font-size: 1.5rem;
+  padding: 0 10px;
+  font-family: "Smooch Sans";
   color: white;
   text-transform: uppercase;
   text-shadow: 10px 0px 20px $primary,
@@ -304,12 +300,11 @@ video {
 }
 */
 
-/*  X-Small devices (portrait phones, less than 576px)
-      No media query for `xs` since this is the default in Bootstrap
-  */
+
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
   /* PRELOADER */
   #loader {
     top: 30%;
@@ -317,9 +312,9 @@ video {
   }
 
   /* NAVBAR */
-    .nav-item {
-    font-size: 0.8rem;
-  }
+    .topnav a {
+      font-size: 1.2rem;
+    }
 
   .topnav.responsive a {
     padding: 5px 0px;
@@ -329,7 +324,6 @@ video {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
   /* PRELOADER */
   #loader {
     top: 32%;
@@ -339,6 +333,10 @@ video {
   }
 
   /* NAVBAR */
+  .topnav a {
+    font-size: 1.5rem;
+  }
+
   .topnav.responsive a {
     padding: 5px 0px;
   }
@@ -347,7 +345,6 @@ video {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
@@ -378,7 +375,7 @@ video {
 
   .topnav a {
     display: inline;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   #burgerMenu {
@@ -386,13 +383,13 @@ video {
   }
 
   .brand-logo {
-    padding: 13px 5px 0px 15px;
+    padding: 17px 5px 0px 15px;
     width: 30px;
     height: 30px;
   }
 
   .navbar-brand {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .menu-dot-arrow {
@@ -421,7 +418,6 @@ video {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
   /* PRELOADER */
   #loader {
     top: 29%;
@@ -429,12 +425,17 @@ video {
     width: 360px;
     height: 360px;
   }
+
+  /* NAVBAR */
+  .topnav a {
+    font-size: 1.8rem;
+  }
+
 }
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
   /* PRELOADER */
   #loader {
     top: 32%;
@@ -443,12 +444,17 @@ video {
     height: 360px;
     background-image: url(/images/preloader/loader.svg);
   }
+
+  /* NAVBAR */
+  .topnav a {
+    font-size: 2rem;
+  }
+
 }
 
 
 /* XXX-Large devices (larger desktops, 2000px and up) */
 @media (min-width: 2000px) {
-  
   /* PRELOADER */
   #loader {
     top: 45%;
@@ -462,7 +468,7 @@ video {
   }
 
   .topnav a {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0 25px;
   }
 
@@ -487,7 +493,6 @@ video {
 
 /* XXXX-Large devices (larger desktops 4K, 3800px and up) */
 @media (min-width: 3800px) {
-
   /* PRELOADER */
   #loader {
     top: 38%;
@@ -501,7 +506,7 @@ video {
   }
 
   .topnav a {
-    font-size: 3.5rem;
+    font-size: 4rem;
     padding: 0 25px;
   }
 
@@ -521,6 +526,4 @@ video {
   .nav-link:hover::after {
     right: 10px;
   }
-
-
 }
