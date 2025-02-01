@@ -4,14 +4,19 @@
 **********************************************/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px; }
+
+li {
+  list-style-type: none; }
 
 /***********************************************
   Colors
 ***********************************************/
 :root {
-  --data-color-primary:#00a2ff;
-  --data-color-secondary:#333; }
+  --primary: rgb(0, 162, 255);
+  --secondary: #333; }
 
 /***********************************************
   FONTS
@@ -22,6 +27,10 @@
   font-weight: 500;
   font-style: normal;
   src: url("/fonts/SmoochSans-Medium.ttf"); }
+
+h1, h2, h3, h4 {
+  font-family: "Smooch Sans";
+  font-weight: 500; }
 
 /***********************************************
   TEMPLATE CONTAINER
@@ -110,8 +119,7 @@ nav {
 .topnav a {
   display: none;
   color: white;
-  text-decoration: none;
-  font-size: 2rem; }
+  font-size: 1.5em; }
 
 .topnav.responsive .icon {
   position: absolute;
@@ -125,7 +133,7 @@ nav {
   padding: 16px 0px; }
 
 .responsive {
-  margin-top: 19px;
+  margin-top: 24px;
   padding: 0 0 10px 20px;
   background-color: #161616; }
 
@@ -140,34 +148,30 @@ nav {
   font-family: "Smooch Sans";
   color: white;
   text-transform: uppercase;
-  text-shadow: 10px 0px 20px #00a2ff, 10px 0px 20px #00a2ff; }
-
-.nav-link {
-  text-decoration: none; }
+  text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary); }
 
 .menu-dot-arrow {
   padding-right: 10px; }
 
 .navbar-brand {
-  font-family: "Smooch Sans", serif;
+  font-family: "Smooch Sans";
   color: white;
-  text-decoration: none;
-  font-size: 2.2rem;
-  text-shadow: 10px 0px 20px #00a2ff, 10px 0px 20px #00a2ff; }
+  font-size: 2em;
+  text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary); }
 
 .logo-brand-wrapper {
   display: inline; }
 
 .brand-logo {
   padding: 25px 5px 0px 15px;
-  text-shadow: 1px 1px 2px black, 0 0 25px #00a2ff, 10px 0px 20px #004f7c; }
+  text-shadow: 1px 1px 2px black, 0 0 25px var(--primary), 10px 0px 20px #004f7c; }
 
 .brand-name {
-  color: #00a2ff; }
+  color: var(--primary);
+  font-size: 1em; }
 
 .nav-link:link {
-  color: white;
-  text-decoration: none; }
+  color: white; }
 
 .nav-link:visited {
   color: white; }
@@ -181,12 +185,12 @@ nav {
 .nav-link:hover::before {
   content: "[";
   display: none;
-  color: #00a2ff; }
+  color: var(--primary); }
 
 .nav-link:hover::after {
   content: "]";
   display: none;
-  color: #00a2ff; }
+  color: var(--primary); }
 
 /*******************************************************
   Home (Background)
@@ -253,7 +257,7 @@ video {
     left: 37%; }
   /* NAVBAR */
   .topnav a {
-    font-size: 1.2rem; }
+    font-size: 0.8em; }
   .topnav.responsive a {
     padding: 5px 0px; } }
 
@@ -267,7 +271,7 @@ video {
     height: 360px; }
   /* NAVBAR */
   .topnav a {
-    font-size: 1.5rem; }
+    font-size: 1.5em; }
   .topnav.responsive a {
     padding: 5px 0px; } }
 
@@ -292,15 +296,13 @@ video {
     padding: 20px; }
   .topnav a {
     display: inline;
-    font-size: 1.5rem; }
+    font-size: 1.5em; }
   #burgerMenu {
     display: none; }
   .brand-logo {
-    padding: 17px 5px 0px 15px;
+    padding: 20px 5px 0px 15px;
     width: 30px;
     height: 30px; }
-  .navbar-brand {
-    font-size: 2rem; }
   .menu-dot-arrow {
     display: none; }
   .nav-item {
@@ -326,7 +328,7 @@ video {
     height: 360px; }
   /* NAVBAR */
   .topnav a {
-    font-size: 1.8rem; } }
+    font-size: 1.8em; } }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -339,7 +341,13 @@ video {
     background-image: url(/images/preloader/loader.svg); }
   /* NAVBAR */
   .topnav a {
-    font-size: 2rem; } }
+    font-size: 2em; }
+  .navbar-brand {
+    font-size: 2.5em; }
+  .brand-logo {
+    padding: 20px 5px 0px 15px;
+    width: 40px;
+    height: 40px; } }
 
 /* XXX-Large devices (larger desktops, 2000px and up) */
 @media (min-width: 2000px) {
@@ -351,13 +359,13 @@ video {
   .topnav {
     padding: 35px; }
   .topnav a {
-    font-size: 3rem;
+    font-size: 3em;
     padding: 0 25px; }
   .brand-logo {
     width: 70px;
     height: 70px; }
   .navbar-brand {
-    font-size: 5rem; }
+    font-size: 5em; }
   .nav-link:hover::before {
     left: -4px; }
   .nav-link:hover::after {
@@ -373,13 +381,14 @@ video {
   .topnav {
     padding: 32px; }
   .topnav a {
-    font-size: 4rem;
+    font-size: 4em;
     padding: 0 25px; }
   .brand-logo {
+    padding: 34px 5px 0px 45px;
     width: 80px;
     height: 80px; }
   .navbar-brand {
-    font-size: 6.8rem; }
+    font-size: 5.5em; }
   .nav-link:hover::before {
     left: -10px; }
   .nav-link:hover::after {

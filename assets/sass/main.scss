@@ -5,18 +5,21 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
 }
 
 
 /***********************************************
   Colors
 ***********************************************/
-$primary: rgb(0, 162, 255);
-$secondary: #333;
-
-:root{ 
-  --data-color-primary:#{$primary};
-  --data-color-secondary:#{$secondary};
+:root { 
+  --primary: rgb(0, 162, 255);
+  --secondary: #333; 
 }
 
 
@@ -29,6 +32,11 @@ $secondary: #333;
   font-weight: 500;
   font-style: normal;
   src: url('/fonts/SmoochSans-Medium.ttf');
+}
+
+h1,h2,h3,h4 {
+  font-family: "Smooch Sans";
+  font-weight: 500;
 }
 
 
@@ -137,8 +145,7 @@ nav {
 .topnav a {
   display: none;
   color: white;
-  text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
 .topnav.responsive .icon {
@@ -155,7 +162,7 @@ nav {
 }
 
 .responsive {
-  margin-top: 19px;
+  margin-top: 24px;
   padding: 0 0 10px 20px;
   background-color: #161616;
 }
@@ -172,12 +179,8 @@ nav {
   font-family: "Smooch Sans";
   color: white;
   text-transform: uppercase;
-  text-shadow: 10px 0px 20px $primary,
-               10px 0px 20px $primary;
-}
-
-.nav-link {
-  text-decoration: none;
+  text-shadow: 10px 0px 20px var(--primary),
+               10px 0px 20px var(--primary);
 }
 
 .menu-dot-arrow {
@@ -185,12 +188,11 @@ nav {
 }
 
 .navbar-brand {
-  font-family: "Smooch Sans", serif;
+  font-family: "Smooch Sans";
   color: white;
-  text-decoration: none;
-  font-size: 2.2rem;
-  text-shadow: 10px 0px 20px $primary,
-               10px 0px 20px $primary;
+  font-size: 2em;
+  text-shadow: 10px 0px 20px var(--primary),
+               10px 0px 20px var(--primary);
 }
 
 .logo-brand-wrapper {
@@ -200,17 +202,17 @@ nav {
 .brand-logo {
   padding: 25px 5px 0px 15px;
   text-shadow: 1px 1px 2px black,
-               0 0 25px $primary,
+               0 0 25px var(--primary),
                10px 0px 20px #004f7c;
 }
 
 .brand-name {
-  color: $primary;
+  color: var(--primary);
+  font-size: 1em;
 }
 
 .nav-link:link {
   color: white;
-  text-decoration: none;
 }
 
 .nav-link:visited {
@@ -228,13 +230,13 @@ nav {
 .nav-link:hover::before {
   content: "[";
   display: none;
-  color: $primary;
+  color: var(--primary);
 }
 
 .nav-link:hover::after {
   content: "]";
   display: none;
-  color: $primary;
+  color: var(--primary);
 }
 
 
@@ -313,7 +315,7 @@ video {
 
   /* NAVBAR */
     .topnav a {
-      font-size: 1.2rem;
+      font-size: 0.8em;
     }
 
   .topnav.responsive a {
@@ -334,7 +336,7 @@ video {
 
   /* NAVBAR */
   .topnav a {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   .topnav.responsive a {
@@ -375,7 +377,7 @@ video {
 
   .topnav a {
     display: inline;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   #burgerMenu {
@@ -383,13 +385,9 @@ video {
   }
 
   .brand-logo {
-    padding: 17px 5px 0px 15px;
+    padding: 20px 5px 0px 15px;
     width: 30px;
     height: 30px;
-  }
-
-  .navbar-brand {
-    font-size: 2rem;
   }
 
   .menu-dot-arrow {
@@ -428,7 +426,7 @@ video {
 
   /* NAVBAR */
   .topnav a {
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
 
 }
@@ -447,9 +445,18 @@ video {
 
   /* NAVBAR */
   .topnav a {
-    font-size: 2rem;
+    font-size: 2em;
   }
 
+  .navbar-brand {
+    font-size: 2.5em;
+  }
+
+  .brand-logo {
+    padding: 20px 5px 0px 15px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -468,7 +475,7 @@ video {
   }
 
   .topnav a {
-    font-size: 3rem;
+    font-size: 3em;
     padding: 0 25px;
   }
 
@@ -478,7 +485,7 @@ video {
   }
 
   .navbar-brand {
-    font-size: 5rem;
+    font-size: 5em;
   }
 
   .nav-link:hover::before {
@@ -506,17 +513,18 @@ video {
   }
 
   .topnav a {
-    font-size: 4rem;
+    font-size: 4em;
     padding: 0 25px;
   }
 
   .brand-logo {
+    padding: 34px 5px 0px 45px;
     width: 80px;
     height: 80px;
   }
 
   .navbar-brand {
-    font-size: 6.8rem;
+    font-size: 5.5em;
   }
 
   .nav-link:hover::before {
