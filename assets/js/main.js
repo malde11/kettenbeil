@@ -16,4 +16,21 @@ window.onload = function() {
     burgerMenu.classList.toggle("toggleMenu");
   });
 
+
+  /* Navbar active state */
+  const pathname = window.location.pathname;
+  const pages    = ["logos", "sketches", "fotos", "tutorials", "kontakt"];
+
+  for (let key in pages) {
+
+    if (pathname.includes(pages[key])) {
+      console.log(key, pages[key]);
+      this.classList.add("active");
+  
+    } else if (this.classList.includes("active")) {
+        this.classList.remove("active");
+    }
+
+  }
+
 };
