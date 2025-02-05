@@ -13,9 +13,9 @@ window.addEventListener('DOMContentLoaded', ()=> {
   
   /* Navbar active state */
   const activeLink = document.querySelector(".nav-link[href='" + window.location.pathname + "']");
-
   if(activeLink) activeLink.classList.add("active");
 
+  
   /* Burger-Menu toggle nav */
   const topNav      = document.getElementById("myTopnav");
   const burgerMenu  = document.getElementById("burgerMenu");
