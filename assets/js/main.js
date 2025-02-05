@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   const activeLink = document.querySelector(".nav-link[href='" + window.location.pathname + "']");
   if(activeLink) activeLink.classList.add("active");
 
-  
+
   /* Burger-Menu toggle nav */
   const topNav      = document.getElementById("myTopnav");
   const burgerMenu  = document.getElementById("burgerMenu");
@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   burgerMenu.addEventListener("click", () => { 
     topNav.classList.toggle("responsive");
     burgerMenu.classList.toggle("toggleMenu");
+    
   });
   
 });
