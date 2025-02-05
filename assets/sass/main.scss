@@ -50,7 +50,7 @@ h1,h2,h3,h4 {
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
-    "slug"
+    "slug-wrapper"
     "main"
     "footer";
 }
@@ -61,8 +61,8 @@ header {
   z-index: -3;
 }
 
-.slug {
-  grid-area: slug;
+.slug-wrapper {
+  grid-area: slug-wrapper;
 }
 
 main {
@@ -424,9 +424,9 @@ video {
 
   main {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns:repeat(8, 1fr);
     grid-template-areas:
-    "slug slug slug slug slug slug slug slug"
+    "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
     ". maincontent maincontent maincontent maincontent2 maincontent2 maincontent2 .";
   }
 

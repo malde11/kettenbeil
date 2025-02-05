@@ -39,15 +39,15 @@ h1, h2, h3, h4 {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "slug" "main" "footer"; }
+  grid-template-areas: "header" "slug-wrapper" "main" "footer"; }
 
 header {
   grid-area: header;
   background-color: black;
   z-index: -3; }
 
-.slug {
-  grid-area: slug; }
+.slug-wrapper {
+  grid-area: slug-wrapper; }
 
 main {
   grid-area: main;
@@ -330,7 +330,7 @@ video {
   main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "slug slug slug slug slug slug slug slug" ". maincontent maincontent maincontent maincontent2 maincontent2 maincontent2 ."; }
+    grid-template-areas: "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper" ". maincontent maincontent maincontent maincontent2 maincontent2 maincontent2 ."; }
   /* PRELOADER */
   #loader {
     top: 30%;
