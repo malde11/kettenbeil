@@ -1,10 +1,15 @@
 "use strict";
 
-window.addEventListener('DOMContentLoaded', ()=> {
+window.addEventListener('load', function () {
 
-  /* Hide Preloader */
-  document.getElementById("loader-background").style.display = 'none';
-  document.getElementById("loader").style.display = 'none';
+    /* Hide Preloader */
+    document.getElementById("loader-background").style.display = 'none';
+    document.getElementById("loader").style.display = 'none';
+
+});
+
+
+window.addEventListener('DOMContentLoaded', ()=> {
   
   /* Navbar active state */
   const activeLink = document.querySelector(".nav-link[href='" + window.location.pathname + "']");
