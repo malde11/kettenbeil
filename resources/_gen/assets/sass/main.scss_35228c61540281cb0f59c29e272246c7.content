@@ -54,12 +54,10 @@ main {
   text-align: center; }
 
 .main-content {
-  grid-area: maincontent;
-  background-color: aqua; }
+  grid-area: maincontent; }
 
 .main-content-2 {
-  grid-area: maincontent2;
-  background-color: blueviolet; }
+  grid-area: maincontent2; }
 
 footer {
   text-align: center;
@@ -268,29 +266,29 @@ video {
 /*******************************************************
   Images
 *******************************************************/
-.card-headline {
-  font-family: "Smooch Sans";
-  font-size: 2em;
-  padding: 15px;
-  transition-delay: .1s;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+.img-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-.card-headline:hover {
+.img-shadow:hover {
   transform: translateY(-4px);
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0; }
 
+.card-headline {
+  padding: 15px;
+  font-family: "Smooch Sans";
+  transition-delay: 0s, 0s;
+  transition-delay: .1s;
+  border: none; }
+
+/*
 .img-shadow {
   text-align: center;
   grid-area: main;
   background-color: #fff;
-  grid-gap: 15px;
-  transition-delay: .1s;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+}
 
-.img-shadow:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2); }
-
+*/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* PRELOADER */
