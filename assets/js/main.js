@@ -1,6 +1,6 @@
 "use strict";
 
-window.addEventListener('load', function () {
+addEventListener('load', ()=> {
 
     /* Hide Preloader */
     document.getElementById("loader-background").style.display = 'none';
@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 });
 
 
-window.addEventListener('DOMContentLoaded', ()=> {
+addEventListener('DOMContentLoaded', ()=> {
   
   /* Navbar active state */
   const activeLink = document.querySelector(".nav-link[href='" + window.location.pathname + "']");
