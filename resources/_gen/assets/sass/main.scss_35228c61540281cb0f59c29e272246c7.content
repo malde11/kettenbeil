@@ -16,7 +16,7 @@ li {
 ***********************************************/
 :root {
   --primary: rgb(0, 162, 255);
-  --secondary: #333; }
+  --secondary: #151515; }
 
 a:link {
   color: #fff; }
@@ -148,7 +148,7 @@ nav {
   left: 0;
   right: 0;
   width: 100vw;
-  background-color: #2c2c2c;
+  background-color: var(--secondary);
   z-index: 1; }
 
 #brand-headline {
@@ -374,9 +374,9 @@ video {
     left: 37%; }
   /* NAVBAR */
   .topnav a {
-    font-size: 0.8em; }
+    font-size: 1em; }
   .topnav.responsive a {
-    padding: 5px 0px; } }
+    padding: 2px 0px; } }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -397,18 +397,18 @@ video {
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 25px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: "header header header header header header header header" "main main main main main main main main" "footer footer footer footer footer footer footer footer"; }
   main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
+    grid-gap: 25px;
     grid-template-areas: "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper" "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow"; }
   .img-shadow {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
+    grid-gap: 25px;
     grid-template-areas: ". main-content main-content main-content main-content-2 main-content-2 main-content-2 ." ". main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 ." ". main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 ."; }
   .main-content,
   .main-content-4,
@@ -465,11 +465,21 @@ video {
     width: 360px;
     height: 360px; }
   /* NAVBAR */
+  .brand-logo {
+    width: 20px;
+    height: 20px; }
+  .navbar-brand {
+    font-size: 1.3em; }
   .topnav a {
-    font-size: 1.8em; }
+    font-size: 1em;
+    padding: 0 25px; }
   .logo-link {
     width: 360px;
-    height: auto; } }
+    height: auto; }
+  .nav-link:hover::before {
+    left: 15px; }
+  .nav-link:hover::after {
+    right: 15px; } }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -482,13 +492,13 @@ video {
     background-image: url(/images/preloader/loader.svg); }
   /* NAVBAR */
   .topnav a {
-    font-size: 2em; }
+    font-size: 1.2em; }
   .navbar-brand {
-    font-size: 2.5em; }
+    font-size: 1.5em; }
   .brand-logo {
     padding: 20px 5px 0px 15px;
-    width: 40px;
-    height: 40px; } }
+    width: 25px;
+    height: 25px; } }
 
 /* XXX-Large devices (larger desktops, 2000px and up) */
 @media (min-width: 2000px) {
