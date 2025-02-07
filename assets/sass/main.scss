@@ -445,6 +445,40 @@ video {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  /* TEMPLATE CONTAINER */
+  .container {
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-areas:
+      "header header header header header header header header"
+      "main main main main main main main main"
+      "footer footer footer footer footer footer footer footer";
+  }
+
+  main {
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
+      "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
+  }
+
+  .img-shadow {
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+      ". . main-content-2 main-content-2 main-content-2 main-content-2 . ."
+      ". . main-content main-content main-content main-content . ."
+      ". . main-content-3 main-content-3 main-content-3 main-content-3 . ."
+      ". . main-content-4 main-content-4 main-content-4 main-content-4 . ."
+      ". . main-content-5 main-content-5 main-content-5 main-content-5 . ."
+      ". . main-content-6 main-content-6 main-content-6 main-content-6 . ."
+  }
+
+
+
   /* PRELOADER */
   #loader {
     top: 30%;
@@ -460,11 +494,6 @@ video {
     padding: 5px 0px;
   }
 }
-
-/********************************************
-* Footer
-*********************************************/
-
 
 
 
