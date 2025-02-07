@@ -367,7 +367,6 @@ video {
   .img-shadow {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
     grid-template-areas: ". . main-content-2 main-content-2 main-content-2 main-content-2 . ." ". . main-content main-content main-content main-content . ." ". . main-content-3 main-content-3 main-content-3 main-content-3 . ." ". . main-content-4 main-content-4 main-content-4 main-content-4 . ." ". . main-content-5 main-content-5 main-content-5 main-content-5 . ." ". . main-content-6 main-content-6 main-content-6 main-content-6 . ."; }
   /* PRELOADER */
   #loader {
@@ -411,6 +410,10 @@ video {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
     grid-template-areas: ". main-content main-content main-content main-content-2 main-content-2 main-content-2 ." ". main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 ." ". main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 ."; }
+  .main-content,
+  .main-content-4,
+  .main-content-6 {
+    margin-bottom: 0; }
   /* PRELOADER */
   #loader {
     top: 30%;
