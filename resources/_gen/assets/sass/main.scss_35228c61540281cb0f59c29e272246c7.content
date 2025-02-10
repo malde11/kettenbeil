@@ -376,7 +376,9 @@ video {
   .topnav a {
     font-size: 1em; }
   .topnav.responsive a {
-    padding: 2px 0px; } }
+    padding: 5px 0px; }
+  .responsive {
+    margin-top: 0px; } }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -388,9 +390,9 @@ video {
     height: 360px; }
   /* NAVBAR */
   .topnav a {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
   .topnav.responsive a {
-    padding: 5px 0px; } }
+    padding: 15px 0px; } }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -421,32 +423,36 @@ video {
     width: 360px;
     height: 360px; }
   /* NAVBAR */
+  .navbar-brand {
+    font-size: 1.5em; }
   .topnav {
     float: right;
     padding: 20px; }
   .topnav a {
     display: inline;
-    font-size: 1.5em; }
+    font-size: 1em;
+    padding: 15px; }
   #burgerMenu {
     display: none; }
   .brand-logo {
     padding: 20px 5px 0px 15px;
-    width: 30px;
-    height: 30px; }
+    width: 25px;
+    height: 25px; }
   .menu-dot-arrow {
     display: none; }
   .nav-item {
-    position: relative; }
+    position: relative;
+    padding: 20px; }
   .nav-link:hover::before {
     content: "[";
     display: inline;
     position: absolute;
-    left: -2px; }
+    left: 25px; }
   .nav-link:hover::after {
     content: "]";
     display: inline;
     position: absolute;
-    right: 2px; }
+    right: 25px; }
   .active {
     border-bottom: 2px solid var(--primary); }
   /* IMAGES */
@@ -472,14 +478,14 @@ video {
     font-size: 1.3em; }
   .topnav a {
     font-size: 1em;
-    padding: 0 25px; }
+    padding: 0 10px; }
   .logo-link {
     width: 360px;
     height: auto; }
   .nav-link:hover::before {
-    left: 15px; }
+    left: 20px; }
   .nav-link:hover::after {
-    right: 15px; } }
+    right: 20px; } }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -492,13 +498,13 @@ video {
     background-image: url(/images/preloader/loader.svg); }
   /* NAVBAR */
   .topnav a {
-    font-size: 1.2em; }
+    font-size: 1em; }
   .navbar-brand {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
   .brand-logo {
     padding: 20px 5px 0px 15px;
-    width: 25px;
-    height: 25px; } }
+    width: 20px;
+    height: 20px; } }
 
 /* XXX-Large devices (larger desktops, 2000px and up) */
 @media (min-width: 2000px) {
@@ -510,17 +516,18 @@ video {
   .topnav {
     padding: 35px; }
   .topnav a {
-    font-size: 3em;
-    padding: 0 25px; }
+    font-size: 1.5em;
+    padding: 0 85px; }
   .brand-logo {
-    width: 70px;
-    height: 70px; }
+    width: 65px;
+    height: 65px;
+    padding-left: 30px; }
   .navbar-brand {
-    font-size: 5em; }
+    font-size: 3.5em; }
   .nav-link:hover::before {
-    left: -4px; }
+    left: 25px; }
   .nav-link:hover::after {
-    right: 4px; } }
+    right: 25px; } }
 
 /* XXXX-Large devices (larger desktops 4K, 3800px and up) */
 @media (min-width: 3800px) {
@@ -532,14 +539,14 @@ video {
   .topnav {
     padding: 32px; }
   .topnav a {
-    font-size: 4em;
-    padding: 0 25px; }
+    font-size: 2.5em;
+    padding: 0 40px; }
   .brand-logo {
     padding: 34px 5px 0px 45px;
-    width: 80px;
-    height: 80px; }
+    width: 50px;
+    height: 50px; }
   .navbar-brand {
-    font-size: 5.5em; }
+    font-size: 3.5em; }
   .nav-link:hover::before {
     left: -10px; }
   .nav-link:hover::after {

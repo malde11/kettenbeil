@@ -42,10 +42,10 @@
 
     <!-- PHOTOS -->
     <div class="main-content-3 card">
-        {{ $logicalPath := "/fotos" }}
+        {{ $logicalPath := "/photos" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Logos">
+            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Photos">
         </a>
         {{ else }}
           {{ errorf "Unable to get page %s" $logicalPath }}
@@ -53,7 +53,7 @@
     </div>
 
     <div class="main-content-4 card">
-        {{ $logicalPath := "/fotos" }}
+        {{ $logicalPath := "/photos" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
             <p class="card-headline">View Photos</p>
@@ -70,7 +70,7 @@
         {{ $logicalPath := "/sketches" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Logos">
+            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Sketches">
         </a>
         {{ else }}
           {{ errorf "Unable to get page %s" $logicalPath }}
@@ -89,6 +89,5 @@
     </div>
 
 </div>
-
 
 {{ end }}
