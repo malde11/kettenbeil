@@ -201,13 +201,15 @@ nav {
 .navbar-brand {
   font-family: "Smooch Sans";
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary); }
 
 .logo-brand-wrapper {
   display: inline; }
 
 .brand-logo {
+  width: 25px;
+  height: 25px;
   padding: 25px 5px 0px 15px;
   text-shadow: 1px 1px 2px black, 0 0 25px var(--primary), 10px 0px 20px var(--primary); }
 
@@ -479,13 +481,15 @@ video {
   .topnav a {
     font-size: 1em;
     padding: 0 10px; }
-  .logo-link {
-    width: 360px;
-    height: auto; }
   .nav-link:hover::before {
     left: 20px; }
   .nav-link:hover::after {
-    right: 20px; } }
+    right: 20px; }
+  .card-headline {
+    padding: 0; }
+  .logo-link {
+    width: 100%;
+    height: 100%; } }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {

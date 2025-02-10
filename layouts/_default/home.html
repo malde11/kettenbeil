@@ -32,7 +32,7 @@
         {{ $logicalPath := "/logos" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Logos">
+            <img class="card-headline logo-link" src="/images/logos/inexorablez-01.webp" alt="Link to Logos">
         </a>
         {{ else }}
           {{ errorf "Unable to get page %s" $logicalPath }}
@@ -45,7 +45,7 @@
         {{ $logicalPath := "/photos" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Photos">
+            <img class="card-headline logo-link" src="/images/photos/sydney-palm.webp" alt="Link to Photos">
         </a>
         {{ else }}
           {{ errorf "Unable to get page %s" $logicalPath }}
@@ -70,7 +70,7 @@
         {{ $logicalPath := "/sketches" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Sketches">
+            <img class="card-headline logo-link" src="/images/sketches/kz.webp" alt="Link to Sketches">
         </a>
         {{ else }}
           {{ errorf "Unable to get page %s" $logicalPath }}
