@@ -103,6 +103,21 @@ footer {
 .main-content-6 {
   grid-area: main-content-6; }
 
+.gallery-row {
+  grid-area: gallery-row; }
+
+.gallery-column {
+  grid-area: gallery-column; }
+
+.inexorablez-logo-1 {
+  grid-area: inexorablez-logo-1; }
+
+.inexorablez-logo-2 {
+  grid-area: inexorablez-logo-2; }
+
+.inexorablez-logo-3 {
+  grid-area: inexorablez-logo-3; }
+
 /********************************************
 * Preloader
 *********************************************/
@@ -432,17 +447,25 @@ video {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "header header header header header header" "main main main main main main ." "footer footer footer footer footer footer"; }
+    grid-template-areas: ". header header header header header header ." ". main main main main main main ." ". footer footer footer footer footer footer ."; }
   main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 25px;
-    grid-template-areas: "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper" "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow"; }
+    grid-template-areas: "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper" "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow" "gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row"; }
   .img-shadow {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 25px;
     grid-template-areas: ". main-content main-content main-content main-content-2 main-content-2 main-content-2 ." ". main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 ." ". main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 ."; }
+  .gallery-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "gallery-column galler-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column"; }
+  .gallery-column {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". inexorablez-logo-1 inexorablez-logo-1 inexorablez-logo-2 inexorablez-logo-2 inexorablez-logo-3 inexorablez-logo-3 ."; }
   .main-content,
   .main-content-4,
   .main-content-6 {
