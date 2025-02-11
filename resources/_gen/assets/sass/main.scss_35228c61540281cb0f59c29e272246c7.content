@@ -244,28 +244,22 @@ nav {
 /***********************************************
   Image-Gallery
 ***********************************************/
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px; }
-
 /* Style the images inside the grid */
-.column img {
+.gallery-column img {
   opacity: 0.8;
   cursor: pointer; }
 
-.column img:hover {
+.gallery-column img:hover {
   opacity: 1; }
 
 /* Clear floats after the columns */
-.row:after {
+.gallery-row:after {
   content: "";
   display: table;
   clear: both; }
 
 /* The expanding image container */
-.image-container {
+.gallery-container {
   position: relative;
   display: none; }
 
