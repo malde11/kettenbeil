@@ -515,28 +515,15 @@ video {
     height: 360px;
   }
 
-  /* NAVBAR */
-  .topnav a {
-    font-size: 1.1em;
-  }
-
-  .topnav.responsive a {
-    padding: 15px 0px;
-  }
-}
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
     grid-gap: 25px;
     grid-template-columns:repeat(8, 1fr);
     grid-template-areas:
-      "header header header header header header header header"
-      "main main main main main main main main"
-      "footer footer footer footer footer footer footer footer";
+      "header header header header header header"
+      "main main main main main main ."
+      "footer footer footer footer footer footer";
   }
 
   main {
@@ -564,6 +551,19 @@ video {
     margin-bottom: 0;
   }
 
+  /* NAVBAR */
+  .topnav a {
+    font-size: 1.1em;
+  }
+
+  .topnav.responsive a {
+    padding: 15px 0px;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   /* PRELOADER */
   #loader {
     top: 30%;
