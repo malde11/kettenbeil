@@ -588,9 +588,9 @@ video {
     grid-gap: 25px;
     grid-template-columns:repeat(8, 1fr);
     grid-template-areas:
-      ". header header header header header header ."
-      ". main main main main main main ."
-      ". footer footer footer footer footer footer .";
+      "header header header header header header header header"
+      "main main main main main main main main"
+      "footer footer footer footer footer footer footer footer";
   }
 
   main {
@@ -617,7 +617,7 @@ video {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
-      "gallery-column galler-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column";
+      "gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column";
   }
 
   .gallery-column {

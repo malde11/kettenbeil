@@ -447,7 +447,7 @@ video {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: ". header header header header header header ." ". main main main main main main ." ". footer footer footer footer footer footer ."; }
+    grid-template-areas: "header header header header header header header header" "main main main main main main main main" "footer footer footer footer footer footer footer footer"; }
   main {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -461,7 +461,7 @@ video {
   .gallery-row {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "gallery-column galler-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column"; }
+    grid-template-areas: "gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column"; }
   .gallery-column {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
