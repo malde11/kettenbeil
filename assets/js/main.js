@@ -25,5 +25,19 @@ addEventListener('DOMContentLoaded', ()=> {
     burgerMenu.classList.toggle("toggleMenu");
     
   });
+
+  /* Image Gallery */
+
+
+  const imgs = document.getElementsByClassName("test").addEventListener("click", function() {
+
+    const expandImg = document.getElementById("expandedImg");
+    const imgText = document.getElementById("imgtext");
+    
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+
+  });
   
 });
