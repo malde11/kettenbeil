@@ -27,17 +27,18 @@ addEventListener('DOMContentLoaded', ()=> {
   });
 
   /* Image Gallery */
+    const imgs = document.getElementsByClassName("test").onclick = function() {
 
+      const expandImg = document.getElementById("expandedImg");
+      const imgText = document.getElementById("imgtext");
+      
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+  };
 
-  const imgs = document.getElementsByClassName("test").addEventListener("click", function() {
+  const galleryBtn = document.getElementsByClassName("closebtn").onclick = function() {
 
-    const expandImg = document.getElementById("expandedImg");
-    const imgText = document.getElementById("imgtext");
-    
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-
-  });
-  
+    galleryBtn.parentElement.style.display='none';
+  };
 });
