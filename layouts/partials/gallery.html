@@ -1,17 +1,14 @@
-<h2 style="text-align:center">Lightbox</h2>
+<h2 style="text-align:center">Logos</h2>
 
 <div class="row">
   <div class="column">
-    <img src="/images/logos/inexorablez-01-thumb.webp" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="/images/logos/inexorablez-01-thumb.webp" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor image-1">
   </div>
   <div class="column">
-    <img src="/images/logos/inexorablez-02.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="/images/logos/inexorablez-02-thumb.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor image-2">
   </div>
   <div class="column">
-    <img src="/images/logos/inexorablez-03-thumb.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="/images/logos/inexorablez-01-thumb.webp" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="/images/logos/inexorablez-03-thumb.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor image-3">
   </div>
 </div>
 
@@ -34,11 +31,6 @@
       <img src="/images/logos/inexorablez-03.png" style="width:100%">
     </div>
     
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="/images/logos/inexorablez-01.webp" style="width:100%">
-    </div>
-    
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -51,13 +43,51 @@
       <img class="demo cursor" src="/images/logos/inexorablez-01.webp" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
     </div>
     <div class="column">
-      <img class="demo cursor" src="/images/logos/inexorablez-03.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      <img class="demo cursor" src="/images/logos/inexorablez-02.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
     </div>
     <div class="column">
       <img class="demo cursor" src="/images/logos/inexorablez-03.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/logos/inexorablez-01.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
   </div>
 </div>
+
+<script>
+
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+</script>

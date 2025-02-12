@@ -28,10 +28,16 @@ addEventListener('DOMContentLoaded', ()=> {
 
 
   /* Image Gallery */
-  document.getElementById("myModal").style.display = 'block';
-  document.getElementById("myModal").style.display = "none";
-
-  let slideIndex = 1;
+  /*
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
   showSlides(slideIndex);
   
   function plusSlides(n) {
@@ -58,5 +64,5 @@ addEventListener('DOMContentLoaded', ()=> {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
-  }
+  }*/
 });

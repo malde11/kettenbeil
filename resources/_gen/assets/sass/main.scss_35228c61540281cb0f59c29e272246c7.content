@@ -57,12 +57,22 @@ h1, h2, h3, h4 {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "slug-wrapper" "img-shadow"; }
+  grid-template-areas: "slug-wrapper" "img-shadow" "row"; }
 
 .img-shadow {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "main-content-2" "main-content" "main-content-3" "main-content-4" "main-content-5" "main-content-6"; }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "column"; }
+
+.hover-shadow {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "image-1" "image-2" "image-3"; }
 
 header {
   grid-area: header;
@@ -78,6 +88,12 @@ footer {
   text-align: center;
   grid-area: footer;
   background-color: cornflowerblue; }
+
+.row {
+  grid-area: row; }
+
+.hover-shadow {
+  grid-area: hover-shadow; }
 
 /* Home */
 .img-shadow {
@@ -253,17 +269,15 @@ nav {
   display: table;
   clear: both; }
 
-/*
 .column {
   float: left;
-  width: 25%;
-}
-*/
+  width: 25%; }
+
 /* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 555;
   padding-top: 100px;
   left: 0;
   top: 0;
