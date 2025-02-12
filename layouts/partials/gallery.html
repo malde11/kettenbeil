@@ -1,18 +1,63 @@
-<!-- The four columns -->
-<div class="gallery-row">
-    <div class="gallery-column">
-      <img src="/images/logos/inexorablez-03.png" class="inexorables-logo-1" alt="inexorablez Logo #1">
-    </div>
-    <div class="gallery-column">
-      <img src="/images/logos/inexorablez-01.webp" class="inexorables-logo-2" alt="inexorablez Logo #2">
-    </div>
-    <div class="gallery-column">
-      <img src="/images/logos/inexorablez-02.png" class="inexorables-logo-3" alt="inexorablez-Logo #3">
-    </div>
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="/images/logos/inexorablez-01-thumb.webp" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/images/logos/inexorablez-02.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/images/logos/inexorablez-03-thumb.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/images/logos/inexorablez-01-thumb.webp" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
 </div>
-  
-<div class="galleryy-container">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg">
-    <div id="imgtext"></div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="/images/logos/inexorablez-01.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="/images/logos/inexorablez-02.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="/images/logos/inexorablez-03.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="/images/logos/inexorablez-01.webp" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="/images/logos/inexorablez-01.webp" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/logos/inexorablez-03.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/logos/inexorablez-03.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/logos/inexorablez-01.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
 </div>

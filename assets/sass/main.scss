@@ -64,7 +64,7 @@ h1,h2,h3,h4 {
   display: grid;
   height: 100vh;
   margin: 0 auto;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   grid-template-areas:
     "header"
     "main"
@@ -73,15 +73,15 @@ h1,h2,h3,h4 {
 
 main {
   display: grid;
-  grid-template-columns:repeat(1fr);
+  grid-template-columns: 1fr;
   grid-template-areas:
     "slug-wrapper"
-    "img-shadow";
+    "img-shadow"
 }
 
 .img-shadow {
   display: grid;
-  grid-template-columns:repeat(1fr);
+  grid-template-columns: 1fr;
   grid-template-areas: 
     "main-content-2"
     "main-content"
@@ -109,6 +109,8 @@ footer {
   background-color: cornflowerblue;
 }
 
+
+/* Home */
 .img-shadow {
   grid-area: img-shadow;
 }
@@ -144,26 +146,6 @@ footer {
 .main-content-6 {
   grid-area: main-content-6;
 
-}
-
-.gallery-row {
-  grid-area: gallery-row;
-}
-
-.gallery-column {
-  grid-area: gallery-column;
-}
-
-.inexorablez-logo-1 {
- grid-area: inexorablez-logo-1;
-}
-
-.inexorablez-logo-2 {
-  grid-area: inexorablez-logo-2;
-}
-
-.inexorablez-logo-3 {
-  grid-area: inexorablez-logo-3;
 }
 
 
@@ -337,50 +319,141 @@ nav {
 
 
 /***********************************************
-  Image-Gallery
+  IMAGE - GALLERY
 ***********************************************/
-/* Style the images inside the grid */
-.gallery-column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+.row > .column {
+  padding: 0 8px;
 }
 
-.gallery-column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.gallery-row:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* The expanding image container */
-.gallery-container {
-  position: relative;
+/*
+.column {
+  float: left;
+  width: 25%;
+}
+*/
+
+
+/* The Modal (background) */
+.modal {
   display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
 }
 
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
   color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
   position: absolute;
   top: 10px;
-  right: 15px;
-  color: white;
+  right: 25px;
   font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
   cursor: pointer;
 }
 
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 /*******************************************************
@@ -617,14 +690,14 @@ video {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
-      "gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column gallery-column";
+      ". gallery-column-1 gallery-column-1 gallery-column-2 gallery-column-2 gallery-column-3 gallery-column-3 .";
   }
 
   .gallery-column {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
-      ". inexorablez-logo-1 inexorablez-logo-1 inexorablez-logo-2 inexorablez-logo-2 inexorablez-logo-3 inexorablez-logo-3 .";
+      ". inexorablez-logo-1 inexorablez-logo-1 inexorablez-logo-2 inexorablez-logo-2 inexorablez-logo-3 inexorablez-logo-3.";
   }
 
   .main-content,
