@@ -57,6 +57,10 @@ h1,h2,h3,h4 {
   font-size: 2em;
 }
 
+.main-headline {
+  margin-top: 120px;
+}
+
 
 /***********************************************
   TEMPLATE CONTAINER
@@ -70,10 +74,6 @@ h1,h2,h3,h4 {
     "header"
     "main"
     "footer";
-}
-
-.main-headline {
-  margin-top: 120px;
 }
 
 main {
@@ -109,7 +109,8 @@ main {
 /* Main Container */
 header {
   grid-area: header;
-  background-color: black;
+  background-color: white;
+  text-align: center;
   z-index: -3;
 }
 
@@ -145,6 +146,9 @@ footer {
 
 .image-wrapper {
   grid-area: image-wrapper;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-1 {

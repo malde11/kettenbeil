@@ -1,9 +1,15 @@
+{{ define "header" }}
+<h1 class="main-headline">{ Logos }</h1>
+{{ end }}
+
+
+
 {{ define "main" }}
 
     {{ .Content }}
 
-    <!-- VIDEO START -->
+    <!-- GALLERY START -->
     {{ partial "gallery.html" . }}
-    <!-- VIDEO END -->
+    <!-- GALLERY END -->
 
 {{ end }}
