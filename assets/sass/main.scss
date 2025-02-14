@@ -54,6 +54,7 @@ a:active {
 h1,h2,h3,h4 {
   font-family: "Smooch Sans";
   font-weight: 500;
+  font-size: 2em;
 }
 
 
@@ -71,13 +72,17 @@ h1,h2,h3,h4 {
     "footer";
 }
 
+.main-headline {
+  margin-top: 120px;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "slug-wrapper"
     "img-shadow"
-    "row";
+    "image-wrapper";
 }
 
 .img-shadow {
@@ -92,14 +97,7 @@ main {
     "main-content-6";
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "column";
-}
-
-.hover-shadow {
+.image-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -108,6 +106,7 @@ main {
     "image-3";
 }
 
+/* Main Container */
 header {
   grid-area: header;
   background-color: black;
@@ -126,13 +125,42 @@ footer {
   background-color: cornflowerblue;
 }
 
-.row {
-  grid-area: row;
+
+
+
+/* Image Gallery */
+.category-box {
+  background-color: var(--secondary);
+  color: white;
+  margin-top: 55px;
 }
 
-.hover-shadow {
-  grid-area: hover-shadow;
+.image-slide {
+  width: 100%;
 }
+
+.demo {
+  width: 100%;
+}
+
+.image-wrapper {
+  grid-area: image-wrapper;
+}
+
+.image-1 {
+  grid-area: image-1;
+}
+
+.image-2 {
+  grid-area: image-2;
+}
+
+.image-3 {
+  grid-area: image-3;
+}
+
+
+
 
 /* Home */
 .img-shadow {
@@ -169,7 +197,6 @@ footer {
 
 .main-content-6 {
   grid-area: main-content-6;
-
 }
 
 
@@ -468,6 +495,10 @@ img {
   opacity: 1;
 }
 
+.hover-shadow {
+  width: 100%;
+}
+
 img.hover-shadow {
   transition: 0.3s;
 }
@@ -676,6 +707,7 @@ video {
     height: 360px;
   }
 
+
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
@@ -694,7 +726,8 @@ video {
     grid-template-areas:
       "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow"
-      "gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row";
+      "gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row gallery-row"
+      "image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper";
   }
 
   .img-shadow {
@@ -707,19 +740,14 @@ video {
       ". main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 .";
   }
 
-  .gallery-row {
+  .image-wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: 
-      ". gallery-column-1 gallery-column-1 gallery-column-2 gallery-column-2 gallery-column-3 gallery-column-3 .";
+    grid-gap: 25px;
+    grid-template-areas:
+      ". image-1 image-1 image-2 image-2 image-3 image-3 .";
   }
 
-  .gallery-column {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: 
-      ". inexorablez-logo-1 inexorablez-logo-1 inexorablez-logo-2 inexorablez-logo-2 inexorablez-logo-3 inexorablez-logo-3.";
-  }
 
   .main-content,
   .main-content-4,
