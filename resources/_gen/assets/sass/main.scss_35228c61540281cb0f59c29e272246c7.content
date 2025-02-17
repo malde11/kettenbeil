@@ -521,8 +521,8 @@ video {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: ". . main-content-2 main-content-2 main-content-2 main-content-2 . ." ". . main-content main-content main-content main-content . ." ". . main-content-3 main-content-3 main-content-3 main-content-3 . ." ". . main-content-4 main-content-4 main-content-4 main-content-4 . ." ". . main-content-5 main-content-5 main-content-5 main-content-5 . ." ". . main-content-6 main-content-6 main-content-6 main-content-6 . ."; }
-  /* PRELOADER */
-  #loader {
+  test
+#loader {
     top: 30%;
     left: 37%; }
   /* NAVBAR */
