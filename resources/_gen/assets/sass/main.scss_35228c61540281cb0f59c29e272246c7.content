@@ -424,7 +424,6 @@ video {
   opacity: .6;
   top: 0;
   bottom: 0;
-  position: absolute;
   z-index: -1; }
 
 .video-section {
@@ -467,6 +466,12 @@ video {
   width: 100%;
   height: 100%;
   background-color: #fff; }
+
+.home-link {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  display: inline-block; }
 
 .main-content,
 .main-content-4,

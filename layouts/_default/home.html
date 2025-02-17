@@ -20,7 +20,7 @@
     <div class="main-content card">
         {{ $logicalPath := "/logos" }}
           {{ with site.GetPage $logicalPath }}
-        <a href="{{ .RelPermalink }}">
+        <a class="home-link" href="{{ .RelPermalink }}">
             <p class="card-headline">View Logos</p>
         </a>
         {{ else }}
@@ -55,7 +55,7 @@
     <div class="main-content-4 card">
         {{ $logicalPath := "/photos" }}
           {{ with site.GetPage $logicalPath }}
-        <a href="{{ .RelPermalink }}">
+        <a class="home-link" href="{{ .RelPermalink }}">
             <p class="card-headline">View Photos</p>
         </a>
         {{ else }}
@@ -80,7 +80,7 @@
     <div class="main-content-6 card">
         {{ $logicalPath := "/sketches" }}
           {{ with site.GetPage $logicalPath }}
-        <a href="{{ .RelPermalink }}">
+        <a class="home-link" href="{{ .RelPermalink }}">
             <p class="card-headline">View Sketches</p>
         </a>
         {{ else }}
