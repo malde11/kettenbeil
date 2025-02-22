@@ -83,7 +83,9 @@ main {
     "slug-wrapper"
     "img-shadow"
     "category-box"
-    "row";
+    "row"
+    "category-box-kettenbeil"
+    "row-kettenbeil";
 }
 
 .img-shadow {
@@ -99,7 +101,32 @@ main {
 }
 
 .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "category-box" 
+  "image-wrapper-1"
+  "image-wrapper-2"
+  "image-wrapper-3";
+}
+
+
+
+.row-kettenbeil {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "category-box-kettenbeil"
+  "image-wrapper-1-kettenbeil"
+  "image-wrapper-2-kettenbeil"
+  "image-wrapper-3-kettenbeil";
+}
+
+.row {
   grid-area: row;
+}
+
+.row-kettenbeil {
+  grid-area: row-kettenbeil;
 }
 
 .category-box {
@@ -161,6 +188,34 @@ footer {
 
 .image-wrapper-3 {
   grid-area: image-wrapper-3;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-box-kettenbeil {
+  background-color: var(--secondary);
+  color: white;
+  margin-top: 55px;
+  grid-area: category-box-kettenbeil;
+}
+
+.image-wrapper-1-kettenbeil {
+  grid-area: image-wrapper-1-kettenbeil;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-wrapper-2-kettenbeil {
+  grid-area: image-wrapper-2-kettenbeil;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-wrapper-3-kettenbeil {
+  grid-area: image-wrapper-3-kettenbeil;
   margin-bottom: 35px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -663,8 +718,30 @@ video {
     grid-template-columns:repeat(8, 1fr);
     grid-gap: 10px;
     grid-template-areas:
+      "row row row row row row row row"
+      "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
       "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+    ". . category-box category-box category-box category-box . ."
+    ". . image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 . ."
+    ". . image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 . ."
+    ". . image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 . .";
+  }
+
+  .row-kettenbeil {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+    ". . category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil . ."
+    ". . image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil . ."
+    ". . image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil . ."
+    ". . image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . .";
   }
 
   .img-shadow {
@@ -679,7 +756,6 @@ video {
       ". . main-content-6 main-content-6 main-content-6 main-content-6 . ."
   }
 
-  test
 
   /* PRELOADER */
   #loader {
@@ -723,21 +799,22 @@ video {
   .container {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns:repeat(8, 1fr);
+    grid-template-columns:repeat(12, 1fr);
     grid-template-areas:
-      "header header header header header header header header"
-      "main main main main main main main main"
-      "footer footer footer footer footer footer footer footer";
+      "header header header header header header header header header header header header"
+      "main main main main main main main main main main main main"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 
   main {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
     grid-gap: 25px;
+    grid-template-columns:repeat(12, 1fr);
     grid-template-areas:
-      "row row row row row row row row"
-      "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
-      "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
+      "row row row row row row row row row row row row"
+      "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
+      "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
+      "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
   }
 
   .row {
@@ -745,17 +822,27 @@ video {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
     grid-template-areas:
-    ". category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 .  .";
+    ". category-box category-box category-box category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 ."
+    ". image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 .";
+  }
+
+  .row-kettenbeil {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    grid-template-areas:
+    ". category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil ."
+    ". image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil .";
   }
 
   .img-shadow {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
+    grid-template-columns:repeat(12, 1fr);
     grid-gap: 25px;
     grid-template-areas: 
-      ". main-content main-content main-content main-content-2 main-content-2 main-content-2 ."
-      ". main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 ."
-      ". main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 .";
+      ". main-content main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 main-content-2 ."
+      ". main-content-3 main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 main-content-4 ."
+      ". main-content-6 main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 main-content-5 .";
   }
 
 
@@ -763,6 +850,28 @@ video {
   .main-content-4,
   .main-content-6 {
     margin-bottom: 0;
+  }
+
+  .image-wrapper-1,
+  .image-wrapper-2,
+  .image-wrapper-3 {
+    margin-bottom: 0;
+  }
+  
+  .image-wrapper-1-kettenbeil {
+    margin-bottom: 0;
+  }
+
+  .category-box {
+    margin-top: 0;
+    align-content: center;
+    text-align: center;
+  }
+
+  .category-box-kettenbeil {
+    margin-top: 0;
+    align-content: center;
+    text-align: center;
   }
 
   /* NAVBAR */
