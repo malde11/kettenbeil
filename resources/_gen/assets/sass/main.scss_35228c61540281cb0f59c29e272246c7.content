@@ -693,6 +693,34 @@ video {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  /* TEMPLATE CONTAINER */
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "header header header header header header header header header header header header" "main main main main main main main main main main main main" "footer footer footer footer footer footer footer footer footer footer footer footer"; }
+  main {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "row row row row row row row row row row row row" "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil" "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper" "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow"; }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    grid-template-areas: ". category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 . . ."; }
+  .row-kettenbeil {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    grid-template-areas: ". category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . . ."; }
+  .img-shadow {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    grid-template-areas: ". main-content main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 main-content-2 ." ". main-content-3 main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 main-content-4 ." ". main-content-6 main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 main-content-5 ."; }
+  .image-wrapper-1-kettenbeil {
+    margin-bottom: 35px; }
   /* PRELOADER */
   #loader {
     top: 29%;
