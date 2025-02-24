@@ -722,6 +722,8 @@ video {
     grid-template-areas: ". main-content main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 main-content-2 ." ". main-content-3 main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 main-content-4 ." ". main-content-6 main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 main-content-5 ."; }
   .image-wrapper-1-kettenbeil {
     margin-bottom: 35px; }
+  .category-box-kettenbeil {
+    margin-bottom: 35px; }
   /* PRELOADER */
   #loader {
     top: 29%;
