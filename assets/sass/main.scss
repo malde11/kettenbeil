@@ -672,6 +672,8 @@ video {
   transition-delay: 0s, 0s;
   transition-delay: .1s;
   border: none;
+  height: 100%;
+  align-content: center;
 }
 
 .card {
@@ -884,6 +886,10 @@ video {
   .topnav.responsive a {
     padding: 15px 0px;
   }
+
+  .home-link {
+    display: contents;
+  }
 }
 
 
@@ -1008,9 +1014,9 @@ video {
     grid-template-columns:repeat(12, 1fr);
     grid-gap: 25px;
     grid-template-areas: 
-      ". main-content main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 main-content-2 ."
-      ". main-content-3 main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 main-content-4 ."
-      ". main-content-6 main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 main-content-5 .";
+      ". . main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 . ."
+      ". . main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 . ."
+      ". . main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 . .";
   }
 
  .image-wrapper-1-kettenbeil {
