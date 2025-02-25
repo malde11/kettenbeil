@@ -1,16 +1,14 @@
 <nav>
-
   {{ "<!-- LOGO AND BRAND -->" | safeHTML }}
   <div class="logo-brand-wrapper">
     <a href="{{ .Site.BaseURL | relLangURL }}">
-        {{ partialCached "logo.html" . }}
+      {{ partialCached "logo.html" . }}
     </a>
     <div id="brand-headline">
       <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
-          <span class="brand-name">Ketten</span>beil
+        <span class="brand-name">Ketten</span>beil
       </a>
     </div>
-
 
     {{ "<!-- BURGER MENU -->" | safeHTML }}
     <a href="#" id="burgerMenu" class="icon">
@@ -18,17 +16,14 @@
     </a>
   </div>
 
-
   {{ "<!-- TOP NAVIGATION MENU -->" | safeHTML }}
   <ul class="topnav" id="myTopnav">
     {{ range site.Menus.main }}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ .URL }}">
-          {{ partial "menu-arrow.html" . }}
-          {{ .Name }}
-        </a>
-      </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ .URL }}">
+        {{ partial "menu-arrow.html" . }} {{ .Name }}
+      </a>
+    </li>
     {{ end }}
   </ul>
-  
 </nav>

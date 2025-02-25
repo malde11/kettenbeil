@@ -14,13 +14,12 @@ li {
   list-style-type: none;
 }
 
-
 /***********************************************
   COLORS / LINKS
 ***********************************************/
-:root { 
+:root {
   --primary: rgb(0, 162, 255);
-  --secondary: #151515; 
+  --secondary: #151515;
 }
 
 a:link {
@@ -39,7 +38,6 @@ a:active {
   color: #fff;
 }
 
-
 /***********************************************
   FONTS
 ***********************************************/
@@ -48,10 +46,13 @@ a:active {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  src: url('/fonts/SmoochSans-Medium.ttf');
+  src: url("/fonts/SmoochSans-Medium.ttf");
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Smooch Sans";
   font-weight: 500;
   font-size: 2em;
@@ -60,7 +61,6 @@ h1,h2,h3,h4 {
 .main-headline {
   margin-top: 120px;
 }
-
 
 /***********************************************
   TEMPLATE CONTAINER
@@ -91,7 +91,7 @@ main {
 .img-shadow {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "main-content-2"
     "main-content"
     "main-content-3"
@@ -104,21 +104,19 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-  "category-box" 
-  "image-wrapper-1"
-  "image-wrapper-2"
-  "image-wrapper-3";
+    "category-box"
+    "image-wrapper-1"
+    "image-wrapper-2"
+    "image-wrapper-3";
 }
-
-
 
 .row-kettenbeil {
   grid-template-columns: 1fr;
   grid-template-areas:
-  "category-box-kettenbeil"
-  "image-wrapper-1-kettenbeil"
-  "image-wrapper-2-kettenbeil"
-  "image-wrapper-3-kettenbeil";
+    "category-box-kettenbeil"
+    "image-wrapper-1-kettenbeil"
+    "image-wrapper-2-kettenbeil"
+    "image-wrapper-3-kettenbeil";
 }
 
 .row {
@@ -153,9 +151,6 @@ footer {
   background-color: cornflowerblue;
 }
 
-
-
-
 /* Image Gallery */
 .category-box {
   background-color: var(--secondary);
@@ -175,22 +170,19 @@ footer {
 .image-wrapper-1 {
   grid-area: image-wrapper-1;
   margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-wrapper-2 {
   grid-area: image-wrapper-2;
   margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-wrapper-3 {
   grid-area: image-wrapper-3;
   margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .category-box-kettenbeil {
@@ -203,24 +195,20 @@ footer {
 .image-wrapper-1-kettenbeil {
   grid-area: image-wrapper-1-kettenbeil;
   margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-wrapper-2-kettenbeil {
   grid-area: image-wrapper-2-kettenbeil;
   margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-wrapper-3-kettenbeil {
   grid-area: image-wrapper-3-kettenbeil;
   margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 /* Home */
 .img-shadow {
@@ -237,28 +225,23 @@ footer {
 
 .main-content-2 {
   grid-area: main-content-2;
-
 }
 
 .main-content-3 {
   grid-area: main-content-3;
-
 }
 
 .main-content-4 {
   grid-area: main-content-4;
-
 }
 
 .main-content-5 {
   grid-area: main-content-5;
-
 }
 
 .main-content-6 {
   grid-area: main-content-6;
 }
-
 
 /********************************************
 * Preloader
@@ -285,19 +268,21 @@ footer {
   background-repeat: no-repeat;
   z-index: 999;
   -webkit-animation: fadeinout 4s infinite forwards;
-    animation: fadeinout 4s infinite forwards;
-    opacity: 0;
+  animation: fadeinout 4s infinite forwards;
+  opacity: 0;
 }
 
 @-webkit-keyframes fadeinout {
-  50% { opacity: 1; }
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeinout {
-  50% { opacity: 1; }
+  50% {
+    opacity: 1;
+  }
 }
-
-
 
 /***********************************************
   Navbar
@@ -351,7 +336,7 @@ nav {
 }
 
 .toggleMenu {
-  content:url("/images/svg/menu-close.svg");
+  content: url("/images/svg/menu-close.svg");
   width: 32px;
   height: 32px;
 }
@@ -362,8 +347,7 @@ nav {
   font-family: "Smooch Sans";
   color: white;
   text-transform: uppercase;
-  text-shadow: 10px 0px 20px var(--primary),
-               10px 0px 20px var(--primary);
+  text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary);
 }
 
 .menu-dot-arrow {
@@ -374,8 +358,7 @@ nav {
   font-family: "Smooch Sans";
   color: white;
   font-size: 1.5em;
-  text-shadow: 10px 0px 20px var(--primary),
-               10px 0px 20px var(--primary);
+  text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary);
 }
 
 .logo-brand-wrapper {
@@ -386,9 +369,8 @@ nav {
   width: 25px;
   height: 25px;
   padding: 25px 5px 0px 15px;
-  text-shadow: 1px 1px 2px black,
-               0 0 25px var(--primary),
-               10px 0px 20px var(--primary);
+  text-shadow: 1px 1px 2px black, 0 0 25px var(--primary),
+    10px 0px 20px var(--primary);
 }
 
 .brand-name {
@@ -405,7 +387,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: white
+  color: white;
 }
 
 .nav-link:active {
@@ -428,7 +410,6 @@ nav {
   display: none;
 }
 
-
 /***********************************************
   IMAGE - GALLERY
 ***********************************************/
@@ -436,7 +417,17 @@ nav {
   padding: 0 8px;
 }
 
+.row-kettenbeil > .column-kettenbeil {
+  padding: 0 8px;
+}
+
 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-kettenbeil:after {
   content: "";
   display: table;
   clear: both;
@@ -447,8 +438,26 @@ nav {
   width: 25%;
 }
 
+.column-kettenbeil {
+  float: left;
+  width: 25%;
+}
+
 /* The Modal (background) */
 .modal {
+  display: none;
+  position: fixed;
+  z-index: 555;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-kettenbeil {
   display: none;
   position: fixed;
   z-index: 555;
@@ -471,8 +480,26 @@ nav {
   max-width: 1200px;
 }
 
+.modal-content-kettenbeil {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
 /* The Close Button */
 .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-kettenbeil {
   color: white;
   position: absolute;
   top: 10px;
@@ -488,11 +515,26 @@ nav {
   cursor: pointer;
 }
 
+.close-kettenbeil:hover,
+.close-kettenbeil:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .mySlides {
   display: none;
 }
 
+.mySlides-kettenbeil {
+  display: none;
+}
+
 .cursor {
+  cursor: pointer;
+}
+
+.cursor-kettenbeil {
   cursor: pointer;
 }
 
@@ -514,8 +556,30 @@ nav {
   -webkit-user-select: none;
 }
 
+.prev-kettenbeil,
+.next-kettenbeil {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 /* Position the "next button" to the right */
 .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next-kettenbeil {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -526,8 +590,21 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.prev-kettenbeil:hover,
+.next-kettenbeil:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertext-kettenbeil {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -546,12 +623,28 @@ img {
   color: white;
 }
 
+.caption-container-kettenbeil {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
 .demo {
+  opacity: 0.6;
+}
+
+.demo-kettenbeil {
   opacity: 0.6;
 }
 
 .active,
 .demo:hover {
+  opacity: 1;
+}
+
+.active-kettenbeil,
+.demo-kettenbeil:hover {
   opacity: 1;
 }
 
@@ -567,7 +660,6 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 /*******************************************************
   Home (Background)
@@ -594,7 +686,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .6;
+  opacity: 0.6;
   top: 0;
   bottom: 0;
   z-index: -1;
@@ -636,7 +728,6 @@ video {
 }
 */
 
-
 /*******************************************************
   Images
 *******************************************************/
@@ -670,7 +761,7 @@ video {
   font-size: 2em;
   font-family: "Smooch Sans";
   transition-delay: 0s, 0s;
-  transition-delay: .1s;
+  transition-delay: 0.1s;
   border: none;
   height: 100%;
   align-content: center;
@@ -704,13 +795,12 @@ video {
 
 */
 
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
       "header header header header header header header header"
       "main main main main main main main main"
@@ -719,7 +809,7 @@ video {
 
   main {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
     grid-template-areas:
       "row row row row row row row row"
@@ -732,34 +822,33 @@ video {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-    ". . category-box category-box category-box category-box . ."
-    ". . image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 . ."
-    ". . image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 . ."
-    ". . image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 . .";
+      ". . category-box category-box category-box category-box . ."
+      ". . image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 . ."
+      ". . image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 . ."
+      ". . image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 . .";
   }
 
   .row-kettenbeil {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-    ". . category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil . ."
-    ". . image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil . ."
-    ". . image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil . ."
-    ". . image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . .";
+      ". . category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil . ."
+      ". . image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil . ."
+      ". . image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil . ."
+      ". . image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . .";
   }
 
   .img-shadow {
     display: grid;
-    grid-template-columns:repeat(8, 1fr);
-    grid-template-areas: 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
       ". . main-content-2 main-content-2 main-content-2 main-content-2 . ."
       ". . main-content main-content main-content main-content . ."
       ". . main-content-3 main-content-3 main-content-3 main-content-3 . ."
       ". . main-content-4 main-content-4 main-content-4 main-content-4 . ."
       ". . main-content-5 main-content-5 main-content-5 main-content-5 . ."
-      ". . main-content-6 main-content-6 main-content-6 main-content-6 . ."
+      ". . main-content-6 main-content-6 main-content-6 main-content-6 . .";
   }
-
 
   /* PRELOADER */
   #loader {
@@ -769,7 +858,7 @@ video {
 
   /* NAVBAR */
   .topnav a {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   .topnav.responsive a {
@@ -781,13 +870,6 @@ video {
   }
 }
 
-
-
-
-
-
-
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* PRELOADER */
@@ -798,12 +880,11 @@ video {
     height: 360px;
   }
 
-
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "header header header header header header header header header header header header"
       "main main main main main main main main main main main main"
@@ -813,7 +894,7 @@ video {
   main {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "row row row row row row row row row row row row"
       "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
@@ -826,8 +907,8 @@ video {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
     grid-template-areas:
-    ". category-box category-box category-box category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 ."
-    ". image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 .";
+      ". category-box category-box category-box category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 ."
+      ". image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 .";
   }
 
   .row-kettenbeil {
@@ -835,20 +916,19 @@ video {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
     grid-template-areas:
-    ". category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil ."
-    ". image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil .";
+      ". category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil ."
+      ". image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil .";
   }
 
   .img-shadow {
     display: grid;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
-    grid-template-areas: 
+    grid-template-areas:
       ". main-content main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 main-content-2 ."
       ". main-content-3 main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 main-content-4 ."
       ". main-content-6 main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 main-content-5 .";
   }
-
 
   .main-content,
   .main-content-4,
@@ -861,7 +941,7 @@ video {
   .image-wrapper-3 {
     margin-bottom: 0;
   }
-  
+
   .image-wrapper-1-kettenbeil {
     margin-bottom: 0;
   }
@@ -892,7 +972,6 @@ video {
   }
 }
 
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* PRELOADER */
@@ -911,7 +990,6 @@ video {
   .topnav {
     float: right;
     padding: 20px;
-    
   }
 
   .topnav a {
@@ -957,25 +1035,22 @@ video {
     border-bottom: 2px solid var(--primary);
   }
 
-
   /* IMAGES */
   .card:hover {
     color: #fff;
     transform: translateY(-4px);
-    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     transition-delay: 0;
   }
 }
 
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "header header header header header header header header header header header header"
       "main main main main main main main main main main main main"
@@ -985,7 +1060,7 @@ video {
   main {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "row row row row row row row row row row row row"
       "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
@@ -997,30 +1072,28 @@ video {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
-    grid-template-areas:
-    ". category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 . . .";
+    grid-template-areas: ". category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 . . .";
   }
 
   .row-kettenbeil {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
-    grid-template-areas:
-    ". category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . . .";
+    grid-template-areas: ". category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . . .";
   }
 
   .img-shadow {
     display: grid;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
-    grid-template-areas: 
+    grid-template-areas:
       ". . main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 . ."
       ". . main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 . ."
       ". . main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 . .";
   }
 
- .image-wrapper-1-kettenbeil {
-      margin-bottom: 35px;
+  .image-wrapper-1-kettenbeil {
+    margin-bottom: 35px;
   }
 
   .category-box-kettenbeil {
@@ -1072,9 +1145,7 @@ video {
     width: 100%;
     height: 100%;
   }
-
 }
-
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
@@ -1103,7 +1174,6 @@ video {
   }
 }
 
-
 /* XXX-Large devices (larger desktops, 2000px and up) */
 @media (min-width: 2000px) {
   /* PRELOADER */
@@ -1111,7 +1181,6 @@ video {
     top: 45%;
     left: 40%;
   }
-
 
   /* NAVBAR */
   .topnav {
@@ -1134,7 +1203,7 @@ video {
   }
 
   .navbar-brand {
-    font-size:1.8em;
+    font-size: 1.8em;
   }
 
   .nav-link:hover::before {
@@ -1146,7 +1215,6 @@ video {
   }
 }
 
-
 /* XXXX-Large devices (larger desktops 4K, 3800px and up) */
 @media (min-width: 3800px) {
   /* PRELOADER */
@@ -1154,7 +1222,6 @@ video {
     top: 38%;
     left: 40%;
   }
-
 
   /* NAVBAR */
   .topnav {
