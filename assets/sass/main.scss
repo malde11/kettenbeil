@@ -62,6 +62,10 @@ h4 {
   margin-top: 120px;
 }
 
+.box-headline {
+  text-align: center;
+}
+
 /***********************************************
   TEMPLATE CONTAINER
 ***********************************************/
@@ -83,9 +87,7 @@ main {
     "slug-wrapper"
     "img-shadow"
     "category-box"
-    "row"
-    "category-box-kettenbeil"
-    "row-kettenbeil";
+    "row";
 }
 
 .img-shadow {
@@ -110,21 +112,8 @@ main {
     "image-wrapper-3";
 }
 
-.row-kettenbeil {
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "category-box-kettenbeil"
-    "image-wrapper-1-kettenbeil"
-    "image-wrapper-2-kettenbeil"
-    "image-wrapper-3-kettenbeil";
-}
-
 .row {
   grid-area: row;
-}
-
-.row-kettenbeil {
-  grid-area: row-kettenbeil;
 }
 
 .category-box {
@@ -141,7 +130,6 @@ header {
 
 main {
   grid-area: main;
-  text-align: center;
   padding: 30px;
 }
 
@@ -181,31 +169,6 @@ footer {
 
 .image-wrapper-3 {
   grid-area: image-wrapper-3;
-  margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.category-box-kettenbeil {
-  background-color: var(--secondary);
-  color: white;
-  margin-top: 55px;
-  grid-area: category-box-kettenbeil;
-}
-
-.image-wrapper-1-kettenbeil {
-  grid-area: image-wrapper-1-kettenbeil;
-  margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.image-wrapper-2-kettenbeil {
-  grid-area: image-wrapper-2-kettenbeil;
-  margin-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.image-wrapper-3-kettenbeil {
-  grid-area: image-wrapper-3-kettenbeil;
   margin-bottom: 35px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -417,17 +380,7 @@ nav {
   padding: 0 8px;
 }
 
-.row-kettenbeil > .column-kettenbeil {
-  padding: 0 8px;
-}
-
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row-kettenbeil:after {
   content: "";
   display: table;
   clear: both;
@@ -438,26 +391,8 @@ nav {
   width: 25%;
 }
 
-.column-kettenbeil {
-  float: left;
-  width: 25%;
-}
-
 /* The Modal (background) */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 555;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-.modal-kettenbeil {
   display: none;
   position: fixed;
   z-index: 555;
@@ -480,26 +415,8 @@ nav {
   max-width: 1200px;
 }
 
-.modal-content-kettenbeil {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
 /* The Close Button */
 .close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close-kettenbeil {
   color: white;
   position: absolute;
   top: 10px;
@@ -515,26 +432,11 @@ nav {
   cursor: pointer;
 }
 
-.close-kettenbeil:hover,
-.close-kettenbeil:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .mySlides {
   display: none;
 }
 
-.mySlides-kettenbeil {
-  display: none;
-}
-
 .cursor {
-  cursor: pointer;
-}
-
-.cursor-kettenbeil {
   cursor: pointer;
 }
 
@@ -547,24 +449,7 @@ nav {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.prev-kettenbeil,
-.next-kettenbeil {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -579,32 +464,15 @@ nav {
   border-radius: 3px 0 0 3px;
 }
 
-.next-kettenbeil {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.prev-kettenbeil:hover,
-.next-kettenbeil:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(161, 161, 161, 0.602);
+  color: black;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.numbertext-kettenbeil {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -623,18 +491,7 @@ img {
   color: white;
 }
 
-.caption-container-kettenbeil {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
 .demo {
-  opacity: 0.6;
-}
-
-.demo-kettenbeil {
   opacity: 0.6;
 }
 
@@ -643,10 +500,6 @@ img {
   opacity: 1;
 }
 
-.active-kettenbeil,
-.demo-kettenbeil:hover {
-  opacity: 1;
-}
 
 .hover-shadow {
   width: 100%;
@@ -739,7 +592,7 @@ video {
 
 .home-link {
   width: 100%;
-  height: 100%;
+  height:auto;
   display: inline-block;
   padding: 10px 0;
   font-size: 0.4em;
@@ -765,6 +618,7 @@ video {
   border: none;
   height: 100%;
   align-content: center;
+  text-align: center;
 }
 
 .card {
@@ -813,7 +667,6 @@ video {
     grid-gap: 10px;
     grid-template-areas:
       "row row row row row row row row"
-      "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
       "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
   }
@@ -826,16 +679,6 @@ video {
       ". . image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 . ."
       ". . image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 . ."
       ". . image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 . .";
-  }
-
-  .row-kettenbeil {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas:
-      ". . category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil . ."
-      ". . image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil . ."
-      ". . image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil . ."
-      ". . image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . .";
   }
 
   .img-shadow {
@@ -897,7 +740,6 @@ video {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "row row row row row row row row row row row row"
-      "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
       "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
   }
@@ -909,15 +751,6 @@ video {
     grid-template-areas:
       ". category-box category-box category-box category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 image-wrapper-1 ."
       ". image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 image-wrapper-3 .";
-  }
-
-  .row-kettenbeil {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 25px;
-    grid-template-areas:
-      ". category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil ."
-      ". image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil .";
   }
 
   .img-shadow {
@@ -942,21 +775,12 @@ video {
     margin-bottom: 0;
   }
 
-  .image-wrapper-1-kettenbeil {
-    margin-bottom: 0;
-  }
-
   .category-box {
     margin-top: 0;
     align-content: center;
     text-align: center;
   }
 
-  .category-box-kettenbeil {
-    margin-top: 0;
-    align-content: center;
-    text-align: center;
-  }
 
   /* NAVBAR */
   .topnav a {
@@ -1063,7 +887,6 @@ video {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
       "row row row row row row row row row row row row"
-      "row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil row-kettenbeil"
       "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
   }
@@ -1075,12 +898,6 @@ video {
     grid-template-areas: ". category-box category-box image-wrapper-1 image-wrapper-1 image-wrapper-2 image-wrapper-2 image-wrapper-3 image-wrapper-3 . . .";
   }
 
-  .row-kettenbeil {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 25px;
-    grid-template-areas: ". category-box-kettenbeil category-box-kettenbeil image-wrapper-1-kettenbeil image-wrapper-1-kettenbeil image-wrapper-2-kettenbeil image-wrapper-2-kettenbeil image-wrapper-3-kettenbeil image-wrapper-3-kettenbeil . . .";
-  }
 
   .img-shadow {
     display: grid;
@@ -1090,14 +907,6 @@ video {
       ". . main-content main-content main-content main-content main-content-2 main-content-2 main-content-2 main-content-2 . ."
       ". . main-content-3 main-content-3 main-content-3 main-content-3 main-content-4 main-content-4 main-content-4 main-content-4 . ."
       ". . main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 . .";
-  }
-
-  .image-wrapper-1-kettenbeil {
-    margin-bottom: 35px;
-  }
-
-  .category-box-kettenbeil {
-    margin-bottom: 35px;
   }
 
   /* PRELOADER */
