@@ -147,14 +147,6 @@ footer {
   grid-area: category-box;
 }
 
-.image-slide {
-  width: 100%;
-}
-
-.demo {
-  width: 100%;
-}
-
 .image-wrapper-1 {
   grid-area: image-wrapper-1;
   margin-bottom: 35px;
@@ -369,9 +361,11 @@ nav {
   color: var(--primary);
 }
 
+/*
 .active {
   display: none;
 }
+*/
 
 /***********************************************
   IMAGE - GALLERY
@@ -395,7 +389,7 @@ nav {
 .modal {
   display: none;
   position: fixed;
-  z-index: 555;
+  z-index: 999;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -432,6 +426,7 @@ nav {
   cursor: pointer;
 }
 
+/* Hide the slides by default */
 .mySlides {
   display: none;
 }
@@ -484,6 +479,7 @@ img {
   margin-bottom: -4px;
 }
 
+/* Caption text */
 .caption-container {
   text-align: center;
   background-color: black;
@@ -491,8 +487,17 @@ img {
   color: white;
 }
 
+img.demo {
+  opacity: 0.6;
+}
+
 .demo {
   opacity: 0.6;
+  width: 100%;
+}
+
+.image-slide {
+  width: 100%;
 }
 
 .active,
@@ -651,6 +656,13 @@ video {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  
+  /* PRELOADER */
+  #loader {
+    top: 30%;
+    left: 37%;
+  }
+
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
@@ -693,14 +705,9 @@ video {
       ". . main-content-6 main-content-6 main-content-6 main-content-6 . .";
   }
 
+  /* IMAGE GALLERY */
   .modal-content {
     width: 45%;
-  }
-
-  /* PRELOADER */
-  #loader {
-    top: 30%;
-    left: 37%;
   }
 
   /* NAVBAR */
@@ -785,6 +792,7 @@ video {
     text-align: center;
   }
 
+  /* IMAGE GALLERY */
   .modal-content {
     width: 75%;
   }
@@ -878,6 +886,15 @@ video {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  /* PRELOADER */
+  #loader {
+    top: 29%;
+    left: 36%;
+    width: 360px;
+    height: 360px;
+  }
+
+
   /* TEMPLATE CONTAINER */
   .container {
     display: grid;
@@ -917,17 +934,9 @@ video {
       ". . main-content-6 main-content-6 main-content-6 main-content-6 main-content-5 main-content-5 main-content-5 main-content-5 . .";
   }
   
-
+  /* IMAGE GALLERY */
   .modal-content {
     width: 50%;
-  }
-
-  /* PRELOADER */
-  #loader {
-    top: 29%;
-    left: 36%;
-    width: 360px;
-    height: 360px;
   }
 
   /* NAVBAR */
