@@ -1,23 +1,30 @@
 <div class="row">
-  
   <div class="category-box">
-    {{ with .Site.GetPage "/logos" }}
-      <h2 class="box-headline">{{ index .Params.headline 0 }}</h2>
-    {{ end }}
+    <h2 class="box-headline">Inexorablez</h2>
   </div>
 
-  {{ $counter := 1 }}
-  {{ range .Params.logo_thumbs_inexorablez }}
-  {{ $id := printf "image-wrapper-0%" $counter }}
-  <div id="{{ $id }}">
+  <div class="image-wrapper-1">
     <img
-      src="/{{ . }}"
+      src="/images/logos/inexorablez/inexorablez-01-thumb.webp"
       onclick="openModal();currentSlide(1)"
       class="hover-shadow cursor"
     />
   </div>
-  {{ end }}
-  {{ $counter = add $counter 1 }}
+  <div class="image-wrapper-2">
+    <img
+      src="/images/logos/inexorablez/inexorablez-02-thumb.webp"
+      onclick="openModal();currentSlide(2)"
+      class="hover-shadow cursor"
+    />
+  </div>
+  <div class="image-wrapper-3">
+    <img
+      src="/images/logos/inexorablez/inexorablez-03-thumb.webp"
+      onclick="openModal();currentSlide(3)"
+      class="hover-shadow cursor"
+    />
+  </div>
+</div>
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>

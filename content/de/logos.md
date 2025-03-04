@@ -8,7 +8,3 @@ logo_thumbs_kettenbeil = ["images/logos/kettenbeil/kettenbeil_logo_1_thumb.webp"
 logo_images_inexorablez = ["images/logos/inexorablez/inexorablez-01.webp", "images/logos/inexorablez/inexorablez-02.webp", "images/logos/inexorablez/inexorablez-03.webp"]
 logo_images_kettenbeil = ["images/logos/kettenbeil/kettenbeil_logo_01.png", "images/logos/kettenbeil/kettenbeil_logo_02.png", "images/logos/kettenbeil/kettenbeil_logo_03.png"]
 +++
-
-
-
-**logos-site**
