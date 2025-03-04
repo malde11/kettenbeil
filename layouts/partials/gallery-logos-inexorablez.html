@@ -8,7 +8,7 @@
 
   {{ $counter := 1 }}
   {{ range .Params.logo_thumbs_inexorablez }}
-  {{ $id := printf "image-wrapper-0%" $counter }}
+  {{ $id := printf "image-wrapper-%d" $counter }}
   <div id="{{ $id }}">
     <img
       src="/{{ . }}"
@@ -16,8 +16,8 @@
       class="hover-shadow cursor"
     />
   </div>
-  {{ end }}
   {{ $counter = add $counter 1 }}
+  {{ end }}
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
