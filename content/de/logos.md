@@ -1,6 +1,7 @@
 +++
 title = "Logos"
 category = ["LOGOS"]
+
 headline = ["Inexorablez", "Kettenbeil", "Superior-Attack", "FH-Flensburg"]
 
 alt-tag = ["Inexorablez Logo #1", "Inexorablez Logo #2", "Inexorablez Logo #3"]
