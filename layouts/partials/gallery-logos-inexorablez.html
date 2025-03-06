@@ -1,9 +1,9 @@
-{{ with .Site.GetPage "/logos" }}
-{{ range .Params }}
-
 <div class="row">
-  <div class="category-box">    
-      <h2 class="box-headline">{{ .Params.headline }}</h2>
+  
+  <div class="category-box">
+    {{ with .Site.GetPage "/logos" }}
+      <h2 class="box-headline">{{ index .Params.headline 0 }}</h2>
+    {{ end }}
   </div>
 
   {{ $counter := 1 }}
@@ -79,8 +79,9 @@
     </div>
   </div>
 </div>
-{{ end }}
-{{ end }}
+
+
+
 
 <script>
   function openModal() {
