@@ -32,7 +32,7 @@
         {{ $logicalPath := "/logos" }}
           {{ with site.GetPage $logicalPath }}
         <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez-01-thumb.webp" alt="Link to Logos">
+            <img class="card-headline logo-link" src="/images/logos/inexorablez/inexorablez-01-thumb.webp" alt="Link to Logos">
         </a>
         {{ else }}
           {{ errorf "Unable to get page %s" $logicalPath }}
