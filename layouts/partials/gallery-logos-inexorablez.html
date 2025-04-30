@@ -12,7 +12,7 @@
   <div id="{{ $id }}">
     <img
       src="/{{ . }}"
-      onclick="openModal();currentSlide(1)"
+      onclick="openModal();currentSlide({{$counter}})"
       class="hover-shadow cursor"
     />
   </div>
