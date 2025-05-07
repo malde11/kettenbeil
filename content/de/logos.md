@@ -4,7 +4,7 @@ title = "Logos"
 [logos]
     [logos.inexoarablez]
     headline = "Inexorablez"
-    [[logos.inexoarablez.alt-tag]]
+    [[logos.inexoarablez.alttag]]
         title1 = "Inexorablez #1"
         title2 = "Inexorablez #2"
         title3 = "Inexorablez #3"
@@ -22,7 +22,7 @@ title = "Logos"
 
     [logos.kettenbeil]
     headline = "Kettenbeil"
-    [[logos.kettenbeil.alt-tag]]
+    [[logos.kettenbeil.alttag]]
         title1 = "Kettenbeil #1"
         title2 = "Kettenbeil #2"
         title3 = "Kettenbeil #3"
@@ -37,7 +37,7 @@ title = "Logos"
 
     [logos.superior-attack]
     headline = "Superior-Attack"
-    [[logos.superior-attack.alt-tag]]
+    [[logos.superior-attack.alttag]]
         title1 = "Superior-Attack #1"
         title2 = "Superior-Attack #2"
         title3 = "Superior-Attack #3"
