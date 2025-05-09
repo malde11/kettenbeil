@@ -16,8 +16,8 @@ title = "Logos"
 
     [[logos.inexoarablez.images]]
         img1 = "/images/logos/inexorablez/inexorablez-01.webp"
-        img2 = "/images/logos/inexorablez/inexorablez-01.webp"
-        img3 = "/images/logos/inexorablez/inexorablez-01.webp"
+        img2 = "/images/logos/inexorablez/inexorablez-02.webp"
+        img3 = "/images/logos/inexorablez/inexorablez-03.webp"
 
 
     [logos.kettenbeil]
@@ -32,8 +32,8 @@ title = "Logos"
         image3 = "/images/logos/kettenbeil/kettenbeil_logo_03_thumb.webp"
     [[logos.kettenbeil.images]]
         img1 = "/images/logos/kettenbeil/kettenbeil_logo_01.webp"
-        img2 = "/images/logos/kettenbeil/kettenbeil_logo_01.webp"
-        img3 = "/images/logos/kettenbeil/kettenbeil_logo_01.webp"
+        img2 = "/images/logos/kettenbeil/kettenbeil_logo_02.webp"
+        img3 = "/images/logos/kettenbeil/kettenbeil_logo_03.webp"
 
 
     [logos.superiorAttack]
