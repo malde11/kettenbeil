@@ -1,53 +1,52 @@
 +++
 title = "Logos"
 
-[logos]
-    [logos.inexorablez]
-    headline = "Inexorablez"
-    [[logos.inexorablez.alttag]]
-        title1 = "Inexorablez #1"
-        title2 = "Inexorablez #2"
-        title3 = "Inexorablez #3"
 
-    [[logos.inexorablez.thumbs]]
-        image1 = "/images/logos/inexorablez/inexorablez-01-thumb.webp"
-        image2 = "/images/logos/inexorablez/inexorablez-02-thumb.webp"
-        image3 = "/images/logos/inexorablez/inexorablez-03-thumb.webp"
-
-    [[logos.inexoarablez.images]]
-        img1 = "/images/logos/inexorablez/inexorablez-01.webp"
-        img2 = "/images/logos/inexorablez/inexorablez-02.webp"
-        img3 = "/images/logos/inexorablez/inexorablez-03.webp"
-
-
-    [logos.kettenbeil]
-    headline = "Kettenbeil"
-    [[logos.kettenbeil.alttag]]
-        title1 = "Kettenbeil #1"
-        title2 = "Kettenbeil #2"
-        title3 = "Kettenbeil #3"
-    [[logos.kettenbeil.thumbs]]
-        image1 = "/images/logos/kettenbeil/kettenbeil_logo_01_thumb.webp"
-        image2 = "/images/logos/kettenbeil/kettenbeil_logo_02_thumb.webp"
-        image3 = "/images/logos/kettenbeil/kettenbeil_logo_03_thumb.webp"
-    [[logos.kettenbeil.images]]
-        img1 = "/images/logos/kettenbeil/kettenbeil_logo_01.webp"
-        img2 = "/images/logos/kettenbeil/kettenbeil_logo_02.webp"
-        img3 = "/images/logos/kettenbeil/kettenbeil_logo_03.webp"
+[params]
+[params.logos]
+[[params.logos.inexorablez]]
+id = 1
+title = "Inexoarablez #1"
+thumb = "/images/logos/inexorablez/inexorablez-01-thumb.webp"
+image = "/images/logos/inexorablez/inexorablez-01.webp"
+[[params.logos.inexorablez]]
+id = 2
+title = "Inexoarablez #2"
+thumb = "/images/logos/inexorablez/inexorablez-02-thumb.webp"
+image = "/images/logos/inexorablez/inexorablez-02.webp"
+[[params.logos.inexorablez]]
+id = 3
+title = "Inexoarablez #3"
+thumb = "/images/logos/inexorablez/inexorablez-03-thumb.webp"
+image = "/images/logos/inexorablez/inexorablez-03.webp"
 
 
-    [logos.superiorAttack]
-    headline = "Superior-Attack"
-    [[logos.superiorAttack.alttag]]
-        title1 = "Superior-Attack #1"
-        title2 = "Superior-Attack #2"
-        title3 = "Superior-Attack #3"
+[[params.logos.kettenbeil]]
+id = 1
+title = "Kettenbeil #1"
+thumb = "/images/logos/kettenbeil/kettenbeil_logo_01_thumb.webp"
+image = "/images/logos/kettenbeil/kettenbeil_logo_01.webp"
+[[params.logos.kettenbeil]]
+id = 2
+title = "Kettenbeil #2"
+thumb = "/images/logos/kettenbeil/kettenbeil_logo_02_thumb.webp"
+image = "/images/logos/kettenbeil/kettenbeil_logo_02.webp"
+[[params.logos.kettenbeil]]
+id = 3
+title = "Kettenbeil #3"
+thumb = "/images/logos/kettenbeil/kettenbeil_logo_03_thumb.webp"
+image = "/images/logos/kettenbeil/kettenbeil_logo_03.webp"
 
-    [[logos.superiorAttack.thumbs]]
-        image1 = "/images/logos/superior-attack/superior-attack-01.png"
-        image2 = "/images/logos/superior-attack/superior-attack-02.png"
 
-    [[logos.superiorAttack.images]]
-        img1 = "/images/logos/superior-attack/superior-attack-01.png"
-        img2 = "/images/logos/superior-attack/superior-attack-01.png"
+[[params.logos.superiorAttack]]
+id = 1
+title = "Superior-Attack #1"
+thumb = "/images/logos/superior-attack/superior-attack-01.png"
+image = "/images/logos/superior-attack/superior-attack-01.png"
+[[params.logos.superiorAttack]]
+id = 2
+title = "Superior-Attack #2"
+thumb = "/images/logos/superior-attack/superior-attack-02.png"
+image = "/images/logos/superior-attack/superior-attack-02.png"
+
 +++
