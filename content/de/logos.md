@@ -1,7 +1,6 @@
 +++
 title = "Logos"
 
-
 [params]
 [params.logos]
 [[params.logos.inexorablez]]

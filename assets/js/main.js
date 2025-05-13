@@ -21,4 +21,21 @@ addEventListener("DOMContentLoaded", () => {
     topNav.classList.toggle("responsive");
     burgerMenu.classList.toggle("toggleMenu");
   });
+
+  /* Image Gallery
+  const image = document.querySelector("#myModal");
+
+  image.addEventListener("click", () => {
+
+  // Open the Modal
+    document.getElementById("myModal").style.display = "block";
+  
+  // Close the Modal
+    document.getElementById("myModal").style.display = "none";
+  
+  });
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+*/
 });
