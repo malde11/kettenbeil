@@ -35,7 +35,8 @@ addEventListener("DOMContentLoaded", () => {
     document.getElementById("myModal").style.display = "none";
   }
 
-  const image = document.getElementById("test-id-1");
+  const image = document.querySelector(".test-id");
+  console.log(image);
   if(image) {
     image.addEventListener("click", openModal, false);
   }
@@ -54,17 +55,39 @@ addEventListener("DOMContentLoaded", () => {
   var slideIndex = 1;
   showSlides(slideIndex);
 
+
   // Next/previous controls
   function plusSlides(n) {
     showSlides((slideIndex += n));
   }
 
+  const prev = document.querySelector(".prev");
+  if(prev) {
+    prev.addEventListener("click", function() {
+      plusSlides(-1);
+    });
+  };
+
+  const next = document.querySelector(".next");
+  if(next) {
+    next.addEventListener("click", function() {
+      plusSlides(1);
+    });
+  };
+  
+
   // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides((slideIndex = n));
+  // Get the current slide
+  const currentSlide = document.querySelector("demo");
+  if(currentSlide) {
+    for (let i = 0; i < currentSlide.length; i++) {
+      currentSlide[i].addEventListener("click", function() {
+        currentSlide(i + 1);
+      });
+    }
   }
 
-
+  // Show the slides
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
