@@ -1,7 +1,7 @@
 <div class="row">
   {{ range .Params.logos.kettenbeil }}
     <div class="column">
-      <img src="{{ .thumb }}" style="width:100%" class="hover-shadow cursor">
+      <img src="{{ .thumb }}" style="width:100%" class="gallery-image hover-shadow cursor">
     </div>
   {{ end }}
   </div>
@@ -16,6 +16,7 @@
       <div class="numbertext">{{ .id }} / {{ len $currentpage.Params.logos.kettenbeil }}</div>
       <img src="{{ .image }}" style="width:100%">
     </div>
+    {{ end }}
   
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>
@@ -24,7 +25,7 @@
       <p id="caption"></p>
     </div>
 
-    
+    {{ range .Params.logos.kettenbeil }}
     <div class="column">
       <img class="demo cursor" src="{{ .image }}" style="width:100%" alt="{{ .title }}">
     </div>

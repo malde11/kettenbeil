@@ -1,9 +1,10 @@
 +++
-title = "Logos"
+title = "{ Logos }"
 
 [params]
 [params.logos]
 [[params.logos.inexorablez]]
+headline = "Inexorablez"
 id = 1
 title = "Inexoarablez #1"
 thumb = "/images/logos/inexorablez/inexorablez-01-thumb.webp"

@@ -1,7 +1,7 @@
 <div class="row">
   {{ range .Params.logos.inexorablez }}
     <div class="column">
-      <img src="{{ .thumb }}" style="width:100%" class="test-id hover-shadow cursor">
+      <img src="{{ .thumb }}" style="width:100%" class="galleryimage hover-shadow cursor">
     </div>
   {{ end }}
   </div>
@@ -16,7 +16,8 @@
       <div class="numbertext">{{ .id }} / {{ len $currentpage.Params.logos.inexorablez }}</div>
       <img src="{{ .image }}" style="width:100%">
     </div>
-    {{ end }}
+  {{ end }}
+    
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>
 

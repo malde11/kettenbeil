@@ -33,7 +33,7 @@
 {{ end }}
 
 
-{{ with resources.Get "js/gallery.js" }}
+{{ with resources.Get "js/test-gallery.js" }}
   {{ if hugo.IsDevelopment }}
     {{ with . | js.Build }}
       <script src="{{ .RelPermalink }}"></script>
