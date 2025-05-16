@@ -1,5 +1,6 @@
 +++
 title = "{ Logos }"
+draft = false
 
 [params]
 [params.logos]

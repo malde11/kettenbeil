@@ -1,5 +1,5 @@
 baseURL = 'https://kettenbeil.com/'
-title = 'Kettenbeil'
+title = 'Kettenbeil - '
 
 defaultContentLanguage = 'de'
 defaultContentLanguageInSubdir = true
