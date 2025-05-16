@@ -503,7 +503,7 @@ video {
   .home-link {
     display: contents; }
   .main-headline {
-    margin-top: 160px; }
+    margin-top: 125px; }
   .logo-headline {
     margin-top: 60px; } }
 
@@ -622,7 +622,7 @@ video {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 25px;
-    grid-template-areas: "logo-headline logo-headline logo-headline logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row" "image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper" ". . . image-container image-container image-container image-container image-container image-container image-contanier . ."; }
+    grid-template-areas: "logo-headline logo-headline logo-headline logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row" "image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper" ". . . image-container image-container image-container image-container image-container image-container image-contanier image-contanier image-contanier"; }
   .image-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -650,7 +650,7 @@ video {
     display: block; }
   #expandedImg {
     display: block; }
-  #img-text {
+  #imgtext {
     display: block; }
   .logo-headline {
     margin-top: 0px; } }
