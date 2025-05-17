@@ -1,7 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 {{ "<!-- START INCLUDE SASS/CSS -->" | safeHTML }}
 {{ with resources.Get "sass/main.scss" }}
   {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
@@ -47,4 +46,4 @@
 {{ end }}
 
 
-<title>{{.Title}}</title>
+<title>{{ .Title }}</title>
