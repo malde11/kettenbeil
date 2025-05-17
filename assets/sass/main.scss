@@ -389,7 +389,7 @@ nav {
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 90%;
+  margin-bottom: 30px;
 }
 
 /* Style the images inside the grid */
@@ -934,6 +934,7 @@ video {
   /* Image - Gallery */
   .column {
     width: 25%;
+    margin-bottom: 0;
     margin-right: 25px;
   }
 
