@@ -1,10 +1,11 @@
 <div class="row">
   {{ range .Params.logos.inexorablez }}
     <div class="column">
-      <img src="{{ .thumb }}" style="width:100%" class="galleryimage hover-shadow cursor">
+      <img id="test-id-{{ .id }}" src="{{ .thumb }}" style="width:100%" class="hover-shadow cursor">
     </div>
   {{ end }}
   </div>
+</div>
 
 {{ $currentpage := . }}
 <div id="myModal" class="modal">

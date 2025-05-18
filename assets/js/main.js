@@ -23,21 +23,33 @@ addEventListener("DOMContentLoaded", () => {
   });
 
 
+   // Image lightbox/Gallery
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
 
-  // Image - Gallery
-  function myFunction(image) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = image.src;
-  imgText.innerHTML = image.alt;
-  expandImg.parentElement.style.display = "block";
-}
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
 
-  const image = document.querySelector(".image-class");
+
+
+
+
+  // Here I have got "test-id-1" how can I get id-2, id-3 and so on?
+  // Maybe somehow with a parameter or a loop? 
+  const image = document.getElementById("test-id-1");
   if(image) {
-      image.addEventListener("click", function() {
-        myFunction(image);
-      });
-  };
+    image.addEventListener("click", openModal, false);
+  }
+
+ // Close the Modal
+  const close = document.getElementsByClassName("close")[0];
+  if(close) {
+    close.addEventListener("click", closeModal, false);
+  }
+  
 
 });
