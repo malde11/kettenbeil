@@ -1,35 +1,52 @@
 <div class="row">
   {{ range .Params.logos.inexorablez }}
     <div class="column">
+<<<<<<< HEAD
+      <img src="{{ .thumb }}" style="width:100%" class="hover-shadow cursor galleryimage" data-id="{{ .id }}">
+=======
       <img id="test-id-{{ .id }}" src="{{ .thumb }}" style="width:100%" class="hover-shadow cursor">
+>>>>>>> origin/main
     </div>
   {{ end }}
   </div>
 </div>
 
-{{ $currentpage := . }}
+
 <div id="myModal" class="modal">
   <span class="close cursor">&times;</span>
   <div class="modal-content">
 
-  {{ range .Params.logos.inexorablez }}
+
+
+    {{ $page := page -}}
+    {{ range .Params.logos.inexorablez }}
     <div class="mySlides">
-      <div class="numbertext">{{ .id }} / {{ len $currentpage.Params.logos.inexorablez }}</div>
+      <div class="numbertext">{{ .id }} / {{ len $page.Params.logos.inexorablez }}</div>
       <img src="{{ .image }}" style="width:100%">
     </div>
+<<<<<<< HEAD
+    {{ end }}
+
+
+    <!-- Next/previous controls -->
+=======
   {{ end }}
     
+>>>>>>> origin/main
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>
 
+    
+    <!-- Caption text -->
     <div class="caption-container">
       <p id="caption"></p>
     </div>
 
     {{ range .Params.logos.inexorablez }}
     <div class="column">
-      <img class="demo cursor" src="{{ .image }}" style="width:100%" alt="{{ .title }}">
+      <img class="demo cursor" src="{{ .image }}" data-id="{{ .id }}" style="width:100%" alt="{{ .title }}">
     </div>
+
     {{ end }}
   </div>
 </div>

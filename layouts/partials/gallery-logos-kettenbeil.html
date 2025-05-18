@@ -1,34 +1,50 @@
 <div class="row">
   {{ range .Params.logos.kettenbeil }}
     <div class="column">
+<<<<<<< HEAD
+      <img src="{{ .thumb }}" style="width:100%" class="hover-shadow cursor galleryimage" data-id="{{ .id }}">
+=======
       <img src="{{ .thumb }}" style="width:100%" class="gallery-image hover-shadow cursor">
+>>>>>>> origin/main
     </div>
   {{ end }}
   </div>
 
-{{ $currentpage := . }}
+
 <div id="myModal" class="modal">
   <span class="close cursor">&times;</span>
   <div class="modal-content">
 
-  {{ range .Params.logos.kettenbeil }}
+
+
+    {{ $page := page -}}
+    {{ range .Params.logos.kettenbeil }}
     <div class="mySlides">
-      <div class="numbertext">{{ .id }} / {{ len $currentpage.Params.logos.kettenbeil }}</div>
+      <div class="numbertext">{{ .id }} / {{ len $page.Params.logos.kettenbeil }}</div>
       <img src="{{ .image }}" style="width:100%">
     </div>
     {{ end }}
+<<<<<<< HEAD
+
+
+    <!-- Next/previous controls -->
+=======
   
+>>>>>>> origin/main
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>
 
+    
+    <!-- Caption text -->
     <div class="caption-container">
       <p id="caption"></p>
     </div>
 
     {{ range .Params.logos.kettenbeil }}
     <div class="column">
-      <img class="demo cursor" src="{{ .image }}" style="width:100%" alt="{{ .title }}">
+      <img class="demo cursor" src="{{ .image }}" data-id="{{ .id }}" style="width:100%" alt="{{ .title }}">
     </div>
+
     {{ end }}
   </div>
 </div>
