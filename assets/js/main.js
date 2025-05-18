@@ -21,10 +21,9 @@ addEventListener("DOMContentLoaded", () => {
     topNav.classList.toggle("responsive");
     burgerMenu.classList.toggle("toggleMenu");
   });
-  
 
-  
-  // Image lightbox/Gallery
+
+   // Image lightbox/Gallery
   // Open the Modal
   function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -35,6 +34,7 @@ addEventListener("DOMContentLoaded", () => {
     document.getElementById("myModal").style.display = "none";
   }
 
+<<<<<<< HEAD
   var slideIndex = 1;
   showSlides(slideIndex);
 
@@ -95,5 +95,24 @@ addEventListener("DOMContentLoaded", () => {
   nextbutton[0].addEventListener("click", (e) => {
       plusSlides(1)
   })
+=======
+
+
+
+
+  // Here I have got "test-id-1" how can I get id-2, id-3 and so on?
+  // Maybe somehow with a parameter or a loop? 
+  const image = document.getElementById("test-id-1");
+  if(image) {
+    image.addEventListener("click", openModal, false);
+  }
+
+ // Close the Modal
+  const close = document.getElementsByClassName("close")[0];
+  if(close) {
+    close.addEventListener("click", closeModal, false);
+  }
+  
+>>>>>>> origin/main
 
 });

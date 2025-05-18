@@ -8,84 +8,88 @@
 
 
 {{ define "main" }}
-<div class="slug-wrapper">
-    <h2 class="slug"><b>Some</b><i> of my</i> work</h2>
+
+<div class="main-template">
+  
+  <div class="slug-wrapper">
+      <h2 class="slug"><b>Some</b><i> of my</i> work</h2>
+  </div>
+
+  <div class="img-shadow">
+
+      <!-- LOGOS -->
+      <div class="main-content card">
+          {{ $logicalPath := "/logos" }}
+            {{ with site.GetPage $logicalPath }}
+          <a class="home-link" href="{{ .RelPermalink }}">
+              <p class="card-headline">View Logos</p>
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
+
+      <div class="main-content-2 card">
+          {{ $logicalPath := "/logos" }}
+            {{ with site.GetPage $logicalPath }}
+          <a href="{{ .RelPermalink }}">
+              <img class="card-headline logo-link" src="/images/logos/inexorablez/inexorablez-01-thumb.webp" alt="Link to Logos">
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
+
+
+      <!-- PHOTOS -->
+      <div class="main-content-3 card">
+          {{ $logicalPath := "/photos" }}
+            {{ with site.GetPage $logicalPath }}
+          <a href="{{ .RelPermalink }}">
+              <img class="card-headline logo-link" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
+
+      <div class="main-content-4 card">
+          {{ $logicalPath := "/photos" }}
+            {{ with site.GetPage $logicalPath }}
+          <a class="home-link" href="{{ .RelPermalink }}">
+              <p class="card-headline">View Photos</p>
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
+
+
+
+      <!-- SKETCHES -->
+      <div class="main-content-5 card">
+          {{ $logicalPath := "/sketches" }}
+            {{ with site.GetPage $logicalPath }}
+          <a href="{{ .RelPermalink }}">
+              <img class="card-headline logo-link" src="/images/sketches/kz-01-thumb.webp" alt="Link to Sketches">
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
+
+      <div class="main-content-6 card">
+          {{ $logicalPath := "/sketches" }}
+            {{ with site.GetPage $logicalPath }}
+          <a class="home-link" href="{{ .RelPermalink }}">
+              <p class="card-headline">View Sketches</p>
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
+
+  </div>
+
 </div>
-
-<div class="img-shadow">
-
-    <!-- LOGOS -->
-    <div class="main-content card">
-        {{ $logicalPath := "/logos" }}
-          {{ with site.GetPage $logicalPath }}
-        <a class="home-link" href="{{ .RelPermalink }}">
-            <p class="card-headline">View Logos</p>
-        </a>
-        {{ else }}
-          {{ errorf "Unable to get page %s" $logicalPath }}
-          {{ end }}
-    </div>
-
-    <div class="main-content-2 card">
-        {{ $logicalPath := "/logos" }}
-          {{ with site.GetPage $logicalPath }}
-        <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/logos/inexorablez/inexorablez-01-thumb.webp" alt="Link to Logos">
-        </a>
-        {{ else }}
-          {{ errorf "Unable to get page %s" $logicalPath }}
-          {{ end }}
-    </div>
-
-
-    <!-- PHOTOS -->
-    <div class="main-content-3 card">
-        {{ $logicalPath := "/photos" }}
-          {{ with site.GetPage $logicalPath }}
-        <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
-        </a>
-        {{ else }}
-          {{ errorf "Unable to get page %s" $logicalPath }}
-          {{ end }}
-    </div>
-
-    <div class="main-content-4 card">
-        {{ $logicalPath := "/photos" }}
-          {{ with site.GetPage $logicalPath }}
-        <a class="home-link" href="{{ .RelPermalink }}">
-            <p class="card-headline">View Photos</p>
-        </a>
-        {{ else }}
-          {{ errorf "Unable to get page %s" $logicalPath }}
-          {{ end }}
-    </div>
-
-
-
-    <!-- SKETCHES -->
-    <div class="main-content-5 card">
-        {{ $logicalPath := "/sketches" }}
-          {{ with site.GetPage $logicalPath }}
-        <a href="{{ .RelPermalink }}">
-            <img class="card-headline logo-link" src="/images/sketches/kz-01-thumb.webp" alt="Link to Sketches">
-        </a>
-        {{ else }}
-          {{ errorf "Unable to get page %s" $logicalPath }}
-          {{ end }}
-    </div>
-
-    <div class="main-content-6 card">
-        {{ $logicalPath := "/sketches" }}
-          {{ with site.GetPage $logicalPath }}
-        <a class="home-link" href="{{ .RelPermalink }}">
-            <p class="card-headline">View Sketches</p>
-        </a>
-        {{ else }}
-          {{ errorf "Unable to get page %s" $logicalPath }}
-          {{ end }}
-    </div>
-
-</div>
-
 {{ end }}
