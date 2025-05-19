@@ -23,7 +23,7 @@ addEventListener("DOMContentLoaded", () => {
   });
 
 
-   // Image lightbox/Gallery
+  // Image lightbox/Gallery
   // Open the Modal
   function openModal() {
     document.getElementById("myModal").style.display = "block";
