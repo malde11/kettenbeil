@@ -48,8 +48,8 @@
 
 <title>
    {{- if .IsHome -}}
-      {{- site.Title -}} &#32;- Webdesign & Development
+      {{- site.Title }} - Webdesign & Development
    {{- else -}}
-      {{- site.Title }} - {{ .Title -}}
+      {{- .Title }} - {{ site.Title -}}
    {{- end -}}
 </title>
