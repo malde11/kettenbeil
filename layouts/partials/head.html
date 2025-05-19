@@ -46,4 +46,10 @@
 {{ end }}
 
 
-<title>{{ .Title }}</title>
+<title>
+   {{- if .IsHome -}}
+      {{- site.Title -}} &#32;- Webdesign & Development
+   {{- else -}}
+      {{- site.Title }} - {{ .Title -}}
+   {{- end -}}
+</title>
