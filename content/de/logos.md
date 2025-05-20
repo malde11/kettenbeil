@@ -5,6 +5,7 @@ title = 'Logos'
 weight = 3
 [params]
 [[params.gallery.inexorablez]]
+headline = "Inexorablez"
 caption = "Inexorablez Logo #1"
 thumb = "/images/logos/inexorablez/inexorablez-01-thumb.webp"
 image = "/images/logos/inexorablez/inexorablez-01.webp"
@@ -21,6 +22,7 @@ image = "/images/logos/inexorablez/inexorablez-03.webp"
 
 
 [[params.gallery.kettenbeil]]
+headline = "Kettenbeil"
 caption = "Kettenbeil Logo #1"
 thumb = "/images/logos/kettenbeil/kettenbeil_logo_01_thumb.webp"
 image = "/images/logos/kettenbeil/kettenbeil_logo_01.webp"
