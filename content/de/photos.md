@@ -1,8 +1,5 @@
 +++
 title = "Photos"
-image = "images/photos/sydney-palm-01-thumb.webp"
-category = ["PHOTOS"]
-project_images = ["sydney-palm-01.webp"]
 draft = false
 +++
 

@@ -25,6 +25,55 @@ addEventListener("DOMContentLoaded", () => {
 
   // Image lightbox/Gallery
   // Open the Modal
+
+// other code you may want in before here...
+    const modal_container = document.getElementById("modal-container")
+    function openModel() {
+        modal_container.style.display = "block"
+    }
+
+    function closeModal() {
+        modal_container.style.display = "none"
+    }
+
+    const next_button = document.getElementById("modal-next")
+    const prev_button = document.getElementById("modal-prev")
+
+    const galleryimages = document.getElementsByClassName("galleryimage")
+    const modal_image = document.getElementById("modal-image")
+    const modal_caption = document.getElementById("modal-caption")
+    const modal_filmstrip = document.getElementById("modal-filmstrip")
+    for (let i=0; i<galleryimages.length; i++) {
+        galleryimages[i].addEventListener("click", (e) => {
+            openModel()
+            modal_image.src = e.target.dataset.image
+            modal_caption.innerText = e.target.alt
+            modal_filmstrip.innerHTML = e.target.parentElement.innerHTML
+            const filmstrip_images = modal_filmstrip.getElementsByClassName("galleryimage")
+            for (let i=0; i<filmstrip_images.length; i++) {
+                filmstrip_images[i].addEventListener("click", (e) => {
+                    modal_image.src = e.target.dataset.image
+                    modal_caption.innerText = e.target.alt
+                })
+            }
+        })
+    }
+
+    const closebutton = document.getElementById("modal-close")
+    closebutton.addEventListener("click", closeModal)
+    // other code you may want after
+    
+});
+
+
+
+
+
+
+
+
+
+/*
   function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
@@ -94,5 +143,4 @@ addEventListener("DOMContentLoaded", () => {
   nextbutton[0].addEventListener("click", (e) => {
       plusSlides(1)
   })
-
-});
+*/

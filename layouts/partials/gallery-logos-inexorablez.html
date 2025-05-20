@@ -1,42 +1,7 @@
 <div class="row">
-  {{ range .Params.logos.inexorablez }}
-    <div class="column">
-      <img src="{{ .thumb }}" style="width:100%" class="hover-shadow cursor galleryimage" data-id="{{ .id }}">
-    </div>
-  {{ end }}
-  </div>
-
-
-
-<div id="myModal" class="modal">
-  <span class="close cursor">&times;</span>
-  <div class="modal-content">
-
-
-
-    {{ $page := page -}}
-    {{ range .Params.logos.inexorablez }}
-    <div class="mySlides">
-      <div class="numbertext">{{ .id }} / {{ len $page.Params.logos.inexorablez }}</div>
-      <img src="{{ .image }}" style="width:100%">
-    </div>
-    {{ end }}
-
-
-    <!-- Next/previous controls -->
-    <a class="prev">&#10094;</a>
-    <a class="next">&#10095;</a>
-
-    
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    {{ range .Params.logos.inexorablez }}
-    <div class="column">
-      <img class="demo cursor" src="{{ .thumb }}" data-id="{{ .id }}" style="width:100%" alt="{{ .title }}">
-    </div>
-    {{ end }}
-</div>
+  
+{{ with .Site.GetPage "/de/logos" }}
+  {{ .Title }}
+{{ end }} 
+  
 </div>
