@@ -111,12 +111,9 @@ h4 {
 .main-template.gallery {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-    "logo-headline"
-    "logo-row"
-    "image-wrapper"
-    "image-class"
-    "image-container";
+  grid-template-areas:
+    "inexorablez"
+    "kettenbeil";
 }
 
 .img-shadow {
@@ -187,26 +184,31 @@ footer {
 }
 
 
-/* Logo Site */
-.logo-headline {
-  grid-area: logo-headline;
+
+
+/* Gallery - Template */
+#inexorablez {
+  grid-area: inexorablez;
+  text-align: center;
+  margin-top: 40px;
+}
+#kettenbeil {
+  grid-area: kettenbeil;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.logo-row {
- grid-area: logo-row;
+.galleryimage {
+  width: 100%;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.image-wrapper {
-  grid-area: image-wrapper;
-}
 
-.image-class {
-  grid-area: image-class;
-}
 
-.image-container {
-  grid-area: image-container;
-}
+
 
 
 /********************************************
@@ -387,6 +389,16 @@ nav {
   IMAGE - GALLERY
 ***********************************************/
 
+#inexorablez {
+  background-color: var(--secondary);
+  color: white;
+}
+
+#kettenbeil {
+  background-color: var(--secondary);
+  color: white;
+}
+
 .gallery {
     display: flex;
     flex-direction: row;
@@ -403,6 +415,10 @@ nav {
     padding-top: 5rem;
     background-color: black;
     z-index: 1000;
+}
+
+#modal-caption {
+  color: white;
 }
 
 #modal-close {
@@ -462,7 +478,18 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.demo {
+  opacity: 0.6;
+}
 
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.cursor {
+  cursor: pointer;
+}
 
 
 
@@ -533,9 +560,7 @@ nav {
   display: none;
 }
 */
-.cursor {
-  cursor: pointer;
-}
+
 /*
 /* Next & previous buttons
 .prev,
@@ -608,6 +633,12 @@ img.hover-shadow {
 */
 
 
+
+
+
+
+
+
 /*******************************************************
   Home (Background)
 *******************************************************/
@@ -655,6 +686,8 @@ video {
   padding: 15px;
   font-size: 2.6em;
 }
+
+
 
 
 
@@ -747,23 +780,6 @@ video {
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
   }
 
-  .main-template.gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 10px;
-    grid-template-areas:
-      "logo-headline logo-headline logo-headline logo-headline logo-headline logo-headline logo-headline logo-headline"
-      "logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row"
-      "image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper"
-  }
-  
-  .image-wrapper {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas:
-      ". . image-class image-class image-class image-class . .";
-  }
-
   .img-shadow {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -789,6 +805,11 @@ video {
     margin-top: 0px;
   }
 }
+
+
+
+
+
 
 
 
@@ -852,6 +873,11 @@ video {
     margin-top: 60px;
   }
 }
+
+
+
+
+
 
 
 
@@ -934,6 +960,11 @@ video {
 
 
 
+
+
+
+
+
 /*******************************************************
   Media Queries - (large desktops, 1200px and up)
 *******************************************************/
@@ -1011,6 +1042,10 @@ video {
 
 
 
+
+
+
+
 /*******************************************************
   Media Queries - (larger desktops, 1400px and up)
 *******************************************************/
@@ -1035,22 +1070,6 @@ video {
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
   }
 
-  .main-template.gallery {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 25px;
-    grid-template-areas:
-      "logo-headline logo-headline logo-headline logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row logo-row"
-      "image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper image-wrapper"
-      ". . . image-container image-container image-container image-container image-container image-container image-contanier image-contanier image-contanier";
-  }
-  
-  .image-wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
-      "image-class image-class image-class image-class image-class image-class image-class image-class image-class image-class image-class image-class";
-  }
 
   .img-shadow {
     display: grid;
@@ -1104,6 +1123,10 @@ video {
   }
 
 }
+
+
+
+
 
 
 
