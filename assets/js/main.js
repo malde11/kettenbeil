@@ -38,11 +38,9 @@ addEventListener("DOMContentLoaded", () => {
         modal_container.style.display = "none";
     };
 
-    // Next/previous controls
     const next_button = document.getElementById("modal-next");
     const prev_button = document.getElementById("modal-prev");
 
-    
     const galleryimages = document.getElementsByClassName("galleryimage");
     const modal_image = document.getElementById("modal-image");
     const modal_caption = document.getElementById("modal-caption");

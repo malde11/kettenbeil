@@ -101,20 +101,25 @@ h4 {
 }
 
 .main-template {
-  display: grid;
-  grid-template-columns: 1fr;
   grid-template-areas:
     "slug-wrapper"
     "img-shadow";
 }
 
-.main-template.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
+.main-template.image-template {
+  grid-template-areas:
+    "header"  
+    "gallery-test"
+    "footer";
+}
+
+.gallery-test {
   grid-template-areas:
     "inexorablez"
+    "galleryimage"
     "kettenbeil";
 }
+
 
 .img-shadow {
   display: grid;
@@ -128,7 +133,6 @@ h4 {
     "main-content-6";
 }
 
-
 /* Main Container */
 header {
   grid-area: header;
@@ -137,17 +141,18 @@ header {
   z-index: -3;
 }
 
+
 footer {
   text-align: center;
   grid-area: footer;
   background-color: cornflowerblue;
 }
 
+
 .main-template {
   grid-area: main-template;
   padding: 30px;
 }
-
 
 
 /* Home Site */
@@ -189,16 +194,21 @@ footer {
 /* Gallery - Template */
 #inexorablez {
   grid-area: inexorablez;
+  margin-top: 40px 0;
   text-align: center;
-  margin-top: 40px;
 }
 #kettenbeil {
   grid-area: kettenbeil;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.gallery-test {
+  grid-area: gallery-test;
 }
 
 .galleryimage {
+  grid-area: galleryimage;
   width: 100%;
   margin-bottom: 30px;
   justify-content: center;
@@ -399,14 +409,14 @@ nav {
   color: white;
 }
 
-.gallery {
+.gallery {/*
     display: flex;
     flex-direction: row;
     overflow-y: auto;
     gap: 0.5rem;
-}
+*/}
 
-#modal-container {
+#modal-container {/*
     position: fixed;
     top: 0;
     left: 0;
@@ -414,7 +424,7 @@ nav {
     height: 100%;
     padding-top: 5rem;
     background-color: black;
-    z-index: 1000;
+    z-index: 1000;*/
 }
 
 #modal-caption {
@@ -426,14 +436,17 @@ nav {
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+}
+
+.close-gallery {
+  width: 32px;
+  height: 32px;
 }
 
 
-#modal-close:hover,
-#modal-close:focus {
-  color: #999;
+.close-gallery:hover,
+.close-gallery:focus {
+  fill: #323232;
   text-decoration: none;
   cursor: pointer;
 }
@@ -490,8 +503,6 @@ nav {
 .cursor {
   cursor: pointer;
 }
-
-
 
 
 
@@ -834,6 +845,17 @@ video {
     grid-template-areas:
       "slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
+    }
+
+  .main-template.gallery {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      ". inexorablez inexorablez inexorablez inexorablez inexorablez imagegallery imagegallery imagegallery imagegallery imagegallery ."
+      ". imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery ."
+      ". kettenbeil kettenbeil kettenbeil kettenbeil kettenbeil kettenbeil imagegallery imagegallery imagegallery imagegallery imagegallery ."
+      ". imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery .";
     }
 
   .img-shadow {

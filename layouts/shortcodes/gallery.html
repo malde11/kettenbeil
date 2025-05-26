@@ -1,5 +1,5 @@
 {{- $gallery := index page.Params.gallery (.Get 0) -}}
-<div class="main-template gallery">
+<div class="gallery">
     {{- range $gallery }}
     <img src="{{ .thumb }}" alt="{{ .caption }}" class="galleryimage cursor" data-image="{{ .image }}">
     {{- end }}
