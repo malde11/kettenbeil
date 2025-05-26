@@ -194,7 +194,7 @@ footer {
 /* Gallery - Template */
 #inexorablez {
   grid-area: inexorablez;
-  margin-top: 40px 0;
+  margin-top: 40px;
   text-align: center;
 }
 #kettenbeil {
@@ -847,15 +847,26 @@ video {
       "img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow img-shadow";
     }
 
-  .main-template.gallery {
+ /* .main-template.image-template {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
-      ". inexorablez inexorablez inexorablez inexorablez inexorablez imagegallery imagegallery imagegallery imagegallery imagegallery ."
-      ". imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery ."
-      ". kettenbeil kettenbeil kettenbeil kettenbeil kettenbeil kettenbeil imagegallery imagegallery imagegallery imagegallery imagegallery ."
-      ". imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery imagegallery .";
+      "header header header header header header header header header header header header"  
+      "gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test gallery-test"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+    
+  }
+*/
+
+  .gallery-test {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      ". inexorablez ."
+      ". galleryimage ." 
+      ". kettenbeil";
     }
 
   .img-shadow {
