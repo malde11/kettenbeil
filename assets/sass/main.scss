@@ -201,6 +201,7 @@ footer {
 }
 
 .galleryimage {
+  pointer-events:none;
   grid-area: galleryimage;
   width: 100%;
   margin-bottom: 30px;
@@ -391,7 +392,6 @@ nav {
 /***********************************************
   IMAGE - GALLERY
 ***********************************************/
-
 #inexorablez {
   background-color: var(--secondary);
   color: white;
@@ -409,7 +409,7 @@ nav {
     gap: 0.5rem;
 }*/
 
-#modal-container {/*
+#modal-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -417,7 +417,7 @@ nav {
     height: 100%;
     padding-top: 5rem;
     background-color: black;
-    z-index: 1000;*/
+    z-index: 1000;
 }
 
 #modal-caption {
@@ -845,15 +845,6 @@ video {
     justify-content: center;
     padding: 0;
   }
-/*
-  .gallery-logo {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
-      "galleryimage galleryimage";
-    }
-*/
 
   .gallery-logo {
     grid-area: unset;
@@ -1063,6 +1054,10 @@ video {
 
   #kettenbeil {
     margin: 50px 0px -20px 15px;
+  }
+
+  .galleryimage {
+    pointer-events:all
   }
 
   /* NAVBAR */
