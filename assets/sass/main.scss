@@ -402,6 +402,12 @@ nav {
   color: white;
 }
 
+.galleryimage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0;
+}
+
 /*.gallery {
     display: flex;
     flex-direction: row;
@@ -421,6 +427,8 @@ nav {
 }
 
 #modal-caption {
+  font-size: 2em;
+  font-family: "Smooch Sans";;
   color: white;
 }
 
@@ -496,7 +504,6 @@ nav {
 .cursor {
   cursor: pointer;
 }
-
 
 
 
