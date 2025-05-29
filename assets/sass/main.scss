@@ -202,12 +202,15 @@ footer {
 
 .galleryimage {
   pointer-events:none;
+  opacity: 0.8;
   grid-area: galleryimage;
   width: 100%;
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 
@@ -403,9 +406,10 @@ nav {
 }
 
 .galleryimage:hover {
-  transform: translateY(-4px);
+  opacity: 1;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
-  transition-delay: 0;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
 /*.gallery {
