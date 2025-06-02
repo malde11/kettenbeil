@@ -1210,6 +1210,16 @@ video {
     width: 100%;
     height: 100%;
   }
+
+  #logos main {
+    background: #151515;
+    background: linear-gradient(346deg, rgba(21, 21, 21, 0.95) 12%, rgba(154, 205, 49, 1) 40%, rgba(21, 21, 21, 1) 62%);
+  }
+
+  #sketches main {
+    background: #151515;
+    background: linear-gradient(346deg, rgba(21, 21, 21, 0.95) 12%, rgba(255, 165, 0, 1) 40%, rgba(21, 21, 21, 1) 62%);
+  }
 }
 
 
