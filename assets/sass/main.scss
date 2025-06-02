@@ -91,6 +91,8 @@ h4 {
 /***********************************************
   BACKGROUND-COLORS
 ***********************************************/
+
+/* Logos */
 #logos header {
   background: #151515;
 }
@@ -117,6 +119,9 @@ h4 {
 }
 
 
+
+
+/* Sketches */
 #sketches header {
   background: #151515;
 }
@@ -141,7 +146,6 @@ h4 {
 #sketches .navbar-brand {
       text-shadow: 10px 0px 20px orange, 10px 0px 20px orange;
 }
-
 
 
 
@@ -925,6 +929,8 @@ video {
     padding: 10px 30px;
     margin: 50px 15px -20px 15px;
     grid-area: unset;
+    background: #151515;
+    background: linear-gradient(90deg, rgba(21, 21, 21, 1) 10%, rgba(21, 21, 21, 0) 44%);
   }
 
   #kettenbeil {
@@ -933,6 +939,8 @@ video {
     text-align: left;
     padding: 10px 30px;
     grid-area: unset;
+    background: #151515;
+    background: linear-gradient(90deg, rgba(21, 21, 21, 1) 10%, rgba(21, 21, 21, 0) 44%);
   }
 
 
@@ -972,6 +980,17 @@ video {
 
   .logo-headline {
     margin-top: 60px;
+  }
+
+
+  #logos main {
+    background: #151515;
+    background: linear-gradient(345deg, rgba(21, 21, 21, 1) 15%, rgba(154, 205, 49, 1) 52%, rgba(21, 21, 21, 1) 75%);
+  }
+
+  #sketches main {
+    background: #151515;
+    background: linear-gradient(345deg, rgba(21, 21, 21, 1) 15%, rgba(255, 165, 0, 1) 52%, rgba(21, 21, 21, 1) 75%);
   }
 }
 
@@ -1053,8 +1072,40 @@ video {
     right: 20px;
   }
 
+  #logos .nav-link:hover::before {
+  content: "[";
+  display: inline;
+  color: yellowgreen;
+}
+
+  #logos .nav-link:hover::after {
+    content: "]";
+    display: inline;
+    color: yellowgreen;
+}
+
+
+  #sketches .nav-link:hover::before {
+    content: "[";
+    display: inline;
+    color: orange;
+  }
+
+  #sketches .nav-link:hover::after {
+  content: "]";
+  display: inline;
+  color: orange;
+  }
   .active {
     border-bottom: 2px solid var(--primary);
+  }
+
+  #logos .active {
+    border-bottom: 2px solid yellowgreen;
+  }
+
+  #sketches .active {
+    border-bottom: 2px solid orange;
   }
 
   /* IMAGES */
@@ -1064,6 +1115,7 @@ video {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
     transition-delay: 0;
   }
+
 }
 
 
