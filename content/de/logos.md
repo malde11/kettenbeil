@@ -2,11 +2,6 @@
 draft = false
 title = 'Logos'
 
-bodyColor = 3
-navColor = 2
-headLineColor = 1
-
-
 
 weight = 3
 [params]

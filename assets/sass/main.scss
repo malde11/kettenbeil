@@ -85,6 +85,69 @@ h4 {
 
 
 
+
+
+
+/***********************************************
+  BACKGROUND-COLORS
+***********************************************/
+#logos header {
+  background: #151515;
+}
+
+#logos main {
+  background: #151515;
+  background: linear-gradient(325deg, rgba(21, 21, 21, 1) 0%, rgba(154, 205, 50, 1) 69%, rgba(21, 21, 21, 1) 87%);  
+}
+
+#logos .nav-item {
+  text-shadow: 10px 0px 20px yellowgreen, 10px 0px 20px yellowgreen;
+}
+
+#logos .main-headline {
+  color: yellowgreen;
+}
+
+#logos .brand-name {
+  color: yellowgreen;
+}
+
+#logos .navbar-brand {
+      text-shadow: 10px 0px 20px yellowgreen, 10px 0px 20px yellowgreen;
+}
+
+
+#sketches header {
+  background: #151515;
+}
+
+#sketches main {
+  background: #151515;
+  background: linear-gradient(325deg, rgba(21, 21, 21, 1) 0%, orange, rgba(21, 21, 21, 1) 87%);  
+}
+
+#sketches .nav-item {
+  text-shadow: 10px 0px 20px orange, 10px 0px 20px orange;
+}
+
+#sketches .main-headline {
+  color: orange;
+}
+
+#sketches .brand-name {
+  color: orange;
+}
+
+#sketches .navbar-brand {
+      text-shadow: 10px 0px 20px orange, 10px 0px 20px orange;
+}
+
+
+
+
+
+
+
 /***********************************************
   TEMPLATE CONTAINER
 ***********************************************/
@@ -128,7 +191,6 @@ h4 {
 /* Main Container */
 header {
   grid-area: header;
-  background-color: white;
   text-align: center;
   z-index: -3;
 }

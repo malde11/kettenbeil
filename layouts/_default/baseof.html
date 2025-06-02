@@ -5,7 +5,8 @@
     {{ partial "head.html" . }}
 </head>
 
-<body>
+{{ $id := or (replace (strings.TrimLeft "/" .Path) "/" "_") "home" }}
+<body id="{{ $id }}">
 
     {{ "<!-- CONTAINER START -->" | safeHTML }}
     <div class="container">
@@ -29,6 +30,7 @@
 
 
         {{ "<!-- MAIN START -->" | safeHTML }}
+            
             <main>
                 {{ block "main" . }}{{ end }}
             </main>
