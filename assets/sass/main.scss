@@ -208,6 +208,7 @@ footer {
 }
 
 .img-shadow {
+  display: grid;
   grid-template-columns: 1fr;
   grid-area: img-shadow;
   grid-template-areas:
