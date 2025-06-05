@@ -41,7 +41,7 @@
 
       <!-- PHOTOS -->
       <div class="main-content-3 card">
-          {{ $logicalPath := "/photos" }}
+          {{ $logicalPath := "/fotos" }}
             {{ with site.GetPage $logicalPath }}
           <a href="{{ .RelPermalink }}">
               <img class="card-headline logo-link" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
@@ -52,7 +52,7 @@
       </div>
 
       <div class="main-content-4 card">
-          {{ $logicalPath := "/photos" }}
+          {{ $logicalPath := "/fotos" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
               <p class="card-headline">View Photos</p>
