@@ -49,12 +49,12 @@ defaultContentLanguageInSubdir = true
         pageRef = '/logos'
         weight = 10
     [[languages.en.menus.main]]
-        name = 'Sketches'
-        pageRef = '/sketches'
-        weight = 20
-      [[languages.en.menus.main]]
         name = 'Photos'
         pageRef = '/fotos'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Sketches'
+        pageRef = '/sketches'
         weight = 30
         [[languages.en.menus.main]]
         name = 'Tutorials'

@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'Logos'
+title = 'Sketches'
 
 weight = 3
 [params]

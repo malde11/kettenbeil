@@ -1,4 +1,4 @@
 +++
-title = "Logos"
 draft = false
+title = 'Photos'
 +++
