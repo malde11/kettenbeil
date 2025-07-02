@@ -829,48 +829,38 @@ video {
     grid-column: 3 / 5;
   }
 
-  .galleryimage {
-    border: 1px solid red;
-  }
-
   #inexorablez {
     grid-column: 1 / 5;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
     background:var(--secondary);
     color: white;
+    margin: 0px 25px 5px 0px;
   }
 
   #kettenbeil {
     grid-column: 1 / 5;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
     color: white;
     background:var(--secondary);
+    margin: 0px 25px 5px 0px;
   }
 
   #superior-attack {
     grid-column: 1 / 5;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
     color: white;
     background:var(--secondary);
+    margin: 0px 0px 5px 0px;
+    width: 545px;
   }
 
 
 
   .galleryimage {
-    pointer-events:all;
     width: 32%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
-
-  .galleryimage:hover {
-    opacity: 1;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(0%);
   }
 
   #modal-image {
@@ -882,10 +872,6 @@ video {
   }
 
   #inexorablez {
-    font-size: 1.2em;
-  }
-
-  #kettenbeil {
     font-size: 1.2em;
   }
 
@@ -1011,19 +997,39 @@ video {
     padding: 150px;
   }
 
+  .galleryimage {
+    pointer-events: all ;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+  .galleryimage:hover {
+    opacity: 1;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+  }
+
   .img-shadow {
     grid-gap: 25px;
   }
 
    #inexorablez {
-    margin: 50px 10px -20px 0px;
+    margin: 50px 35px 5px 0px;
     padding: 25px 25px;
   }
 
   #kettenbeil {
-    margin: 50px 10px -20px 0px;
+    margin: 50px 35px 5px 0px;
     padding: 25px 25px;
   }
+
+  #superior-attack {
+    margin: 50px 390px 5px 0px;
+    padding: 25px 25px;
+    width: 660px;
+  }
+
 
   /* NAVBAR */
   .brand-logo {
@@ -1102,14 +1108,20 @@ video {
   }
 
   #inexorablez {
-    margin: 50px 13px -10px 0px;
+    margin: 50px 40px 15px 0px;
     font-size: 1em;
   }
 
  
   #kettenbeil {
-    margin: 50px 13px -10px 0px;
+    margin: 50px 40px 15px 0px;
     font-size: 1em;
+  }
+
+  #superior-attack {
+    margin: 50px 35px 15px 0px;
+    font-size: 1em;
+    width: 762px;
   }
 
 
@@ -1163,11 +1175,16 @@ video {
 @media (min-width: 1920px) {
 
   #inexorablez {
-    margin: 50px 20px -12px 0px;
+    margin: 50px 60px 35px 0px;
   }
 
   #kettenbeil {
-    margin: 50px 20px -12px 0px;
+    margin: 50px 60px 35px 0px;
+  }
+
+  #superior-attack {
+    width: 1069px;
+    margin: 50px 35px 35px 0px;
   }
 
   .gallery {
@@ -1192,11 +1209,16 @@ video {
   }
 
   #inexorablez {
-    margin: 50px 35px 62px 0px;
+    margin: 50px 85px 92px 0px;
   }
 
   #kettenbeil {
-    margin: 50px 35px 62px 0px;
+    margin: 50px 85px 92px 0px;
+  }
+
+  #superior-attack {
+    width: 1478px;
+    margin: 50px 35px 90px 0px;
   }
 
 
@@ -1257,15 +1279,20 @@ video {
   }
 
   #inexorablez {
-    margin: 50px 60px 8px 0px;
+    margin: 50px 135px 150px 0px;
     height: 60px;
     font-size: 3em;
   }
 
   #kettenbeil {
-    margin: 50px 60px 8px 0px;
+    margin: 50px 135px 150px 0px;
     height: 60px;
     font-size: 3em;
+  }
+
+  #superior-attack {
+    width: 2300px;
+    margin: 50px 35px 150px 0px;
   }
 
   .gallery {
