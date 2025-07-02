@@ -2,8 +2,6 @@
 draft = false
 title = 'Logos'
 
-
-weight = 3
 [params]
 [[params.gallery.inexorablez]]
 headline = "Inexorablez"
@@ -22,6 +20,7 @@ thumb = "/images/logos/inexorablez/inexorablez-03-thumb.webp"
 image = "/images/logos/inexorablez/inexorablez-03.webp"
 
 
+
 [[params.gallery.kettenbeil]]
 headline = "Kettenbeil"
 caption = "Kettenbeil Logo #1"
@@ -37,6 +36,19 @@ image = "/images/logos/kettenbeil/kettenbeil_logo_02.webp"
 caption = "Kettenbeil Logo #3"
 thumb = "/images/logos/kettenbeil/kettenbeil_logo_03_thumb.webp"
 image = "/images/logos/kettenbeil/kettenbeil_logo_03.webp"
+
+
+
+[[params.gallery.superior-attack]]
+headline = "Superior-Attack"
+caption = "Superior-Attack #1"
+thumb = "/images/logos/superior-attack/superior-attack-01-thumb.webp"
+image = "/images/logos/superior-attack/superior-attack-01.webp"
+
+[[params.gallery.superior-attack]]
+caption = "Superior-Attack #2"
+thumb = "/images/logos/superior-attack/superior-attack-02-thumb.webp"
+image = "/images/logos/superior-attack/superior-attack-02.webp"
 +++
 
 ## Inexorablez
@@ -46,5 +58,9 @@ image = "/images/logos/kettenbeil/kettenbeil_logo_03.webp"
 ## Kettenbeil
 
 {{< gallery kettenbeil >}}
+
+## Superior-Attack
+
+{{< gallery superior-attack >}}
 
 {{< modal >}}

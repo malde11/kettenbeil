@@ -16,17 +16,6 @@
   <div class="img-shadow">
 
       <!-- LOGOS -->
-      <div class="main-content card">
-          {{ $logicalPath := "/logos" }}
-            {{ with site.GetPage $logicalPath }}
-          <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">View Logos</p>
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
-
       <div class="main-content-2 card">
           {{ $logicalPath := "/logos" }}
             {{ with site.GetPage $logicalPath }}
@@ -38,13 +27,23 @@
             {{ end }}
       </div>
 
+      <div class="main-content card">
+          {{ $logicalPath := "/logos" }}
+            {{ with site.GetPage $logicalPath }}
+          <a class="home-link" href="{{ .RelPermalink }}">
+              <p class="card-headline">View Logos</p>
+          </a>
+          {{ else }}
+            {{ errorf "Unable to get page %s" $logicalPath }}
+            {{ end }}
+      </div>
 
       <!-- PHOTOS -->
       <div class="main-content-3 card">
           {{ $logicalPath := "/fotos" }}
             {{ with site.GetPage $logicalPath }}
           <a href="{{ .RelPermalink }}">
-              <img class="card-headline logo-link" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
+              <img class="card-headline logo-link foto-margin" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}

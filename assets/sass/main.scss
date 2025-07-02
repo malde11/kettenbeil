@@ -160,45 +160,24 @@ h4 {
   width: 100vw;
   margin: 0 auto;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "navbar"
-    "header"
-    "main"
-    "footer";
+  
 }
+
+
 
 /* Main Container */
-nav {
-  grid-area: navbar;
-}
-
 header {
-  grid-area: header;
   text-align: center;
   z-index: -3;
 }
 
 main {
-  display: grid;
-  grid-area: main;
   padding: 25px;
-  grid-template-areas:
-    "slug-wrapper"
-    "img-shadow";
-}
-
-#logos main {
-  display: grid;
-  grid-template-areas:
-    "inexorablez"
-    "galleryimage"
-    "kettenbeil";
 }
 
 
 footer {
   text-align: center;
-  grid-area: footer;
   background-color: cornflowerblue;
 }
 
@@ -209,16 +188,7 @@ footer {
 }
 
 .img-shadow {
-  display: grid;
-  grid-template-columns: 1fr;
   grid-area: img-shadow;
-  grid-template-areas:
-    "main-content-2"
-    "main-content"
-    "main-content-3"
-    "main-content-4"
-    "main-content-5"
-    "main-content-6";
 }
 
 .main-content {
@@ -245,6 +215,9 @@ footer {
   grid-area: main-content-6;
 }
 
+.foto-margin {
+  margin-bottom: -5px;
+}
 
 /* Logos - Template */
 #inexorablez {
@@ -259,9 +232,15 @@ footer {
   margin-top: 60px;
 }
 
+#superior-attack {
+  grid-area: superior-attack;
+  text-align: center;
+  margin-top: 60px;
+}
+
 .galleryimage {
-  pointer-events: none;
   grid-area: galleryimage;
+  pointer-events: none;
   width: 100%;
   margin-bottom: 30px;
   align-items: center;
@@ -458,12 +437,10 @@ nav {
   color: white;
 }
 
-/*.gallery {
-    display: flex;
-    flex-direction: row;
-    overflow-y: auto;
-    gap: 0.5rem;
-}*/
+#superior-attack {
+  background-color: var(--secondary);
+  color: white;
+}
 
 #modal-container {
     position: fixed;
@@ -728,25 +705,23 @@ video {
   }
 
   /* TEMPLATE CONTAINER */
-
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "navbar navbar"
-      "header header"
-      "main main"
-      "footer footer";
-  }
-
   main {
+    display: grid;
     grid-gap: 25px;
     grid-template-areas:
-    "slug-wrapper slug-wrapper"
-    "img-shadow img-shadow";
+    "slug-wrapper"
+    "img-shadow";
+  }
+
+  #logos main {
+    display: inline;
+    grid-template-areas: none;
+    padding: 25px 90px;
   }
 
   .img-shadow {
     display: grid;
+    grid-gap: 25px;
     grid-template-areas:
     "main-content main-content-2"
     "main-content-3 main-content-4"
@@ -759,37 +734,19 @@ video {
     margin-bottom: 0;
   }
 
-  #logos main {
-    display: grid;
-    grid-template-areas:
-      "inexorablez inexorablez"
-      "gallery gallery"
-      "kettenbeil gallery";
-  }
-
-  .gallery {
-    grid-template-areas:
-      "galleryimage";
-  }
-
   #inexorablez {
-    text-align: center;
-    font-size: 3em;
-    background:var(--secondary);
-    color: white;
-    margin-bottom: -25px;
-    padding: 25px 0;
+    font-size: 3.5em;
   }
 
   #kettenbeil {
-    text-align: center;
-    font-size: 3em;
-    color: white;
-    background:var(--secondary);
-    margin-bottom: -25px;
-    padding: 25px 0;
+    font-size: 3.5em;
   }
 
+  #superior-attack {
+    font-size: 3.5em;
+  }
+
+  /* IMAGES */
   .card {
     background-color: var(--secondary);
     color: #fff;
@@ -862,35 +819,45 @@ video {
   }
 
   /* TEMPLATE CONTAINER */
-  .container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "navbar navbar navbar navbar"
-      "header header header header"
-      "main main main main"
-      "footer footer footer footer";
-  }
-
-  main {
-    grid-template-areas:
-      "slug-wrapper slug-wrapper slug-wrapper slug-wrapper"
-      "img-shadow img-shadow img-shadow img-shadow";
-  }
-
-  .img-shadow {
+  #logos .container {
     display: grid;
-    grid-template-areas:
-      "main-content main-content main-content-2 main-content-2"
-      "main-content-3 main-content-3 main-content-4 main-content-4"
-      "main-content-6 main-content-6 main-content-5 main-content-5";
+    grid-column: 1 / 4;
+
   }
 
-  #logos main {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "inexorablez kettenbeil"
-      "gallerimage galleryimage";
+  .gallery {
+    grid-column: 3 / 5;
   }
+
+  .galleryimage {
+    border: 1px solid red;
+  }
+
+  #inexorablez {
+    grid-column: 1 / 5;
+    text-align: center;
+    font-size: 1.2em;
+    background:var(--secondary);
+    color: white;
+  }
+
+  #kettenbeil {
+    grid-column: 1 / 5;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    background:var(--secondary);
+  }
+
+  #superior-attack {
+    grid-column: 1 / 5;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    background:var(--secondary);
+  }
+
+
 
   .galleryimage {
     pointer-events:all;
@@ -915,19 +882,11 @@ video {
   }
 
   #inexorablez {
-    text-align: left;
-    padding: 20px 0px 15px 20px;
-    margin: 80px 9px -42px 0px;
     font-size: 1.2em;
-    height: 20px;
   }
 
   #kettenbeil {
-    text-align: left;
-    padding: 20px 0px 15px 20px;
-    margin: 80px 9px -42px 0px;
     font-size: 1.2em;
-    height: 20px;
   }
 
   /* NAVBAR */
@@ -1143,12 +1102,14 @@ video {
   }
 
   #inexorablez {
-    margin: 50px 13px -15px 0px;
+    margin: 50px 13px -10px 0px;
+    font-size: 1em;
   }
 
  
   #kettenbeil {
-    margin: 50px 13px -15px 0px;
+    margin: 50px 13px -10px 0px;
+    font-size: 1em;
   }
 
 
