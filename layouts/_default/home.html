@@ -10,7 +10,9 @@
 {{ define "main" }}
   
   <div class="slug-wrapper">
-      <h2 class="slug"><b>Some</b><i> of my</i> work</h2>
+
+    <h1 class="slug">Ausgewählte Arbeiten<b> von mir</b></h1> 
+  
   </div>
 
   <div class="img-shadow">
@@ -31,7 +33,7 @@
           {{ $logicalPath := "/logos" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">View Logos</p>
+              <p class="card-headline">Siehe Logos</p>
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}
@@ -54,7 +56,7 @@
           {{ $logicalPath := "/fotos" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">View Photos</p>
+              <p class="card-headline">Siehe Fotos</p>
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}
@@ -79,7 +81,7 @@
           {{ $logicalPath := "/sketches" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">View Sketches</p>
+              <p class="card-headline">Siehe Sketches</p>
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}
