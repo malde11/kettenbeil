@@ -1,4 +1,5 @@
 +++
-title = "Contact"
 draft = false
+title = "Contact"
+url = 'contact'
 +++

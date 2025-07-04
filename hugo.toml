@@ -25,13 +25,30 @@ defaultContentLanguageInSubdir = true
         pageRef = '/sketches'
         weight = 30
         [[languages.de.menus.main]]
-        name = 'Tutorials'
-        pageRef = '/tutorials'
-        weight = 40
-        [[languages.de.menus.main]]
         name = 'Kontakt'
         pageRef = '/kontakt'
-        weight = 50
+        weight = 40
+
+
+
+
+        [[languages.de.menus.footer]]
+        name = 'github'
+        url = 'https://github.com'
+        weight = 10
+      [[languages.de.menus.footer]]
+        name = 'Stackoverflow'
+        url = 'https://stackoverflow.com'
+        weight = 20
+      [[languages.de.menus.footer]]
+        name = 'youtube'
+        url = 'https://youtube.com'
+        weight = 30
+      [[languages.de.menus.footer]]
+        name = 'FreeCodeCamp'
+        url = 'https://freecodecamp.com'
+        weight = 40
+
 
 
 
@@ -48,7 +65,7 @@ defaultContentLanguageInSubdir = true
         name = 'Logos'
         pageRef = '/logos'
         weight = 10
-    [[languages.en.menus.main]]
+      [[languages.en.menus.main]]
         name = 'Photos'
         pageRef = '/fotos'
         weight = 20
@@ -56,11 +73,27 @@ defaultContentLanguageInSubdir = true
         name = 'Sketches'
         pageRef = '/sketches'
         weight = 30
-        [[languages.en.menus.main]]
-        name = 'Tutorials'
-        pageRef = '/tutorials'
-        weight = 40
-        [[languages.en.menus.main]]
+      [[languages.en.menus.main]]
         name = 'Contact'
         pageRef = '/kontakt'
-        weight = 50
+        weight = 40
+
+
+
+
+    [[languages.en.menus.footer]]
+        name = 'github'
+        url = 'https://github.com'
+        weight = 10
+      [[languages.en.menus.footer]]
+        name = 'Stackoverflow'
+        url = 'https://stackoverflow.com'
+        weight = 20
+      [[languages.en.menus.footer]]
+        name = 'youtube'
+        url = 'https://youtube.com'
+        weight = 30
+      [[languages.en.menus.footer]]
+        name = 'FreeCodeCamp'
+        url = 'https://freecodecamp.com'
+        weight = 40
