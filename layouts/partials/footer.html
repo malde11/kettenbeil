@@ -1,3 +1,44 @@
 <footer>
-  <h1>Ich bin ein footer</h1>
+
+<div class="footer-logo">
+  <img alt="Kettenbeil Logo" src="/images/kettenbeil-logos/kettenbeil-Logo-footer.webp">
+</div>
+
+<div class="sitemap">
+  <h3 class="footer-headline">Sitemap</h3>
+  <ul>
+    {{ range site.Menus.main }}
+    <li class="footer-link">
+      <a href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+
+<div class="social-media">
+  <h3 class="footer-headline">Social Media</h3>
+  <ul>
+
+    {{ range site.Menus.footer }}
+    <li class="footer-link">
+      <a href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    </li>
+    {{ end }}
+
+  </ul>
+</div>
+
+<div class="copyright">
+  <p class="copyright-text">
+    Copyright {{ now.Year }}. Alle Rechte vorbehalten.
+    <span class="copy-imprint">
+      <a href="imprint">Impressum</a>
+    </span>
+  </p>
+</div>
+
 </footer>
