@@ -32,7 +32,7 @@
       <li class="nav-item language-pipe">|</li>
       <li class="nav-item">
         <a class="nav-link" href="{{ .Permalink }}">
-        {{ .Language.LanguageName }}
+        {{ partial "menu-arrow.html" . }} {{ .Language.LanguageName }}
         </a>
       </li>
     {{ end }}
