@@ -150,6 +150,36 @@ h4 {
 
 
 
+/* Photos */
+#fotos header {
+  background: #151515;
+}
+
+#fotos main {
+  background: #151515;
+  background: linear-gradient(346deg, rgba(21, 21, 21, 0.95) 12%, purple 40%, #151515 62%);  
+}
+
+#fotos .nav-item {
+  text-shadow: 10px 0px 20px purple, 10px 0px 20px purple;
+}
+
+#fotos .main-headline {
+  color: purple;
+}
+
+#fotos .brand-name {
+  color: purple;
+}
+
+#fotos .navbar-brand {
+      text-shadow: 10px 0px 20px purple, 10px 0px 20px purple;
+}
+
+
+
+
+
 
 /***********************************************
   TEMPLATE CONTAINER
@@ -1009,10 +1039,23 @@ video {
   }
 
   #sketches .nav-link:hover::after {
-  content: "]";
-  display: inline;
-  color: orange;
+    content: "]";
+    display: inline;
+    color: orange;
   }
+
+  #fotos .nav-link:hover::before {
+    content: "[";
+    display: inline;
+    color: purple;
+  }
+
+  #fotos .nav-link:hover::after {
+    content: "]";
+    display: inline;
+    color: purple;
+  }
+
   .active {
     border-bottom: 2px solid var(--primary);
   }
@@ -1023,6 +1066,10 @@ video {
 
   #sketches .active {
     border-bottom: 2px solid orange;
+  }
+
+  #fotos .active {
+    border-bottom: 2px solid purple;
   }
 
   .language-pipe {

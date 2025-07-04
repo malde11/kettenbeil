@@ -1,5 +1,5 @@
 +++
 draft = false
-title = 'Fotos'
+title = 'Photos'
 url = 'photos'
 +++
