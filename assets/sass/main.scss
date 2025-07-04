@@ -238,6 +238,18 @@ footer {
   margin-top: 60px;
 }
 
+#christian-s {
+  grid-area: christan-s;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#fh-flensburg {
+  grid-area: fh-flensburg;
+  text-align: center;
+  margin-top: 60px;
+}
+
 .galleryimage {
   grid-area: galleryimage;
   pointer-events: none;
@@ -438,6 +450,16 @@ nav {
 }
 
 #superior-attack {
+  background-color: var(--secondary);
+  color: white;
+}
+
+#christian-s {
+  background-color: var(--secondary);
+  color: white;
+}
+
+#fh-flensburg {
   background-color: var(--secondary);
   color: white;
 }
@@ -746,6 +768,14 @@ video {
     font-size: 3.5em;
   }
 
+   #christian-s {
+    font-size: 3.5em;
+  }
+
+   #fh-flensburg {
+    font-size: 3.5em;
+  }
+
   /* IMAGES */
   .card {
     background-color: var(--secondary);
@@ -836,6 +866,7 @@ video {
     background:var(--secondary);
     color: white;
     margin: 0px 25px 5px 0px;
+    padding-left: 20px;
   }
 
   #kettenbeil {
@@ -845,6 +876,7 @@ video {
     color: white;
     background:var(--secondary);
     margin: 0px 25px 5px 0px;
+    padding-left: 20px;
   }
 
   #superior-attack {
@@ -854,7 +886,30 @@ video {
     color: white;
     background:var(--secondary);
     margin: 0px 0px 5px 0px;
-    width: 545px;
+    width: 525px;
+    padding-left: 20px;
+  }
+
+  #christian-s {
+    grid-column: 1 / 5;
+    text-align: left;
+    font-size: 1.2em;
+    color: white;
+    background:var(--secondary);
+    margin: 0px 0px 5px 0px;
+    width: 250px;
+    padding-left: 20px;
+  }
+
+  #fh-flensburg {
+    grid-column: 1 / 5;
+    text-align: left;
+    font-size: 1.2em;
+    color: white;
+    background:var(--secondary);
+    margin: 0px 0px 5px 0px;
+    width: 250px;
+    padding-left: 20px;
   }
 
 
@@ -1030,6 +1085,18 @@ video {
     width: 660px;
   }
 
+  #christian-s {
+    margin: 50px 390px 5px 0px;
+    padding: 25px 25px;
+    width: 301px;
+  }
+
+  #fh-flensburg {
+    margin: 50px 390px 5px 0px;
+    padding: 25px 25px;
+    width: 301px;
+  }
+
 
   /* NAVBAR */
   .brand-logo {
@@ -1124,6 +1191,18 @@ video {
     width: 762px;
   }
 
+  #christian-s {
+    margin: 50px 35px 15px 0px;
+    font-size: 1em;
+    width: 354px;
+  }
+
+  #fh-flensburg {
+    margin: 50px 35px 15px 0px;
+    font-size: 1em;
+    width: 354px;
+  }
+
 
 
   /* NAVBAR */
@@ -1187,6 +1266,16 @@ video {
     margin: 50px 35px 35px 0px;
   }
 
+  #christian-s {
+    width: 508px;
+    margin: 50px 35px 35px 0px;
+  }
+
+  #fh-flensburg {
+    width: 508px;
+    margin: 50px 35px 35px 0px;
+  }
+
   .gallery {
     margin-top: -30px;
   }
@@ -1218,6 +1307,16 @@ video {
 
   #superior-attack {
     width: 1478px;
+    margin: 50px 35px 90px 0px;
+  }
+
+   #christian-s {
+    width: 712px;
+    margin: 50px 35px 90px 0px;
+  }
+
+   #fh-flensburg {
+    width: 712px;
     margin: 50px 35px 90px 0px;
   }
 
@@ -1292,6 +1391,16 @@ video {
 
   #superior-attack {
     width: 2300px;
+    margin: 50px 35px 150px 0px;
+  }
+
+  #christian-s {
+    width: 1120px;
+    margin: 50px 35px 150px 0px;
+  }
+
+  #fh-flensburg {
+    width: 1120px;
     margin: 50px 35px 150px 0px;
   }
 

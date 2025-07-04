@@ -49,18 +49,42 @@ image = "/images/logos/superior-attack/superior-attack-01.webp"
 caption = "Superior-Attack #2"
 thumb = "/images/logos/superior-attack/superior-attack-02-thumb.webp"
 image = "/images/logos/superior-attack/superior-attack-02.webp"
+
+
+
+[[params.gallery.christian-s]]
+headline = "Christian S."
+caption = "Christian S."
+thumb = "/images/logos/cs/cs_logo_thumb.webp"
+image = "/images/logos/cs/cs_logo.webp"
+
+
+
+[[params.gallery.fh-flensburg]]
+headline = "FH-Flensburg"
+caption = "FH-Flensburg - Game-Design"
+thumb = "/images/logos/flensburg/fh-flensburg-thumb.webp"
+image = "/images/logos/flensburg/fh-flensburg.webp"
 +++
 
-## Inexorablez
 
+## Inexorablez
 {{< gallery inexorablez >}}
 
-## Kettenbeil
 
+## Kettenbeil
 {{< gallery kettenbeil >}}
 
-## Superior-Attack
 
+## Superior-Attack
 {{< gallery superior-attack >}}
+
+
+## Christian-S
+{{< gallery christian-s >}}
+
+
+## FH-Flensburg
+{{< gallery fh-flensburg >}}
 
 {{< modal >}}
