@@ -25,5 +25,17 @@
       </a>
     </li>
     {{ end }}
+
+    <hr class="nav-divider">
+
+    {{ range .AllTranslations }}
+      <li class="nav-item language-pipe">|</li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ .Permalink }}">
+        {{ .Language.LanguageName }}
+        </a>
+      </li>
+    {{ end }}
+
   </ul>
 </nav>

@@ -350,11 +350,11 @@ nav {
 .topnav.responsive a {
   display: block;
   float: none;
-  padding: 16px 0px;
+  padding: 8px 0px;
 }
 
 .responsive {
-  margin-top: 24px;
+  margin-top: 0px;
   padding: 0 0 10px 20px;
   background-color: #161616;
 }
@@ -430,8 +430,18 @@ nav {
   color: var(--primary);
 }
 
+.language-pipe {
+  display: none;
+}
 
+hr {
+  display: none;
+}
 
+.topnav.responsive hr {
+    margin-left: -20px;
+    display: block;
+  }
 
 
 
@@ -1013,6 +1023,15 @@ video {
 
   #sketches .active {
     border-bottom: 2px solid orange;
+  }
+
+  .language-pipe {
+    display: inline;
+  }
+
+  .nav-divider {
+    display: none;
+    margin-left: -10px;
   }
 
   /* IMAGES */
