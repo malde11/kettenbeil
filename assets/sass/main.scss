@@ -215,7 +215,7 @@ footer {
 /* Home Site */
 .slug-wrapper {
   grid-area: slug-wrapper;
-  margin-bottom: 25px;
+  margin: 40px;
 }
 
 .img-shadow {
@@ -746,6 +746,7 @@ video {
 
 .send-button {
   padding: 20px;
+  margin-left: 35px;
   color: var(--primary);
   background-color: white;
   border-radius: 5px;
@@ -910,7 +911,7 @@ video {
   }
 
   #contact-form {
-    padding-left: 110px;
+    padding-left: 170px;
   }
 
   .input-form {
@@ -1333,7 +1334,11 @@ video {
 
   .input-form {
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+  }
+
+  .clear-button {
+    margin-left: 35px;
   }
 
 
@@ -1442,6 +1447,15 @@ video {
     width: 354px;
   }
 
+  .clear-button {
+    margin-left: 35px;
+    padding: 20px 50px;
+  }
+
+  .send-button {
+    padding: 20px 50px;
+  }
+
 
 
   /* NAVBAR */
@@ -1517,6 +1531,15 @@ video {
 
   .gallery {
     margin-top: -30px;
+  }
+
+  .clear-button {
+    padding: 50px 90px;
+  }
+
+  .send-button {
+    padding: 50px 90px;
+    margin-right: 55px;
   }
 
 }
