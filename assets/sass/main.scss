@@ -501,7 +501,7 @@ footer {
 }
 
 .copyright {
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 
 .copyright-text {
@@ -513,6 +513,7 @@ footer {
 }
 
 .footer-link {
+  margin-top: 15px;
   color: rgb(130, 130, 130);
 }
 
@@ -948,6 +949,30 @@ video {
     display: grid;
     grid-column: 1 / 4;
 
+  }
+
+  footer {
+    display: grid;
+  }
+
+  .footer-logo {
+    grid-column: 1 / 2;
+  }
+
+  .sitemap {
+    align-content: center;
+    grid-column: 2 / 3;
+    padding-top: 65px;
+  }
+
+  .social-media {
+    align-content: center;
+    grid-column: 3 / 4;
+    padding-top: 65px;
+  }
+
+  .copyright {
+    grid-column: 1 / 5;
   }
 
   .gallery {
