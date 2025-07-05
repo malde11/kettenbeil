@@ -1,5 +1,7 @@
 +++
 draft = false
-title = "Contact"
+title = 'Contact'
 url = 'contact'
 +++
+
+{{< content de >}}

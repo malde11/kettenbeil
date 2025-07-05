@@ -1,4 +1,8 @@
 +++
 draft = false
-title = "Logos"
+title = 'Logos'
+url = 'logos'
 +++
+
+
+{{< content de >}}
