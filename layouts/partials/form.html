@@ -1,0 +1,33 @@
+<!-- fabform -->
+<div class="form-container">
+      <form id="contact-form" action="https://fabform.io/f/insert-later" method="post">
+
+          <label class="label-form" for="name">Vorname:</label>
+          <input class="input-form" id="name" name="name" type="text" placeholder="Vorname *" required>
+
+          <label class="label-form" for="lastname">Nachname:</label>
+          <input class="input-form" id="lastname" name="lastname" type="text" placeholder="Nachname *" required>
+
+          <label class="label-form" for="email">E-Mail-Adresse:</label>
+          <input class="input-form" id="email" name="email" type="email" placeholder="E-Mail-Adresse *" required>
+
+          <label class="label-form" for="phone">Telefonnummer:</label>
+          <input class="input-form" id="phone" name="phone" type="text" placeholder="Telefonnummer">
+
+          <label class="label-form" for="reason">Grund:</label>
+          <select class="input-form" id="reason" name="reason" required>
+            <option value="" disabled selected>Dein Grund</option>
+            <option value="gd">Grafik - Design</option>
+            <option value="wd">Web - Design</option>
+            <option value="is">Praktikum</option>
+            <option value="ot">Anderer</option>
+          </select>
+
+          <label class="label-form" for="message">Nachricht:</label>
+          <textarea class="input-form" id="message" name="message" placeholder="Deine Nachricht..." rows="6" required></textarea>
+        
+          <button class="send-button" type="button">Senden</button>
+          <button class="clear-button" type="reset">Löschen</button>
+      </form>
+</div>
+<!-- fabform end -->

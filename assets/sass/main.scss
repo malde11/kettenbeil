@@ -215,6 +215,7 @@ footer {
 /* Home Site */
 .slug-wrapper {
   grid-area: slug-wrapper;
+  margin-bottom: 25px;
 }
 
 .img-shadow {
@@ -658,7 +659,7 @@ footer {
   Home (Background)
 *******************************************************/
 #video-wrapper {
-  background: url(/images/backgrounds/background.webp);
+  background: url(/images/backgrounds/backgrounds.webp);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -706,6 +707,57 @@ video {
 
 
 
+
+
+/*******************************************************
+  Home Form
+*******************************************************/
+
+.contact-section {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin: 70px 0 50px 0;
+}
+
+#contact-form {
+  background-color: white;
+  padding-left: 30px;
+}
+
+.label-form {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.input-form {
+  margin-bottom: 20px;
+  display: block;
+  border: none;
+  width: 250px;
+  border-bottom: 1px solid var(--primary);
+}
+
+.input-form:focus {
+  outline: none;
+  border-bottom: 1px solid var(--primary);
+}
+
+.send-button {
+  padding: 20px;
+  color: var(--primary);
+  background-color: white;
+  border-radius: 5px;
+  border-color: var(--secondary);
+}
+
+.clear-button {
+  padding: 20px;
+  color: var(--primary);
+  background-color: white;
+  border-radius: 5px;
+  border-color: var(--secondary);
+}
 
 
 
@@ -852,6 +904,18 @@ video {
     margin-bottom: 0;
   }
 
+  .form-container {
+    display: grid;
+  }
+
+  #contact-form {
+    padding-left: 110px;
+  }
+
+  .input-form {
+    width: 80%;
+  }
+
   #inexorablez {
     font-size: 3.5em;
   }
@@ -955,6 +1019,18 @@ video {
     display: grid;
   }
 
+  .form-container {
+    padding: 50px;
+  }
+
+  .send-button:hover {
+    color: green;
+  }
+
+  .clear-button:hover {
+    color: red;
+  }
+
   .footer-logo {
     grid-column: 1 / 2;
   }
@@ -1032,6 +1108,13 @@ video {
     padding-left: 20px;
   }
 
+  .slug-wrapper {
+    margin: 70px 0;
+  }
+
+  .contact-section {
+    margin: 100px 0 50px 0;
+  }
 
 
   .galleryimage {
@@ -1241,6 +1324,15 @@ video {
     margin: 50px 390px 5px 0px;
     padding: 25px 25px;
     width: 301px;
+  }
+
+  .slug-wrapper {
+    margin-bottom: 65px;
+  }
+
+  .input-form {
+    font-size: 1.5em;
+    margin-bottom: 40px;
   }
 
 

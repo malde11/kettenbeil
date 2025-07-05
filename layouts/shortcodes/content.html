@@ -7,13 +7,11 @@ Renders the content of the current page's translation in the specified language.
 
 @example {{< content de >}}
 */}}
-
-
 {{ with $sourceLanguage := .Get 0 }}
   {{ if eq $.Page.Language.Lang $sourceLanguage }}
     {{ errorf "The positional parameter passed to the %q shortcode must not be the language key of the current site. See %s" $.Name $.Position }}
   {{ else }}
-    {{ with index (where $.Page.Translations "Language.Lang" "de") 0 }}
+    {{ with index (where $.Page.Translations "Language.Lang" $sourceLanguage) 0 }}
       {{ .Content }}
     {{ else }}
       {{ errorf "The %q shortcode was unable to find a %q translation of the %q page. See %s" $.Name $sourceLanguage $.Page.Path $.Position }}
