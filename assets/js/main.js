@@ -25,6 +25,20 @@ addEventListener("DOMContentLoaded", () => {
   });
 
 
+
+  // Scroll to top button
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  const rootElement = document.documentElement;
+  scrollToTopBtn.addEventListener("click", () => {
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  
+
+
   // Image lightbox/Gallery
     const modal_container = document.getElementById("modal-container");
 
