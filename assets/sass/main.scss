@@ -347,7 +347,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  /*width: 100vw;*/
+  width: 100vw;
   background-color: var(--secondary);
   z-index: 1;
 }
@@ -738,7 +738,7 @@ video {
   margin-bottom: 55px;
   display: block;
   border: none;
-  width: 270px;
+  width: 300px;
   border-bottom: 1px solid var(--primary);
 }
 
