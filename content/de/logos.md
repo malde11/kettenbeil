@@ -54,7 +54,7 @@ image = "/images/logos/superior-attack/superior-attack-02.webp"
 
 [[params.gallery.christian-s]]
 headline = "Christian S."
-caption = "Christian S. - Logo"
+caption = "Christian S. - Logos"
 thumb = "/images/logos/cs/cs_logo_thumb.webp"
 image = "/images/logos/cs/cs_logo.webp"
 
