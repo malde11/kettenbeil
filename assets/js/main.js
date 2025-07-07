@@ -81,88 +81,13 @@ addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    const closebutton = document.getElementById("modal-close")
-    closebutton.addEventListener("click", closeModal)
-    // other code you may want after
+    const closebutton = document.getElementById("modal-close");
+    closebutton.addEventListener("click", closeModal);
     
+    const clickOutsideModal = document.getElementById("modal-container");
+    clickOutsideModal.addEventListener("click", (e) => {
+        if (e.target === clickOutsideModal) {
+            closeModal();
+        }
+    })
 });
-
-
-
-
-
-
-
-
-
-/*
-  function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-
-  // Close the Modal
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-
-  const galleryimages = document.getElementsByClassName("galleryimage")
-  for (let i=0; i<galleryimages.length; i++) {
-      galleryimages[i].addEventListener("click", (e) => {
-          openModal()
-          currentSlide(parseInt(e.target.dataset.id))
-      })
-  }
-
-  const miniimages = document.getElementsByClassName("demo")
-  for (let i=0; i<miniimages.length; i++) {
-      miniimages[i].addEventListener("click", (e) => {
-          currentSlide(parseInt(e.target.dataset.id))
-      })
-  }
-
-  const closebutton = document.getElementsByClassName("close")
-  closebutton[0].addEventListener("click", (e) => {
-      closeModal()
-  })
-
-  const previousbutton = document.getElementsByClassName("prev")
-  previousbutton[0].addEventListener("click", (e) => {
-      plusSlides(-1)
-  })
-
-  const nextbutton = document.getElementsByClassName("next")
-  nextbutton[0].addEventListener("click", (e) => {
-      plusSlides(1)
-  })
-*/

@@ -537,7 +537,6 @@ footer {
 }
 
 
-
 /***********************************************
   IMAGE - GALLERY
 ***********************************************/
@@ -1058,6 +1057,11 @@ video {
     grid-column: 1 / 5;
   }
 
+  #scrollToTopBtn {
+  padding-top: 65px;
+  grid-column: 4 / 5;
+}
+
   .gallery {
     grid-column: 3 / 5;
   }
@@ -1394,6 +1398,11 @@ video {
     background: #151515;
     background: linear-gradient(346deg, rgba(21, 21, 21, 0.95) 12%, rgba(255, 165, 0, 1) 40%, rgba(21, 21, 21, 1) 62%);
   }
+
+  #modal-filmstrip {
+    width: 60%;
+    margin: 0;
+  }
 }
 
 
@@ -1501,6 +1510,11 @@ video {
 
   .logo-headline {
     margin-top: 0px;
+  }
+
+  .close-gallery {
+    width: 80px;
+    height: 80px;
   }
 
 }
@@ -1702,4 +1716,8 @@ video {
   .nav-link:hover::after {
     right: 10px;
   }
+
+  .galleryimage {
+    margin-left: 30px;
+}
 }
