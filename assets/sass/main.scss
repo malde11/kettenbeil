@@ -208,7 +208,6 @@ main {
 
 footer {
   text-align: center;
-  background-color: cornflowerblue;
 }
 
 
@@ -502,7 +501,7 @@ footer {
 }
 
 .copyright {
-  padding-bottom: 15px;
+  padding: 60px 0 50px 0;
 }
 
 .copyright-text {
@@ -514,6 +513,7 @@ footer {
 }
 
 .footer-link {
+  font-family: 'Smooch Sans';
   margin-top: 15px;
   color: rgb(130, 130, 130);
 }
@@ -532,8 +532,11 @@ footer {
 }
 
 .scroll-to-name {
+  font-family: 'Smooch Sans';
   color: white;
   margin-bottom: 60px;
+  display: inline;
+  cursor: pointer;
 }
 
 
@@ -1057,9 +1060,18 @@ video {
   }
 
   #scrollToTopBtn {
-  padding-top: 65px;
-  grid-column: 4 / 5;
-}
+    padding-top: 65px;
+    grid-column: 4 / 5;
+  }
+
+  .scrool-to-arrow {
+    cursor: pointer;
+    display: inline;
+  }
+
+  .scrool-to-name {
+    cursor: pointer;
+  }
 
   .gallery {
     grid-column: 3 / 5;
