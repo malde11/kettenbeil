@@ -934,6 +934,14 @@ video {
     padding: 25px 90px;
   }
 
+  #fotos .gallery {
+    display: contents;
+  }
+
+  #fotos main {
+    display: inline;
+  }
+
   .img-shadow {
     display: grid;
     grid-gap: 25px;
