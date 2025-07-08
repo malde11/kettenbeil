@@ -176,6 +176,22 @@ h4 {
       text-shadow: 10px 0px 20px purple, 10px 0px 20px purple;
 }
 
+#fotos .galleryimage {
+ margin-bottom: 0;
+}
+
+#sydney {
+  display: none;
+}
+
+#australia {
+  display: none;
+}
+
+#new-zealand {
+  display: none;
+}
+
 
 
 
@@ -829,7 +845,28 @@ video {
 }
 
 
+/*
 
+.slide {
+  color: white;
+  z-index: 0;
+  animation-duration: 3s;
+  animation-name: slide;
+}
+
+@keyframes slide {
+  from {
+    translate: 0 150vh;
+    scale: 1 200%;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 1 100%;
+  }
+}
+
+*/
 
 
 
@@ -1025,6 +1062,7 @@ video {
 
   footer {
     display: grid;
+    z-index: 1;
   }
 
   .form-container {
