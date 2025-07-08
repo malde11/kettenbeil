@@ -1131,6 +1131,7 @@ video {
   }
 
   #inexorablez {
+    width: 472px;
     grid-column: 1 / 5;
     text-align: left;
     font-size: 1.2em;
@@ -1141,6 +1142,7 @@ video {
   }
 
   #kettenbeil {
+    width: 472px;
     grid-column: 1 / 5;
     text-align: left;
     font-size: 1.2em;
@@ -1157,7 +1159,7 @@ video {
     color: white;
     background:var(--secondary);
     margin: 0px 0px 5px 0px;
-    width: 525px;
+    width: 306px;
     padding-left: 20px;
   }
 
@@ -1168,7 +1170,7 @@ video {
     color: white;
     background:var(--secondary);
     margin: 0px 0px 5px 0px;
-    width: 250px;
+    width: 142px;
     padding-left: 20px;
   }
 
@@ -1179,7 +1181,7 @@ video {
     color: white;
     background:var(--secondary);
     margin: 0px 0px 5px 0px;
-    width: 250px;
+    width: 142px;
     padding-left: 20px;
   }
 
@@ -1390,11 +1392,13 @@ video {
   }
 
    #inexorablez {
+    width: 588px;
     margin: 50px 35px 5px 0px;
     padding: 25px 25px;
   }
 
   #kettenbeil {
+    width: 588px;
     margin: 50px 35px 5px 0px;
     padding: 25px 25px;
   }
@@ -1402,19 +1406,19 @@ video {
   #superior-attack {
     margin: 50px 390px 5px 0px;
     padding: 25px 25px;
-    width: 660px;
+    width: 374px;
   }
 
   #christian-s {
     margin: 50px 390px 5px 0px;
     padding: 25px 25px;
-    width: 301px;
+    width: 160px;
   }
 
   #fh-flensburg {
     margin: 50px 390px 5px 0px;
     padding: 25px 25px;
-    width: 301px;
+    width: 160px;
   }
 
   .slug-wrapper {
@@ -1516,12 +1520,14 @@ video {
   }
 
   #inexorablez {
+    width: 680px;
     margin: 50px 40px 15px 0px;
     font-size: 1em;
   }
 
  
   #kettenbeil {
+    width: 680px;
     margin: 50px 40px 15px 0px;
     font-size: 1em;
   }
@@ -1529,19 +1535,19 @@ video {
   #superior-attack {
     margin: 50px 35px 15px 0px;
     font-size: 1em;
-    width: 762px;
+    width: 435px;
   }
 
   #christian-s {
     margin: 50px 35px 15px 0px;
     font-size: 1em;
-    width: 354px;
+    width: 190px;
   }
 
   #fh-flensburg {
     margin: 50px 35px 15px 0px;
     font-size: 1em;
-    width: 354px;
+    width: 190px;
   }
 
   .clear-button {
@@ -1608,25 +1614,27 @@ video {
 @media (min-width: 1920px) {
 
   #inexorablez {
+    width: 950px;
     margin: 50px 60px 35px 0px;
   }
 
   #kettenbeil {
+    width: 950px;
     margin: 50px 60px 35px 0px;
   }
 
   #superior-attack {
-    width: 1069px;
+    width: 620px;
     margin: 50px 35px 35px 0px;
   }
 
   #christian-s {
-    width: 508px;
+    width: 284px;
     margin: 50px 35px 35px 0px;
   }
 
   #fh-flensburg {
-    width: 508px;
+    width: 284px;
     margin: 50px 35px 35px 0px;
   }
 
@@ -1665,25 +1673,27 @@ video {
   }
 
   #inexorablez {
+    width: 1315px;
     margin: 50px 85px 92px 0px;
   }
 
   #kettenbeil {
+    width: 1315px;
     margin: 50px 85px 92px 0px;
   }
 
   #superior-attack {
-    width: 1478px;
+    width: 855px;
     margin: 50px 35px 90px 0px;
   }
 
    #christian-s {
-    width: 712px;
+    width: 402px;
     margin: 50px 35px 90px 0px;
   }
 
    #fh-flensburg {
-    width: 712px;
+    width: 402px;
     margin: 50px 35px 90px 0px;
   }
 
@@ -1777,30 +1787,35 @@ video {
   }
 
   #inexorablez {
-    margin: 50px 135px 150px 0px;
+    margin: 50px 135px 150px 30px;
     height: 60px;
     font-size: 3em;
+    width: 2105px;
   }
 
   #kettenbeil {
-    margin: 50px 135px 150px 0px;
+    margin: 50px 135px 150px 30px;
     height: 60px;
     font-size: 3em;
+    width: 2105px;
   }
 
   #superior-attack {
-    width: 2300px;
-    margin: 50px 35px 150px 0px;
+    width: 1375px;
+    margin: 50px 35px 150px 30px;
+    font-size: 3em;
   }
 
   #christian-s {
-    width: 1120px;
-    margin: 50px 35px 150px 0px;
+    width: 645px;
+    margin: 50px 35px 150px 30px;
+    font-size: 3em;
   }
 
   #fh-flensburg {
-    width: 1120px;
-    margin: 50px 35px 150px 0px;
+    width: 645px;
+    margin: 50px 35px 150px 30px;
+    font-size: 3em;
   }
 
   .gallery {
