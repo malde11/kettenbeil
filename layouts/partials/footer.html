@@ -40,10 +40,10 @@
 <div class="copyright">
   <p class="copyright-text">
     Copyright {{ now.Year }}. Alle Rechte vorbehalten.
-    <span class="copy-imprint">
+    <span>
       {{ $logicalPath := "/impressum" }}
             {{ with site.GetPage $logicalPath }}
-          <a href="{{ .RelPermalink }}">
+          <a class="copy-imprint" href="{{ .RelPermalink }}">
             {{ .Title }}
           </a>
           {{ else }}

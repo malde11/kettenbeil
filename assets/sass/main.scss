@@ -1357,10 +1357,6 @@ video {
     margin-bottom: 50px;
   }
 
-  .clear-button {
-    margin-left: 35px;
-  }
-
 
   /* NAVBAR */
   .brand-logo {
@@ -1473,7 +1469,6 @@ video {
   }
 
   .clear-button {
-    margin-left: 35px;
     padding: 20px 50px;
   }
 
@@ -1648,6 +1643,22 @@ video {
   .nav-link:hover::after {
     right: 25px;
   }
+
+  .input-form {
+    margin-bottom: 65px;
+    font-size: 2em;
+    width: 60%;
+    margin-left: 385px;
+  }
+
+  .clear-button {
+    margin-left: 385px;
+    font-size: 1.5em;
+  }
+
+  .send-button {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -1663,6 +1674,22 @@ video {
   #loader {
     top: 38%;
     left: 40%;
+  }
+
+  .slug {
+    font-size: 10em;
+  }
+
+  .slug-small {
+    font-size: 0.5em;
+  }
+
+  .img-shadow {
+    grid-gap: 120px;
+  }
+
+  .card-headline {
+    font-size: 10em;
   }
 
   .main-headline {
@@ -1730,5 +1757,55 @@ video {
 
   .galleryimage {
     margin-left: 30px;
-}
+  }
+
+  .input-form {
+    font-size: 4em;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 75px;
+  }
+
+  #contact-form {
+    margin-left: 640px;
+  }
+
+  .clear-button {
+    font-size: 4em;
+    border-width: 5px;
+  }
+
+  .send-button {
+    font-size: 4em;
+    border-width: 5px;
+  }
+
+  .sitemap {
+    font-size: 3em;
+  }
+
+  .social-media {
+    font-size: 3em;
+  }
+
+  .copyright-text {
+    font-size: 3em;
+  }
+
+  .copy-imprint {
+    font-size: 3em;
+  }
+
+  .footer-link a {
+    font-size: 3em;
+  }
+
+  .scroll-to-name {
+    font-size: 3em;
+  }
+
+  #scroll-to-top-svg {
+    width: 200px;
+    height: 200px;
+  }
+
 }
