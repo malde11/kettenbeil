@@ -1355,6 +1355,10 @@ video {
     filter: grayscale(100%);
   }
 
+  #modal-filmstrip {
+    display: block;
+  }
+
   .galleryimage:hover {
     opacity: 1;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
@@ -1452,9 +1456,8 @@ video {
     background: linear-gradient(346deg, rgba(21, 21, 21, 0.95) 12%, rgba(255, 165, 0, 1) 40%, rgba(21, 21, 21, 1) 62%);
   }
 
-  #modal-filmstrip {
-    width: 60%;
-    margin: 0;
+  #fotos #modal-filmstrip {
+    display: block;
   }
 }
 

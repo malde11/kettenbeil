@@ -73,7 +73,6 @@ image = "/images/photos/new-zealand-smoke-02.png"
 ## Sydney
 {{< gallery sydney >}}
 
-
 ## Australia
 {{< gallery australia >}}
 
