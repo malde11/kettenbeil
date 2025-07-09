@@ -1,5 +1,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{- if .IsHome -}}
+  <meta name="description" content="Webdesign & Development von M. Kettenbeil">
+{{- else -}}
+  <meta name="description" content="{{ .Description }}">
+{{- end -}}
+
 
 {{ "<!-- START INCLUDE SASS/CSS -->" | safeHTML }}
 {{ with resources.Get "sass/main.scss" }}
