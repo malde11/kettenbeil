@@ -1,10 +1,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 {{- if .IsHome -}}
   <meta name="description" content="Webdesign & Development von M. Kettenbeil">
 {{- else -}}
   <meta name="description" content="{{ .Description }}">
 {{- end -}}
+
+<meta name="keywords" content="Webdesign, Webentwicklung, Grafikdesign, Logos, Fotos, Sketches">
+<meta name="author" content="M. Kettenbeil">
 
 
 {{ "<!-- START INCLUDE SASS/CSS -->" | safeHTML }}
