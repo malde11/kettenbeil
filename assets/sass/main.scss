@@ -22,7 +22,7 @@ li {
   COLORS / LINKS
 ***********************************************/
 :root {
-  --primary: rgb(0, 162, 255);
+  --primary: #00a2ff;
   --secondary: #151515;
 }
 
@@ -341,7 +341,6 @@ footer {
 
 
 .top-btn {
-  color: green;
   all: unset;
   font-size:1.5rem; 
   position: fixed;
@@ -353,6 +352,28 @@ footer {
   transition: .3s;
   z-index: 2;
 }
+
+#logos .top-btn g path {
+  stroke: yellowgreen;
+}
+#logos .top-btn rect {
+  fill: var(--secondary);
+}
+
+#fotos .top-btn g path {
+  stroke: purple;
+}
+#fotos .top-btn rect {
+  fill: var(--secondary);
+}
+
+#sketches .top-btn g path {
+  stroke: orange;
+}
+#sketches .top-btn rect {
+  fill: var(--secondary);
+}
+
 
 
 
