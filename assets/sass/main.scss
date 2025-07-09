@@ -505,13 +505,10 @@ nav {
   display: none;
 }
 
-hr {
-  display: none;
-}
-
-.topnav.responsive hr {
-    margin-left: -20px;
+.topnav.responsive .nav-divider {
     display: block;
+    border-bottom: 1px solid #fff;
+    margin-left: -20px;
   }
 
 
@@ -1248,6 +1245,10 @@ video {
     padding: 0px;
   }
 
+  .topnav.responsive .nav-divider {
+    display: none;
+  }
+
   #burgerMenu {
     display: none;
   }
@@ -1336,11 +1337,6 @@ video {
 
   .language-pipe {
     display: inline;
-  }
-
-  .nav-divider {
-    display: none;
-    margin-left: -10px;
   }
 
   /* IMAGES */
