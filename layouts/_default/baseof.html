@@ -36,7 +36,11 @@
             </main>
         
 
+        {{ "<!-- SCROLL TO TOP START -->" | safeHTML }}
+            {{ partialCached "scroll-to-top.html" . }}
 
+
+            
         {{ "<!-- FOOTER START -->" | safeHTML }}
             {{ partialCached "footer.html" . }}
         

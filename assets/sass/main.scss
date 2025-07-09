@@ -299,7 +299,7 @@ footer {
 
 
 /********************************************
-* Preloader
+* Preloader & Scroll Button
 *********************************************/
 #loader-background {
   position: fixed;
@@ -339,6 +339,20 @@ footer {
   }
 }
 
+
+.top-btn {
+  color: green;
+  all: unset;
+  font-size:1.5rem; 
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  cursor: pointer;
+  transform:scale(1.8);
+  opacity: 0;
+  transition: .3s;
+  z-index: 2;
+}
 
 
 
@@ -535,14 +549,6 @@ footer {
 .footer-link a:hover {
   color: white;
   border-bottom: 1px solid white;
-}
-
-.scroll-to-name {
-  font-family: 'Smooch Sans';
-  color: white;
-  margin-bottom: 60px;
-  display: inline;
-  cursor: pointer;
 }
 
 
@@ -1110,16 +1116,6 @@ video {
 
   .copyright {
     grid-column: 1 / 5;
-  }
-
-  #scrollToTopBtn {
-    padding-top: 65px;
-    grid-column: 4 / 5;
-  }
-
-  .scrool-to-arrow {
-    cursor: pointer;
-    display: inline;
   }
 
   .scrool-to-name {
@@ -1892,15 +1888,6 @@ video {
 
   .footer-link a {
     font-size: 3em;
-  }
-
-  .scroll-to-name {
-    font-size: 3em;
-  }
-
-  #scroll-to-top-svg {
-    width: 200px;
-    height: 200px;
   }
 
 }
