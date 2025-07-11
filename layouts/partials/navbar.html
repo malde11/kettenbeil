@@ -2,7 +2,7 @@
   {{ "<!-- LOGO AND BRAND -->" | safeHTML }}
   <div class="logo-brand-wrapper">
     <a href="{{ .Site.BaseURL | relLangURL }}">
-      {{ partialCached "logo.html" . }}
+      {{ partialCached "kettenbeil-logo.html" . }}
     </a>
     <div id="brand-headline">
       <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
@@ -12,7 +12,7 @@
 
     {{ "<!-- BURGER MENU -->" | safeHTML }}
     <a href="#" id="burgerMenu" class="icon">
-      {{ partialCached "burger-menu.html" . }}
+      {{ partialCached "menu.html" . }}
     </a>
   </div>
 
