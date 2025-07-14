@@ -354,6 +354,14 @@ footer {
   z-index: 2;
 }
 
+.top-btn g path {
+  stroke: var(--primary);
+}
+
+.top-btn rect {
+  fill: var(--secondary);
+}
+
 #logos .top-btn g path {
   stroke: yellowgreen;
 }
