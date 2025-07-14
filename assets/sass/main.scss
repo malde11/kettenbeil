@@ -396,7 +396,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  /*width: 100vw;*/
+  width: 100%;
   background-color: var(--secondary);
   z-index: 1;
 }
@@ -533,6 +533,7 @@ nav {
 
 footer {
   background-color: black;
+  padding: 25px;
 }
 
 .footer-logo {
@@ -745,7 +746,6 @@ video {
 .slug {
   text-align: center;
   background-color: #fff;
-  padding: 15px;
   font-size: 2.6em;
 }
 
@@ -758,6 +758,10 @@ video {
 /*******************************************************
   Home Form
 *******************************************************/
+
+.form-container {
+  padding: 25px;
+}
 
 .contact-section {
   background-color: white;
@@ -780,7 +784,7 @@ video {
   margin-bottom: 55px;
   display: block;
   border: none;
-  width: 300px;
+  /*width: 300px;*/
   border-bottom: 1px solid var(--primary);
 }
 
