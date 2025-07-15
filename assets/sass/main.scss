@@ -797,7 +797,7 @@ video {
   padding: 20px;
   margin-left: 20px;
   color: var(--primary);
-  background-color: white;
+  background-color: var(--secondary);
   border-radius: 5px;
   border-color: var(--secondary);
 }
@@ -805,7 +805,7 @@ video {
 .clear-button {
   padding: 20px;
   color: var(--primary);
-  background-color: white;
+  background-color: var(--secondary);
   border-radius: 5px;
   border-color: var(--secondary);
 }
