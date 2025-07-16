@@ -83,11 +83,5 @@ addEventListener("DOMContentLoaded", () => {
 
     const closebutton = document.getElementById("modal-close");
     closebutton.addEventListener("click", closeModal);
-    
-    const clickOutsideModal = document.getElementById("modal-container");
-    clickOutsideModal.addEventListener("click", (e) => {
-        if (e.target === clickOutsideModal) {
-            closeModal();
-        }
-    })
+
 });
