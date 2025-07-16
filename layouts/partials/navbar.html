@@ -2,7 +2,7 @@
   {{ "<!-- LOGO AND BRAND -->" | safeHTML }}
   <div class="logo-brand-wrapper">
     <a href="{{ .Site.BaseURL | relLangURL }}">
-      <image alt="Kettenbeil-Logo" src="/images/svgs/kettenbeil-logo.svg">
+      <image class="brand-logo" alt="Kettenbeil-Logo" src="/images/svgs/kettenbeil-logo.svg">
     </a>
     <div id="brand-headline">
       <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
@@ -12,7 +12,7 @@
 
     {{ "<!-- BURGER MENU -->" | safeHTML }}
     <a href="#" id="burgerMenu" class="icon">
-        <image alt="menu items" src="/images/svgs/menu.svg">
+        <image class="menu-item" alt="menu items" src="/images/svgs/menu.svg">
     </a>
   </div>
 
@@ -21,7 +21,7 @@
     {{ range site.Menus.main }}
     <li class="nav-item">
       <a class="nav-link" href="{{ .URL }}">
-          <image alt="menu items" src="/images/svgs/menu-arrow.svg">
+          <image class="menu-item" alt="menu items" src="/images/svgs/menu-arrow.svg">
         {{ .Name }}
       </a>
     </li>
@@ -33,7 +33,7 @@
       <li class="nav-item language-pipe">|</li>
       <li class="nav-item">
         <a class="nav-link" href="{{ .Permalink }}">
-            <image alt="Language items" src="/images/svgs/menu-arrow.svg">
+            <image class="menu-item" alt="Language items" src="/images/svgs/menu-arrow.svg">
           {{ .Language.LanguageName }}
         </a>
       </li>

@@ -362,7 +362,7 @@ footer {
   fill: var(--secondary);
 }
 
-#logos .top-btn g path {
+#logos .top-btn path {
   stroke: yellowgreen;
 }
 #logos .top-btn rect {
@@ -410,7 +410,13 @@ nav {
   padding: 28px 15px 15px 15px;
 }
 
-.menu-dot-arrow {
+#burgerMenu img {
+  width: 32px;
+  height: 32px;
+  padding-right: 0px;
+}
+
+.menu-item {
   padding-right: 10px;
 }
 
@@ -452,10 +458,6 @@ nav {
   color: white;
   text-transform: uppercase;
   text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary);
-}
-
-.menu-dot-arrow {
-  padding-right: 10px;
 }
 
 .navbar-brand {
@@ -1272,7 +1274,7 @@ video {
     height: 25px;
   }
 
-  .menu-dot-arrow {
+  .menu-item {
     display: none;
   }
 
