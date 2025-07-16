@@ -81,4 +81,10 @@ addEventListener("DOMContentLoaded", () => {
         });
     };
 
+    const closebutton = document.getElementById("modal-close");
+
+    if (closebutton) {
+        closebutton.addEventListener("click", closeModal);
+    }
+
 });
