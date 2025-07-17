@@ -2,7 +2,7 @@
 <html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 
 <head>
-    {{ partialCached "head.html" . }}
+    {{ partial "head.html" . }}
 </head>
 
 {{ $id := or (replace (strings.TrimLeft "/" .Path) "/" "_") "home" }}
