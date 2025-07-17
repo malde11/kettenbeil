@@ -2,7 +2,8 @@ baseURL = 'https://kettenbeil.com/'
 title = 'Kettenbeil'
 
 defaultContentLanguage = 'de'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
+disableDefaultLanguageRedirect = true
 
 [languages]
   [languages.de]
