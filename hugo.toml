@@ -34,7 +34,7 @@ defaultContentLanguageInSubdir = true
 
         [[languages.de.menus.footer]]
         name = 'github'
-        url = 'https://github.com'
+        url = 'https://github.com/malde11'
         weight = 10
       [[languages.de.menus.footer]]
         name = 'Stackoverflow'
@@ -46,7 +46,7 @@ defaultContentLanguageInSubdir = true
         weight = 30
       [[languages.de.menus.footer]]
         name = 'FreeCodeCamp'
-        url = 'https://freecodecamp.com'
+        url = 'https://freecodecamp.org/malde11'
         weight = 40
 
 
