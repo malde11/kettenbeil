@@ -38,7 +38,7 @@ defaultContentLanguageInSubdir = true
         weight = 10
       [[languages.de.menus.footer]]
         name = 'Stackoverflow'
-        url = 'https://stackoverflow.com'
+        url = 'https://stackoverflow.com/users/16225255/malte-k'
         weight = 20
       [[languages.de.menus.footer]]
         name = 'youtube'
@@ -83,11 +83,11 @@ defaultContentLanguageInSubdir = true
 
     [[languages.en.menus.footer]]
         name = 'github'
-        url = 'https://github.com'
+        url = 'https://github.com/malde11'
         weight = 10
       [[languages.en.menus.footer]]
         name = 'Stackoverflow'
-        url = 'https://stackoverflow.com'
+        url = 'https://stackoverflow.com/users/16225255/malte-k'
         weight = 20
       [[languages.en.menus.footer]]
         name = 'youtube'
@@ -95,5 +95,5 @@ defaultContentLanguageInSubdir = true
         weight = 30
       [[languages.en.menus.footer]]
         name = 'FreeCodeCamp'
-        url = 'https://freecodecamp.com'
+        url = 'https://freecodecamp.org/malde11'
         weight = 40
