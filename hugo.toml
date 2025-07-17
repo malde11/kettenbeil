@@ -3,7 +3,6 @@ title = 'Kettenbeil'
 
 defaultContentLanguage = 'de'
 defaultContentLanguageInSubdir = true
-disableDefaultLanguageRedirect = true
 
 [languages]
   [languages.de]

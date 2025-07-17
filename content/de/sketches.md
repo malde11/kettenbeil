@@ -1,5 +1,5 @@
 +++
 draft = false
 title = 'Sketches'
-description = 'Sketches von M. Kettenbeil'
+description = 'Sketches von M. Kettenbeil. '
 +++
