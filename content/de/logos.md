@@ -1,7 +1,7 @@
 +++
 draft = false
 title = 'Logos'
-description = 'Logos designed von M. Kettenbeil. '
+description = 'Logos designed von M. Kettenbeil.'
 
 [params]
 [[params.gallery.inexorablez]]

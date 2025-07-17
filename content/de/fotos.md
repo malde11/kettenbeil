@@ -1,7 +1,7 @@
 +++
 draft = false
 title = 'Fotos'
-description = 'Fotos aufgenommen von M. Kettenbeil. '
+description = 'Fotos aus Australien und Neuseeland aufgenommen von M. Kettenbeil.'
 
 [params]
 [[params.gallery.sydney]]
