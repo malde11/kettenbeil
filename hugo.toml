@@ -1,6 +1,8 @@
 baseURL = 'https://kettenbeil.com/'
 title = 'Kettenbeil'
 
+enableRobotsTXT = true
+
 defaultContentLanguage = 'de'
 defaultContentLanguageInSubdir = true
 
