@@ -2,27 +2,26 @@
 <div class="form-container">
       <form id="contact-form" action="https://fabform.io/f/insert-later" method="post">
 
-          <label class="label-form" for="name">Vorname:</label>
-          <input class="input-form" id="name" name="name" type="text" placeholder="Vorname *" required>
+          <label class="label-form" for="given-name">Vorname:</label>
+          <input class="input-form" id="given-name" name="given-name" type="given-name" placeholder="Vorname *" required>
 
-          <label class="label-form" for="lastname">Nachname:</label>
-          <input class="input-form" id="lastname" name="lastname" type="text" placeholder="Nachname *" required>
+          <label class="label-form" for="family-name">Nachname:</label>
+          <input class="input-form" id="family-name" name="family-name" type="family-name" placeholder="Nachname *" required>
 
           <label class="label-form" for="email">E-Mail-Adresse:</label>
           <input class="input-form" id="email" name="email" type="email" placeholder="E-Mail-Adresse *" required>
 
-          <label class="label-form" for="phone">Telefonnummer:</label>
-          <input class="input-form" id="phone" name="phone" type="text" placeholder="Telefonnummer">
+          <label class="label-form" for="tel">Telefonnummer:</label>
+          <input class="input-form" id="tel" name="tel" type="tel" placeholder="Telefonnummer">
 
-          <label class="label-form" for="f_reason">Grund:
-            <select class="input-form" id="f_reason" name="f_reason">
-              <option value="ds" disabled selected>Dein Grund</option>
-              <option value="gd">Grafik - Design</option>
-              <option value="wd">Web - Design</option>
-              <option value="pt">Praktikum</option>
-              <option value="ot">Anderer</option>
-            </select>
-          </label>
+          <label class="label-form" for="f_reason">Grund:</label>
+          <select class="input-form" id="f_reason" name="f_reason">
+            <option value="ds" disabled selected>Dein Grund</option>
+            <option value="gd">Grafik - Design</option>
+            <option value="wd">Web - Design</option>
+            <option value="pt">Praktikum</option>
+            <option value="ot">Anderer</option>
+          </select>
 
           <label class="label-form" for="message">Nachricht:</label>
           <textarea class="input-form" id="message" name="message" placeholder="Deine Nachricht..." rows="6" required></textarea>
