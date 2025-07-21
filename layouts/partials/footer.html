@@ -21,7 +21,7 @@
   <h3 class="footer-headline">Social Media</h3>
   <ul>
 
-    {{ range site.Menus.footer }}
+    {{ range .Site.Menus.footer }}
     <li class="footer-link">
       <a target="_blank" href="{{ .URL }}">
         {{ .Name }}
