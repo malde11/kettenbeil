@@ -11,7 +11,7 @@
   
   <div class="slug-wrapper">
 
-    <h2 class="slug">Ausgewählte Arbeiten<b class="slug-small"> von mir</b></h2> 
+    <h2 class="slug">{{ T "slug" }}<b class="slug-small"> {{ T "small-slug" }}</b></h2> 
   
   </div>
 
@@ -33,7 +33,7 @@
           {{ $logicalPath := "/logos" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">Siehe Logos</p>
+              <p class="card-headline">{{ T "logos" }}</p>
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}
@@ -56,7 +56,7 @@
           {{ $logicalPath := "/fotos" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">Siehe Fotos</p>
+              <p class="card-headline">{{ T "photos" }}</p>
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}
@@ -81,7 +81,7 @@
           {{ $logicalPath := "/sketches" }}
             {{ with site.GetPage $logicalPath }}
           <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">Siehe Sketches</p>
+              <p class="card-headline">{{ T "sketches" }}</p>
           </a>
           {{ else }}
             {{ errorf "Unable to get page %s" $logicalPath }}
@@ -92,10 +92,10 @@
 
   <section class="contact-section">
     <div>
-      <h2 class="slug"><b class="slug-small">Sei nicht</b> schüchtern. <br><i class="slug-small">Sag </i>Hallo!</h2>
+      <h2 class="slug"><b class="slug-small">{{ T "form-slug" }}</b> {{ T "form-slug-2" }} <br><i class="slug-small">{{ T "form-slug-3" }} </i>{{ T "form-slug-4" }}</h2>
     </div>
   </section>
 
-  {{ partialCached "form.html" . }}
+  {{ partial "form.html" . }}
 
 {{ end }}
