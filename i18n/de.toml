@@ -1,0 +1,15 @@
+#Form:
+given-name = 'Vorname'
+family-name = 'Nachname'
+email = 'E-Mail-Adresse'
+tel = 'Telefonnummer'
+f_reason = 'Grund'
+gd = 'Grafik - Design'
+wd = 'Web - Design'
+pt = 'Praktikum'
+ot = 'Anderer'
+message = 'Deine Nachricht...'
+send = 'Senden'
+clear = 'Löschen'
+
+#Footer:

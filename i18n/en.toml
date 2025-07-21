@@ -1,0 +1,13 @@
+#Form:
+given-name = 'Given Name'
+family-name = 'Family Name'
+email = 'Email Address'
+tel = 'Phone Number'
+f_reason = 'Reason'
+gd = 'Graphic - Design'
+wd = 'Web - Design'
+pt = 'Internship'
+ot = 'Other'
+message = 'Your Message...'
+send = 'Send'
+clear = 'Clear'
