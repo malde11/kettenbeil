@@ -1,3 +1,16 @@
+#Homepage:
+slug = 'Ausgewählte Arbeiten'
+small-slug = 'von mir'
+logos = 'Siehe Logos'
+photos = 'Siehe Fotos'
+sketches = 'Siehe Sketches'
+
+form-slug = 'Sei nicht'
+form-slug-2 = 'schüchtern.'
+form-slug-3 = 'Sag'
+form-slug-4 = 'Hallo!'
+
+
 #Form:
 given-name = 'Vorname'
 family-name = 'Nachname'
@@ -11,5 +24,3 @@ ot = 'Anderer'
 message = 'Deine Nachricht...'
 send = 'Senden'
 clear = 'Löschen'
-
-#Footer:

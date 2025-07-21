@@ -1,3 +1,16 @@
+#Homepage:
+slug = 'Some Selected Works'
+small-slug = 'by me'
+logos = 'View Logos'
+photos = 'View Photos'
+sketches = 'View Sketches'
+
+form-slug = 'Do not be'
+form-slug-2 = 'Shy.'
+form-slug-3 = 'Say'
+form-slug-4 = 'Hello!'
+
+
 #Form:
 given-name = 'Given Name'
 family-name = 'Family Name'
