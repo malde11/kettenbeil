@@ -2,32 +2,32 @@
 <div class="form-container">
       <form id="contact-form" action="https://fabform.io/f/insert-later" method="post" autocomplete="on">
 
-          <label class="label-form" for="given-name">Vorname:</label>
-          <input class="input-form" id="given-name" name="given-name" type="text" placeholder='{{ T "privacy" }} *' required>
+          <label class="label-form" for="given-name">{{ $.Get "given-name" }}:</label>
+          <input class="input-form" id="given-name" name="given-name" type="text" placeholder='{{ $.Get "given-name" }}*' required>
 
-          <label class="label-form" for="family-name">Nachname:</label>
-          <input class="input-form" id="family-name" name="family-name" type="text" placeholder='{{ T "security" }} *' required>
+          <label class="label-form" for="family-name">{{ $.Get "family-name" }}:</label>
+          <input class="input-form" id="family-name" name="family-name" type="text" placeholder='{{ $.Get "family-name" }}*' required>
 
-          <label class="label-form" for="email">E-Mail-Adresse:</label>
-          <input class="input-form" id="email" name="email" type="email" placeholder="E-Mail-Adresse *" required>
+          <label class="label-form" for="email">{{ $.Get "email" }}:</label>
+          <input class="input-form" id="email" name="email" type="email" placeholder='{{ $.Get "email" }}*' required>
 
-          <label class="label-form" for="tel">Telefonnummer:</label>
-          <input class="input-form" id="tel" name="tel" type="tel" placeholder="Telefonnummer">
+          <label class="label-form" for="tel">{{ $.Get "tel" }}:</label>
+          <input class="input-form" id="tel" name="tel" type="tel" placeholder='{{ $.Get "tel" }}'>
 
-          <label class="label-form" for="f_reason">Grund:</label>
+          <label class="label-form" for="f_reason">{{ $.Get "f_reason" }}:</label>
           <select class="input-form" id="f_reason" name="f_reason" required>
-            <option value="" disabled selected>Dein Grund</option>
-            <option value="gd">Grafik - Design</option>
-            <option value="wd">Web - Design</option>
-            <option value="pt">Praktikum</option>
-            <option value="ot">Anderer</option>
+            <option value="" disabled selected>{{ $.Get "f_reason" }}</option>
+            <option value="gd">{{ $.Get "gd" }}</option>
+            <option value="wd">{{ $.Get "wd" }}</option>
+            <option value="pt">{{ $.Get "pt" }}</option>
+            <option value="ot">{{ $.Get "ot" }}</option>
           </select>
 
-          <label class="label-form" for="message">Nachricht:</label>
-          <textarea class="input-form" id="message" name="message" placeholder="Deine Nachricht..." rows="6" required></textarea>
+          <label class="label-form" for="message">{{ $.Get "message_head" }}:</label>
+          <textarea class="input-form" id="message" name="message" placeholder='{{ $.Get "message" }}' rows="6" required></textarea>
           
-          <button class="clear-button" type="reset">Löschen</button>
-          <button class="send-button" type="submit">Senden</button>
+          <button class="clear-button" type="reset">{{ $.Get "clear" }}</button>
+          <button class="send-button" type="submit">{{ $.Get "send" }}</button>
       </form>
 </div>
 <!-- fabform end -->

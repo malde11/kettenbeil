@@ -2,19 +2,19 @@
 <div class="form-container">
       <form id="contact-form" action="https://fabform.io/f/insert-later" method="post" autocomplete="on">
 
-          <label class="label-form" for="given-name">Vorname:</label>
+          <label class="label-form" for="given-name">{{ T "given-name" }}:</label>
           <input class="input-form" id="given-name" name="given-name" type="text" placeholder='{{ T "given-name" }}*' required>
 
-          <label class="label-form" for="family-name">Nachname:</label>
+          <label class="label-form" for="family-name">{{ T "family-name" }}:</label>
           <input class="input-form" id="family-name" name="family-name" type="text" placeholder='{{ T "family-name" }}*' required>
 
-          <label class="label-form" for="email">E-Mail-Adresse:</label>
+          <label class="label-form" for="email">{{ T "email" }}:</label>
           <input class="input-form" id="email" name="email" type="email" placeholder='{{ T "email" }}*' required>
 
-          <label class="label-form" for="tel">Telefonnummer:</label>
+          <label class="label-form" for="tel">{{ T "tel" }}:</label>
           <input class="input-form" id="tel" name="tel" type="tel" placeholder='{{ T "tel" }}'>
 
-          <label class="label-form" for="f_reason">Grund:</label>
+          <label class="label-form" for="f_reason">{{ T "f_reason" }}:</label>
           <select class="input-form" id="f_reason" name="f_reason" required>
             <option value="" disabled selected>{{ T "f_reason" }}</option>
             <option value="gd">{{ T "gd" }}</option>
@@ -23,7 +23,7 @@
             <option value="ot">{{ T "ot" }}</option>
           </select>
 
-          <label class="label-form" for="message">Nachricht:</label>
+          <label class="label-form" for="message">{{ T "message_head" }}:</label>
           <textarea class="input-form" id="message" name="message" placeholder='{{ T "message" }}' rows="6" required></textarea>
           
           <button class="clear-button" type="reset">{{ T "clear" }}</button>
