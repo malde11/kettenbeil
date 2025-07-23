@@ -183,6 +183,18 @@ h4 {
 
 
 
+/* Contact */
+#kontakt header {
+  background: black;
+  color: white;
+}
+
+#kontakt main {
+  background: black;
+  color: white;
+}
+
+
 
 
 
@@ -297,6 +309,28 @@ footer {
 }
 
 
+/* Contact - Template */
+#sei-nicht-schüchtern-sag-hallo {
+  grid-area: sei-nicht-schüchtern-sag-hallo;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#do-not-be-shy-say-hello {
+  grid-area: do-not-be-shy-say-hello;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-contact-container {
+  grid-area: form-contact-container;
+}
+
+
+
+
+
+
 
 
 /********************************************
@@ -382,6 +416,8 @@ footer {
 #sketches .top-btn rect {
   fill: var(--secondary);
 }
+
+
 
 
 
@@ -815,6 +851,77 @@ video {
 
 
 
+
+
+
+
+/********************************************************
+  Form Contact
+*******************************************************/
+
+#kontakt input[type="text"],
+#kontakt input[type="tel"],
+#kontakt input[type="email"],
+#kontakt select,
+#kontakt textarea {
+  background-color : black;
+  color: white;
+}
+
+#kontakt ::placeholder {
+  color: white;
+}
+
+#kontakt #given-name {
+  border-color: orange;
+}
+
+#kontakt #family-name {
+  border-color: purple;
+}
+
+#kontakt #email {
+  border-color: yellowgreen;
+}
+
+#kontakt #tel {
+  border-color: var(--primary);
+}
+
+#kontakt #f_reason {
+  border-color:brown;
+}
+
+#kontakt #message {
+  border-color:yellow;
+}
+
+#kontakt .clear-button {
+  background-color: black;
+  color: white;
+  border-color: var(--primary);
+}
+
+#kontakt .send-button {
+  background-color: black;
+  color: white;
+  border-color: var(--primary);
+}
+
+#kontakt .clear-button:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#kontakt .send-button:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+
+
+
+
 /*******************************************************
   Images
 *******************************************************/
@@ -874,30 +981,6 @@ video {
   color: #fff;
 }
 
-
-/*
-
-.slide {
-  color: white;
-  z-index: 0;
-  animation-duration: 3s;
-  animation-name: slide;
-}
-
-@keyframes slide {
-  from {
-    translate: 0 150vh;
-    scale: 1 200%;
-  }
-
-  to {
-    translate: 0 0;
-    scale: 1 100%;
-  }
-}
-
-*/
-
 #sydney {
   color: white;
   padding: 0 0 5px 5px;
@@ -914,6 +997,29 @@ video {
   color: white;
   padding: 0 0 5px 5px;
   margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+/*******************************************************
+  Contact Site
+*******************************************************/
+
+#sei-nicht-schüchtern-sag-hallo {
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+#do-not-be-shy-say-hello {
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
 
@@ -1130,10 +1236,12 @@ video {
   }
 
   .send-button:hover {
+    cursor: pointer;
     color: var(--primary);
   }
 
   .clear-button:hover {
+    cursor: pointer;
     color: red;
   }
 
@@ -1401,6 +1509,32 @@ video {
   /* TEMPLATE CONTAINER */
   main {
     padding: 150px;
+  }
+
+
+  #kontakt #contact-form {
+    background-color: black;
+  }
+
+  #sei-nicht-schüchtern-sag-hallo {
+    grid-column-start:1;
+    grid-column-end: 2;
+    font-size: 2.1em;
+  }
+
+  #do-not-be-shy-say-hello {
+    grid-column-start:1;
+    grid-column-end: 2;
+    font-size: 2.1em;
+  }
+
+  .form-contact-container {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  #kontakt .input-form {
+    width: 100%;
   }
 
   .galleryimage {
