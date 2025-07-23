@@ -868,6 +868,10 @@ video {
   color: white;
 }
 
+#kontakt .input-form {
+  width: 100%;
+}
+
 #kontakt ::placeholder {
   color: white;
 }
@@ -1084,6 +1088,14 @@ video {
     grid-template-areas:
     "slug-wrapper"
     "img-shadow";
+  }
+
+  #kontakt main {
+    display: inline;
+  }
+
+  .form-contact-container {
+    padding: 25px 100px;
   }
 
   #logos main {
@@ -1512,6 +1524,10 @@ video {
   }
 
 
+  #kontakt main {
+    display: grid;
+  }
+
   #kontakt #contact-form {
     background-color: black;
   }
@@ -1531,11 +1547,9 @@ video {
   .form-contact-container {
     grid-column-start: 2;
     grid-column-end: 4;
+    padding: 0;
   }
-
-  #kontakt .input-form {
-    width: 100%;
-  }
+  
 
   .galleryimage {
     pointer-events: all ;
