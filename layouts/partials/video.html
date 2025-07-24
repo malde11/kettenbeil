@@ -1,14 +1,29 @@
 {{ "<!-- VIDEO START -->" | safeHTML }}
 <div class="video-section">
   <div id="video-wrapper">
-    <notavideo autoplay="" muted="" loop="" preload="auto">
+    <video autoplay="" muted="" loop="" preload="auto">
       <source
         src="/videos/ground_1080p.webm"
         type="video/webm"
         media="(min-width: 1200px)"
       >
-      <p id="no_video">Your browser does not support the video tag.</p>
-    </notavideo>
+      <source
+        src="/videos/ground_1080p.mp4"
+        type="video/mp4"
+        media="(min-width: 1200px)"
+      >
+      <source
+        src="/videos/ground_540p.webm"
+        type="video/webm"
+        media="(min-width: 768px)"
+      >
+      <source
+        src="/videos/ground_540p.mp4"
+        type="video/mp4"
+        media="(min-width: 768px)"
+      >
+      <p id="no_video">{{ T "no_video" }}</p>
+    </video>
   </div>
 
   <!-- 

@@ -29,3 +29,6 @@ clear = 'Löschen'
 #Noscript:
 noscript = 'Dein Browser unterstützt kein Javascritp!'
 noscript_enable = 'Bitte aktiviere Javascript'
+
+#NoVideo:
+no_video = "Dein Browser unterstützt kein Video Tag!"

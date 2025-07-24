@@ -29,3 +29,6 @@ clear = 'Clear'
 #Noscript:
 noscript = 'Your browser does not support JavaScript!'
 noscript_enable = 'Please enable JavaScript'
+
+#NoVideo:
+no_video = "Your Browser does not support the Video Tag!"
