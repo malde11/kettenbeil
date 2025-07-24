@@ -30,7 +30,30 @@ defaultContentLanguageInSubdir = true
         weight = 40
 
 
-[languages.en]
+
+        [[languages.de.menus.footer]]
+        name = 'github'
+        url = 'https://github.com/malde11'
+        weight = 10
+      [[languages.de.menus.footer]]
+        name = 'Stackoverflow'
+        url = 'https://stackoverflow.com/users/16225255/malte-k'
+        weight = 20
+      [[languages.de.menus.footer]]
+        name = 'youtube'
+        url = 'https://youtube.com'
+        weight = 30
+      [[languages.de.menus.footer]]
+        name = 'FreeCodeCamp'
+        url = 'https://freecodecamp.org/malde11'
+        weight = 40
+
+
+
+
+
+
+  [languages.en]
     languageCode = 'en-US'
     languageName = 'English 🇬🇧'
     contentDir = 'content/en'
@@ -54,20 +77,22 @@ defaultContentLanguageInSubdir = true
         pageRef = '/kontakt'
         weight = 40
 
-[menus]
-[[menus.footer]]
-    name = 'github'
-    url = 'https://github.com/malde11'
-    weight = 10
-[[menus.footer]]
-    name = 'Stackoverflow'
-    url = 'https://stackoverflow.com/users/16225255/malte-k'
-    weight = 20
-[[menus.footer]]
-    name = 'youtube'
-    url = 'https://youtube.com'
-    weight = 30
-[[menus.footer]]
-    name = 'FreeCodeCamp'
-    url = 'https://freecodecamp.org/malde11'
-    weight = 40
+
+
+
+    [[languages.en.menus.footer]]
+        name = 'github'
+        url = 'https://github.com/malde11'
+        weight = 10
+      [[languages.en.menus.footer]]
+        name = 'Stackoverflow'
+        url = 'https://stackoverflow.com/users/16225255/malte-k'
+        weight = 20
+      [[languages.en.menus.footer]]
+        name = 'youtube'
+        url = 'https://youtube.com'
+        weight = 30
+      [[languages.en.menus.footer]]
+        name = 'FreeCodeCamp'
+        url = 'https://freecodecamp.org/malde11'
+        weight = 40
