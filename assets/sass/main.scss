@@ -26,7 +26,16 @@ li {
   font-family: "Smooch Sans";
 }
 
-
+#no_video {
+  font-family: "Smooch Sans";
+  text-align: center;
+  padding: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: white;
+  z-index: 999;
+}
 
 
 
@@ -1088,6 +1097,11 @@ video {
     height: 360px;
   }
 
+  #no_video {
+    bottom: 0;
+    left: 25%;
+  }
+
   .top-btn {
   right: 45px;
   bottom: 45px;
@@ -1541,6 +1555,11 @@ video {
     font-size: 3em;
   }
 
+  #no_video {
+    bottom: 0;
+    left: 35%;
+  }
+
 
   /* TEMPLATE CONTAINER */
   main {
@@ -1721,6 +1740,11 @@ video {
   }
 
   #noscript {
+    left: 38%;
+  }
+
+  #no_video {
+    bottom: 0;
     left: 38%;
   }
 
