@@ -334,8 +334,9 @@ footer {
 #sei-nicht-schüchtern-sag-hallo {
   grid-area: sei-nicht-schüchtern-sag-hallo;
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0 0 10px;
 }
+
 
 #do-not-be-shy-say-hello {
   grid-area: do-not-be-shy-say-hello;
@@ -345,6 +346,7 @@ footer {
 
 .form-contact-container {
   grid-area: form-contact-container;
+  margin-top: 50px;
 }
 
 
@@ -1248,8 +1250,6 @@ video {
 
 
 
-
-
 /*******************************************************
   Media Queries - (desktops, 992px and up)
 *******************************************************/
@@ -1526,8 +1526,8 @@ video {
   #new-zealand {
     display: none;
   }
-}
 
+}
 
 
 
