@@ -25,3 +25,7 @@ message_head = 'Message'
 message = 'Your Message...'
 send = 'Send'
 clear = 'Clear'
+
+#Noscript:
+noscript = 'Your browser does not support JavaScript!'
+noscript_enable = 'Please enable JavaScript'
