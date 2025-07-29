@@ -7,12 +7,16 @@ addEventListener("load", () => {
 });
 
 addEventListener("DOMContentLoaded", () => {
+
+
   /* Navbar active state */
   const activeLink = document.querySelector(
     ".nav-link[href='" + window.location.pathname + "']"
   );
 
   if (activeLink) activeLink.classList.add("active");
+
+
 
   /* Burger-Menu toggle nav */
   const topNav = document.getElementById("myTopnav");
@@ -37,6 +41,59 @@ addEventListener("DOMContentLoaded", () => {
   window.onscroll = () => topBtn.style.opacity = window.scrollY > 500 ? 1 : 0;
 
   
+
+
+
+  // Color headline contact
+  const colorMe = document.getElementById("sei-nicht-schüchtern-sag-hallo");
+  const colorMeTwo = document.getElementById("do-not-be-shy-say-hello");
+
+  if (colorMe) {
+    
+    const splits = colorMe.innerText.split(" ");
+    const colors = ["white", "#3defe9", "#6bd968", "white", "#fecc1b"];
+
+    let spans = [];
+
+    //for every word
+    for (var x = 0; x < splits.length; x++) {
+      //cycle through available colors by index number (i), using index of word (x) remainder when divided by length of color options array (mod)
+      var i = x % colors.length;
+
+      var color = colors[i];
+      //wrap word with span
+      var span = "<span style='color: " + color + ";'>" + splits[x] + "</span>";
+
+      spans.push(span);
+    }
+
+    //replace words with spans
+    colorMe.innerHTML = spans.join(" ");
+
+  } else {
+
+    const splitsTwo = colorMeTwo.innerText.split(" ");
+    const colorsTwo = ["white", "#3defe9", "#6bd968", "white", "#fecc1b"];
+
+    let spansTwo = [];
+
+    //for every word
+    for (var y = 0; y < splitsTwo.length; y++) {
+      //cycle through available colors by index number (i), using index of word (x) remainder when divided by length of color options array (mod)
+      var n = y % colorsTwo.length;
+
+      var colorTwo = colorsTwo[n];
+      //wrap word with span
+      var spanTwo = "<span style='color: " + colorTwo + ";'>" + splitsTwo[y] + "</span>";
+
+      //push the span into the spans array
+      spansTwo.push(spanTwo);
+
+    }
+    //join the spans together with a space
+    colorMeTwo.innerHTML = spansTwo.join(" ");
+  }
+
 
 
   // Image lightbox/Gallery
