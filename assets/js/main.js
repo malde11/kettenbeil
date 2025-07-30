@@ -62,7 +62,7 @@ addEventListener("DOMContentLoaded", () => {
 
       var color = colors[i];
       //wrap word with span
-      var span = "<span style='color: " + color + ";'>" + splits[x] + "</span>";
+      var span = "<span class='contact-slug-de' style='color: " + color + ";'>" + splits[x] + "</span>";
 
       spans.push(span);
     }
@@ -84,7 +84,7 @@ addEventListener("DOMContentLoaded", () => {
 
       var colorTwo = colorsTwo[n];
       //wrap word with span
-      var spanTwo = "<span style='color: " + colorTwo + ";'>" + splitsTwo[y] + "</span>";
+      var spanTwo = "<span class='contact-slug-en' style='color: " + colorTwo + ";'>" + splitsTwo[y] + "</span>";
 
       //push the span into the spans array
       spansTwo.push(spanTwo);

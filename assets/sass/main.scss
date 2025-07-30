@@ -1049,7 +1049,13 @@ video {
   margin-bottom: 25px;
 }
 
+.contact-slug-de {
+  font-size: 2em;
+}
 
+.contact-slug-en {
+  font-size: 2em;
+}
 
 /*******************************************************
   Media Queries - (landscape phones, 576px and up)
@@ -1578,18 +1584,18 @@ video {
   #sei-nicht-schüchtern-sag-hallo {
     grid-column-start:1;
     grid-column-end: 2;
-    font-size: 2.1em;
+    font-size: 1em;
   }
 
   #do-not-be-shy-say-hello {
     grid-column-start:1;
     grid-column-end: 2;
-    font-size: 2.1em;
+    font-size: 1em;
   }
 
   .form-contact-container {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     padding: 0;
   }
   
