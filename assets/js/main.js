@@ -70,7 +70,7 @@ addEventListener("DOMContentLoaded", () => {
     //replace words with spans
     colorMe.innerHTML = spans.join(" ");
 
-  } else {
+  } else if (colorMeTwo) {
 
     const splitsTwo = colorMeTwo.innerText.split(" ");
     const colorsTwo = ["white", "#3defe9", "#6bd968", "white", "#fecc1b"];
