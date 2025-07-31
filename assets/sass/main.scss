@@ -838,7 +838,7 @@ video {
 }
 
 .label-form {
-  display: none;
+  visibility: hidden;
   margin-bottom: 10px;
 }
 
@@ -925,14 +925,14 @@ video {
 
 #kontakt .clear-button {
   background-color: black;
-  color: white;
-  border-color: var(--primary);
+  color: #fecc1b;
+  border-color: #fecc1b;
 }
 
 #kontakt .send-button {
   background-color: black;
-  color: white;
-  border-color: var(--primary);
+  color: #fecc1b;
+  border-color: #fecc1b;
 }
 
 #kontakt .clear-button:hover {
@@ -942,7 +942,7 @@ video {
 
 #kontakt .send-button:hover {
   cursor: pointer;
-  color: var(--primary);
+  color: white;
 }
 
 
