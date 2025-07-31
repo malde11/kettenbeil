@@ -1613,7 +1613,7 @@ video {
   #do-not-be-shy-say-hello {
     grid-column-start:1;
     grid-column-end: 2;
-    font-size: 1em;
+    font-size: 2em;
   }
 
   .form-contact-container {
@@ -1946,6 +1946,10 @@ video {
     font-size: 4em;
   }
 
+  #do-not-be-shy-say-hello {
+    font-size: 4em;
+  }
+
   .form-contact-container {
     width: 815px;
   }
@@ -2197,6 +2201,10 @@ video {
 
 
   #sei-nicht-schüchtern-sag-hallo {
+    font-size: 6em;
+  }
+
+  #do-not-be-shy-say-hello {
     font-size: 6em;
   }
 }
