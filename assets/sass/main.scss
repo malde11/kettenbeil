@@ -324,6 +324,7 @@ footer {
 
 .galleryimage {
   grid-area: galleryimage;
+  width: 100%;
   pointer-events: none;
   margin-bottom: 30px;
   align-items: center;
@@ -438,6 +439,13 @@ footer {
   stroke: orange;
 }
 #sketches .top-btn rect {
+  fill: var(--secondary);
+}
+
+#kontakt .top-btn g path {
+  stroke: #fecc1b;
+}
+#kontakt .top-btn rect {
   fill: var(--secondary);
 }
 
@@ -1134,6 +1142,7 @@ video {
 
   #kontakt main {
     display: inline;
+    grid-template-areas: none;
   }
 
   .form-contact-container {
@@ -1596,9 +1605,9 @@ video {
   }
 
   #sei-nicht-schüchtern-sag-hallo {
-    grid-column-start:1;
+    grid-column-start: 1;
     grid-column-end: 2;
-    font-size: 1em;
+    font-size: 2em;
   }
 
   #do-not-be-shy-say-hello {
@@ -1609,8 +1618,9 @@ video {
 
   .form-contact-container {
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 3;
     padding: 0;
+    width: 570px;
   }
   
 
@@ -1932,6 +1942,13 @@ video {
     margin-bottom: 100px;
   }
 
+  #sei-nicht-schüchtern-sag-hallo {
+    font-size: 4em;
+  }
+
+  .form-contact-container {
+    width: 815px;
+  }
 }
 
 
@@ -2178,4 +2195,8 @@ video {
     font-size: 3em;
   }
 
+
+  #sei-nicht-schüchtern-sag-hallo {
+    font-size: 6em;
+  }
 }
