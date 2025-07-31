@@ -1175,6 +1175,7 @@ video {
 
   #fotos main {
     display: inline;
+    text-align: center;
   }
 
   .img-shadow {
@@ -2065,7 +2066,6 @@ video {
     margin-bottom: 65px;
     font-size: 2em;
     width: 60%;
-    margin-left: 385px;
   }
 
   .clear-button {
@@ -2076,7 +2076,12 @@ video {
   .send-button {
     font-size: 1.5em;
   }
+
+  .form-contact-container {
+    width: 1000px;
+  }
 }
+
 
 
 
@@ -2240,5 +2245,9 @@ video {
 
   #do-not-be-shy-say-hello {
     font-size: 6em;
+  }
+
+  .form-contact-container {
+    width: 1700px;
   }
 }
