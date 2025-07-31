@@ -83,9 +83,17 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Smooch Sans";
+  font-family: "Smooch Sans", sans-serif;
   font-weight: 500;
   font-size: 1.5em;
+}
+
+p {
+  font-family: "Smooch Sans", sans-serif;
+}
+
+form {
+  font-family: "Smooch Sans", sans-serif;
 }
 
 .main-headline {
@@ -522,14 +530,14 @@ nav {
 .nav-item {
   display: inline;
   padding: 0 10px;
-  font-family: "Smooch Sans";
+  font-family: "Smooch Sans", sans-serif;
   color: white;
   text-transform: uppercase;
   text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary);
 }
 
 .navbar-brand {
-  font-family: "Smooch Sans";
+  font-family: "Smooch Sans", sans-serif;
   color: white;
   font-size: 1.5em;
   text-shadow: 10px 0px 20px var(--primary), 10px 0px 20px var(--primary);
@@ -839,19 +847,23 @@ video {
   color: black;
   text-align: center;
   margin: 70px 0 50px 0;
+  font-family: "Smooch Sans", sans-serif;
 }
 
 #contact-form {
   background-color: white;
   margin-bottom: 65px;
+  font-family: "Smooch Sans", sans-serif;
 }
 
 .label-form {
   visibility: hidden;
   margin-bottom: 10px;
+  font-family: "Smooch Sans", sans-serif;
 }
 
 .input-form {
+  font-family: "Smooch Sans", sans-serif;
   margin-bottom: 55px;
   display: block;
   border: none;
@@ -865,6 +877,7 @@ video {
 }
 
 .send-button {
+  font-family: "Smooch Sans", sans-serif;
   padding: 20px;
   margin-left: 20px;
   color: white;
@@ -874,6 +887,7 @@ video {
 }
 
 .clear-button {
+  font-family: "Smooch Sans", sans-serif;
   padding: 20px;
   color: white;
   background-color: var(--secondary);
@@ -1263,6 +1277,11 @@ video {
   #sketches main {
     background: #151515;
     background: linear-gradient(345deg, rgba(21, 21, 21, 1) 15%, rgba(255, 165, 0, 1) 52%, rgba(21, 21, 21, 1) 75%);
+  }
+
+  .galleryimage {
+    grid-area: galleryimage;
+    width: auto;
   }
 }
 
