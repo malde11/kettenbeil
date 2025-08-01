@@ -355,7 +355,7 @@ footer {
 }
 
 .form-contact-container {
-  grid-area: form-contact-container;
+  /*grid-area: form-contact-container;*/
   margin-top: 50px;
 }
 
@@ -1622,6 +1622,10 @@ video {
 
   #kontakt #contact-form {
     background-color: black;
+  }
+
+  .form-contact-container {
+    grid-area: form-contact-container;
   }
 
   #sei-nicht-schüchtern-sag-hallo {
