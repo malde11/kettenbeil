@@ -1,18 +1,18 @@
 <!-- fabform -->
 <div class="form-contact-container">
-      <form id="contact-form-site" action="https://fabform.io/f/insert-later" method="post" autocomplete="on">
+      <form id="contact-form-site" action="https://fabform.io/f/insert-later" method="post">
 
-          <label class="label-form" for="given-name">{{ $.Get "given-name" }}:</label>
-          <input class="input-form" id="given-name" name="given-name" type="text" placeholder='{{ $.Get "given-name" }}*' required>
+          <label class="label-form" for="firstName">{{ $.Get "given-name" }}:</label>
+          <input class="input-form" id="firstName" name="firstName" type="text" placeholder='{{ $.Get "given-name" }}*' autocomplete="given-name" required>
 
-          <label class="label-form" for="family-name">{{ $.Get "family-name" }}:</label>
-          <input class="input-form" id="family-name" name="family-name" type="text" placeholder='{{ $.Get "family-name" }}*' required>
+          <label class="label-form" for="lastName">{{ $.Get "family-name" }}:</label>
+          <input class="input-form" id="lastName" name="lastName" type="text" placeholder='{{ $.Get "family-name" }}*' autocomplete="family-name" required>
 
           <label class="label-form" for="email">{{ $.Get "email" }}:</label>
-          <input class="input-form" id="email" name="email" type="email" placeholder='{{ $.Get "email" }}*' required>
+          <input class="input-form" id="email" name="email" type="email" placeholder='{{ $.Get "email" }}*' autocomplete="email" required>
 
-          <label class="label-form" for="tel">{{ $.Get "tel" }}:</label>
-          <input class="input-form" id="tel" name="tel" type="tel" placeholder='{{ $.Get "tel" }}'>
+          <label class="label-form" for="mobile">{{ $.Get "tel" }}:</label>
+          <input class="input-form" id="mobile" name="mobile" type="tel" placeholder='{{ $.Get "tel" }}' autocomplete="tel">
 
           <label class="label-form" for="f_reason">{{ $.Get "f_reason" }}:</label>
           <select class="input-form" id="f_reason" name="f_reason" required>
