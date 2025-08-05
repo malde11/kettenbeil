@@ -215,7 +215,8 @@ addEventListener("DOMContentLoaded", () => {
         }
 
         // Validate mobile
-        if (!/^\d+$/.test(form.mobile.value)) {
+        // not required, but if provided, must be numeric
+        if (form.mobile.value && !/^\d+$/.test(form.mobile.value)) {
           mobile.style.display = "block";
           form.mobile.style.borderColor = "red";
           valid = false;
@@ -290,7 +291,8 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       // Validate mobile
-      if (!/^\d+$/.test(formShortcode.mobile.value)) {
+      // not required, but if provided, must be numeric
+      if (formShortcode.mobile.value && !/^\d+$/.test(formShortcode.mobile.value)) {
         mobile.style.display = "block";
         formShortcode.mobile.style.borderColor = "red";
         valid = false;
@@ -298,6 +300,7 @@ addEventListener("DOMContentLoaded", () => {
         mobile.style.display = "none";
         formShortcode.mobile.style.borderColor = "greenyellow";
       }
+      
 
       // Validate reason
       if (formShortcode.f_reason.value === "") {
