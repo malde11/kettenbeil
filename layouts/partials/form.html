@@ -1,33 +1,39 @@
-<!-- fabform -->
+<!-- form -->
 <div class="form-container">
-      <form id="contact-form" action="https://formbold.com/s/6MgKW" method="POST">
+      <form id="contact-form" class="form-validation" action="https://formbold.com/s/6MgKW" method="POST">
 
           <label class="label-form" for="firstName">{{ T "given-name" }}:</label>
-          <input class="input-form" id="firstName" name="firstName" type="text" placeholder='{{ T "given-name" }}*' autocomplete="given-name" required>
+          <span id="warn-first-name" class="warn-form">{{ T "warn_first_name" }}</span>
+          <input class="input-form" id="firstName" name="firstName" type="text" placeholder='{{ T "given-name" }}*' autocomplete="given-name">
 
           <label class="label-form" for="lastName">{{ T "family-name" }}:</label>
-          <input class="input-form" id="lastName" name="lastName" type="text" placeholder='{{ T "family-name" }}*' autocomplete="family-name" required>
+          <span id="warn-last-name" class="warn-form">{{ T "warn_last_name" }}</span>
+          <input class="input-form" id="lastName" name="lastName" type="text" placeholder='{{ T "family-name" }}*' autocomplete="family-name">
 
           <label class="label-form" for="email">{{ T "email" }}:</label>
-          <input class="input-form" id="email" name="email" type="email" placeholder='{{ T "email" }}*' autocomplete="email" required>
+          <span id="warn-email" class="warn-form">{{ T "warn_email" }}</span>
+          <input class="input-form" id="email" name="email" type="email" placeholder='{{ T "email" }}*' autocomplete="email">
 
           <label class="label-form" for="mobile">{{ T "tel" }}:</label>
+          <span id="warn-mobile" class="warn-form">{{ T "warn_mobile" }}</span>
           <input class="input-form" id="mobile" name="mobile" type="tel" placeholder='{{ T "tel" }}' autocomplete="tel">
 
           <label class="label-form" for="f_reason">{{ T "f_reason" }}:</label>
-          <select class="input-form" id="f_reason" name="f_reason" required>
+          <span id="warn-reason" class="warn-form">{{ T "warn_reason" }}</span>
+          <select class="input-form" id="f_reason" name="f_reason">
             <option value="" disabled selected>{{ T "f_reason" }}</option>
-            <option value="gd">{{ T "gd" }}</option>
-            <option value="wd">{{ T "wd" }}</option>
-            <option value="pt">{{ T "pt" }}</option>
-            <option value="ot">{{ T "ot" }}</option>
+            <option value="graphic">{{ T "gd" }}</option>
+            <option value="web">{{ T "wd" }}</option>
+            <option value="inter">{{ T "pt" }}</option>
+            <option value="other">{{ T "ot" }}</option>
           </select>
 
           <label class="label-form" for="message">{{ T "message_head" }}:</label>
-          <textarea class="input-form" id="message" name="message" placeholder='{{ T "message" }}' rows="6" required></textarea>
+          <span id="warn-message" class="warn-form">{{ T "warn_message" }}</span>
+          <textarea class="input-form" id="message" name="message" placeholder='{{ T "message" }}' rows="6"></textarea>
           
           <button class="clear-button" type="reset">{{ T "clear" }}</button>
           <button class="send-button" type="submit">{{ T "send" }}</button>
       </form>
 </div>
-<!-- fabform end -->
+<!-- form end -->

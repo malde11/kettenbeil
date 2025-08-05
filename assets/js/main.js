@@ -6,6 +6,9 @@ addEventListener("load", () => {
   document.getElementById("loader").style.display = "none";
 });
 
+
+
+
 addEventListener("DOMContentLoaded", () => {
 
 
@@ -15,6 +18,9 @@ addEventListener("DOMContentLoaded", () => {
   );
 
   if (activeLink) activeLink.classList.add("active");
+
+  
+
 
 
 
@@ -27,6 +33,8 @@ addEventListener("DOMContentLoaded", () => {
     topNav.classList.toggle("responsive");
     burgerMenu.classList.toggle("toggleMenu");
   });
+
+
 
 
 
@@ -96,6 +104,10 @@ addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
   // Image lightbox/Gallery
     const modal_container = document.getElementById("modal-container");
 
@@ -144,4 +156,171 @@ addEventListener("DOMContentLoaded", () => {
         closebutton.addEventListener("click", closeModal);
     }
 
+
+
+
+    // Form validation
+    const firstName = document.getElementById("warn-first-name");
+    const lastName = document.getElementById("warn-last-name");
+    const email = document.getElementById("warn-email");
+    const mobile = document.getElementById("warn-mobile");
+    const reason = document.getElementById("warn-reason");
+    const message = document.getElementById("warn-message");
+
+    const form = document.getElementById("contact-form");
+
+    // Hide all warning messages initially
+    firstName.style.display = "none";
+    lastName.style.display = "none";
+    email.style.display = "none";
+    mobile.style.display = "none";
+    reason.style.display = "none";
+    message.style.display = "none";
+
+    if (form) {
+      form.addEventListener("submit", (e) => {
+
+        let valid = true;
+
+        // Validate first name
+        if (!/^[a-zA-Z\s]{2,}$/.test(form.firstName.value)) {
+          firstName.style.display = "block";
+          form.firstName.style.borderColor = "red";
+          valid = false;
+        } else {
+          firstName.style.display = "none";
+          form.firstName.style.borderColor = "greenyellow";
+        }
+
+        // Validate last name
+        if (!/^[a-zA-Z\s]{2,}$/.test(form.lastName.value)) {
+          lastName.style.display = "block";
+          form.lastName.style.borderColor = "red";
+          valid = false;
+        } else {
+          lastName.style.display = "none";
+          form.lastName.style.borderColor = "greenyellow";
+        }
+
+        // Validate email
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(form.email.value)) {
+          email.style.display = "block";
+          form.email.style.borderColor = "red";
+          valid = false;
+        } else {
+          email.style.display = "none";
+          form.email.style.borderColor = "greenyellow";
+        }
+
+        // Validate mobile
+        if (!/^\d+$/.test(form.mobile.value)) {
+          mobile.style.display = "block";
+          form.mobile.style.borderColor = "red";
+          valid = false;
+        } else {
+          mobile.style.display = "none";
+          form.mobile.style.borderColor = "greenyellow";
+        }
+
+        // Validate reason
+        if (form.f_reason.value === "") {
+          reason.style.display = "block";
+          form.f_reason.style.borderColor = "red";
+          valid = false;
+        } else {
+          reason.style.display = "none";
+          form.f_reason.style.borderColor = "greenyellow";
+        }
+
+        // Validate message
+        if (form.message.value.trim() === "") {
+          message.style.display = "block";
+          form.message.style.borderColor = "red";
+          valid = false;
+        } else {
+          message.style.display = "none";
+          form.message.style.borderColor = "greenyellow";
+        }
+
+        // If not valid, prevent form submission
+        if (!valid) {
+          e.preventDefault();
+        }
+      });
+    }
+      
+  // Form validation for shortcodes
+  const formShortcode = document.getElementById("contact-form-site");
+  if (formShortcode) {
+    formShortcode.addEventListener("submit", (e) => {
+
+      let valid = true;
+
+      // Validate first name
+      if (!/^[a-zA-Z\s]{2,}$/.test(formShortcode.firstName.value)) {
+        firstName.style.display = "block";
+        formShortcode.firstName.style.borderColor = "red";
+        valid = false;
+      } else {
+        firstName.style.display = "none";
+        formShortcode.firstName.style.borderColor = "greenyellow";
+      }
+
+      // Validate last name
+      if (!/^[a-zA-Z\s]{2,}$/.test(formShortcode.lastName.value)) {
+        lastName.style.display = "block";
+        formShortcode.lastName.style.borderColor = "red";
+        valid = false;
+      } else {
+        lastName.style.display = "none";
+        formShortcode.lastName.style.borderColor = "greenyellow";
+      }
+
+      // Validate email
+      if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formShortcode.email.value)) {
+        email.style.display = "block";
+        formShortcode.email.style.borderColor = "red";
+        valid = false;
+      } else {
+        email.style.display = "none";
+        formShortcode.email.style.borderColor = "greenyellow";
+      }
+
+      // Validate mobile
+      if (!/^\d+$/.test(formShortcode.mobile.value)) {
+        mobile.style.display = "block";
+        formShortcode.mobile.style.borderColor = "red";
+        valid = false;
+      } else {
+        mobile.style.display = "none";
+        formShortcode.mobile.style.borderColor = "greenyellow";
+      }
+
+      // Validate reason
+      if (formShortcode.f_reason.value === "") {
+        reason.style.display = "block";
+        formShortcode.f_reason.style.borderColor = "red";
+        valid = false;
+      } else {
+        reason.style.display = "none";
+        formShortcode.f_reason.style.borderColor = "greenyellow";
+      }
+
+      // Validate message
+      if (formShortcode.message.value.trim() === "") {
+        message.style.display = "block";
+        formShortcode.message.style.borderColor = "red";
+        valid = false;
+      } else {
+        message.style.display = "none";
+        formShortcode.message.style.borderColor = "greenyellow";
+      }
+
+      // If not valid, prevent form submission
+      if (!valid) {
+        e.preventDefault();
+      }
+    });
+  }
+    
 });

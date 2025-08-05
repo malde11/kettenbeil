@@ -26,6 +26,14 @@ message = 'Your Message...'
 send = 'Send'
 clear = 'Clear'
 
+#Form-Validation:
+warn_first_name = 'Only letters are allowed.'
+warn_last_name = 'Only letters are allowed.'
+warn_email = 'This is not a valid email format.'
+warn_mobile = 'Only numbers are allowed.'
+warn_reason = 'Please select a reason.'
+warn_message = 'Please let us know your concern.'
+
 #Noscript:
 noscript = 'Your browser does not support JavaScript!'
 noscript_enable = 'Please enable JavaScript'

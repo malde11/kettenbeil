@@ -1,33 +1,39 @@
-<!-- fabform -->
+<!-- form -->
 <div class="form-contact-container">
-      <form id="contact-form-site" action="https://formbold.com/s/6MgKW" method="POST">
+      <form id="contact-form-site" class="form-validation" action="https://formbold.com/s/6MgKW" method="POST">
 
           <label class="label-form" for="firstName">{{ $.Get "given-name" }}:</label>
-          <input class="input-form" id="firstName" name="firstName" type="text" placeholder='{{ $.Get "given-name" }}*' autocomplete="given-name" required>
+          <span id="warn-first-name" class="warn-form">{{ $.Get "warn_first_name" }}</span>
+          <input class="input-form" id="firstName" name="firstName" type="text" placeholder='{{ $.Get "given-name" }}*' autocomplete="given-name">
 
           <label class="label-form" for="lastName">{{ $.Get "family-name" }}:</label>
-          <input class="input-form" id="lastName" name="lastName" type="text" placeholder='{{ $.Get "family-name" }}*' autocomplete="family-name" required>
+          <span id="warn-last-name" class="warn-form">{{ $.Get "warn_last_name" }}</span>
+          <input class="input-form" id="lastName" name="lastName" type="text" placeholder='{{ $.Get "family-name" }}*' autocomplete="family-name">
 
           <label class="label-form" for="email">{{ $.Get "email" }}:</label>
-          <input class="input-form" id="email" name="email" type="email" placeholder='{{ $.Get "email" }}*' autocomplete="email" required>
+          <span id="warn-email" class="warn-form">{{ $.Get "warn_email" }}</span>
+          <input class="input-form" id="email" name="email" type="email" placeholder='{{ $.Get "email" }}*' autocomplete="email">
 
           <label class="label-form" for="mobile">{{ $.Get "tel" }}:</label>
+          <span id="warn-mobile" class="warn-form">{{ $.Get "warn_mobile" }}</span>
           <input class="input-form" id="mobile" name="mobile" type="tel" placeholder='{{ $.Get "tel" }}' autocomplete="tel">
 
           <label class="label-form" for="f_reason">{{ $.Get "f_reason" }}:</label>
-          <select class="input-form" id="f_reason" name="f_reason" required>
+          <span id="warn-reason" class="warn-form">{{ $.Get "warn_reason" }}</span>
+          <select class="input-form" id="f_reason" name="f_reason">
             <option value="" disabled selected>{{ $.Get "f_reason" }}</option>
-            <option value="gd">{{ $.Get "gd" }}</option>
-            <option value="wd">{{ $.Get "wd" }}</option>
-            <option value="pt">{{ $.Get "pt" }}</option>
-            <option value="ot">{{ $.Get "ot" }}</option>
+            <option value="graphic">{{ $.Get "gd" }}</option>
+            <option value="web">{{ $.Get "wd" }}</option>
+            <option value="inter">{{ $.Get "pt" }}</option>
+            <option value="other">{{ $.Get "ot" }}</option>
           </select>
 
           <label class="label-form" for="message">{{ $.Get "message_head" }}:</label>
-          <textarea class="input-form" id="message" name="message" placeholder='{{ $.Get "message" }}' rows="6" required></textarea>
+          <span id="warn-message" class="warn-form">{{ $.Get "warn_message" }}</span>
+          <textarea class="input-form" id="message" name="message" placeholder='{{ $.Get "message" }}' rows="6"></textarea>
           
           <button class="clear-button" type="reset">{{ $.Get "clear" }}</button>
           <button class="send-button" type="submit">{{ $.Get "send" }}</button>
       </form>
 </div>
-<!-- fabform end -->
+<!-- form end -->
