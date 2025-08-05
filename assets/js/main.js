@@ -179,13 +179,16 @@ addEventListener("DOMContentLoaded", () => {
     reason.style.display = "none";
     message.style.display = "none";
 
+
+
     if (form) {
       form.addEventListener("submit", (e) => {
 
         let valid = true;
 
         // Validate first name
-        if (!/^[a-zA-Z\s]{2,}$/.test(form.firstName.value)) {
+        // allow umlauts and spaces, at least 2 characters
+        if (!/^[a-zA-ZäöüÄÖÜß\s]{2,}$/.test(form.firstName.value)) {
           firstName.style.display = "block";
           form.firstName.style.borderColor = "red";
           valid = false;
@@ -193,9 +196,10 @@ addEventListener("DOMContentLoaded", () => {
           firstName.style.display = "none";
           form.firstName.style.borderColor = "greenyellow";
         }
+        
 
         // Validate last name
-        if (!/^[a-zA-Z\s]{2,}$/.test(form.lastName.value)) {
+        if (!/^[a-zA-ZäöüÄÖÜß\s]{2,}$/.test(form.lastName.value)) {
           lastName.style.display = "block";
           form.lastName.style.borderColor = "red";
           valid = false;
@@ -261,7 +265,7 @@ addEventListener("DOMContentLoaded", () => {
       let valid = true;
 
       // Validate first name
-      if (!/^[a-zA-Z\s]{2,}$/.test(formShortcode.firstName.value)) {
+      if (!/^[a-zA-ZäöüÄÖÜß\s]{2,}$/.test(formShortcode.firstName.value)) {
         firstName.style.display = "block";
         formShortcode.firstName.style.borderColor = "red";
         valid = false;
@@ -271,7 +275,7 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       // Validate last name
-      if (!/^[a-zA-Z\s]{2,}$/.test(formShortcode.lastName.value)) {
+      if (!/^[a-zA-ZäöüÄÖÜß\s]{2,}$/.test(formShortcode.lastName.value)) {
         lastName.style.display = "block";
         formShortcode.lastName.style.borderColor = "red";
         valid = false;
