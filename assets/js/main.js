@@ -159,6 +159,8 @@ addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
     // Form validation
     const firstName = document.getElementById("warn-first-name");
     const lastName = document.getElementById("warn-last-name");
@@ -248,7 +250,8 @@ addEventListener("DOMContentLoaded", () => {
         }
       });
     }
-      
+
+
   // Form validation for shortcodes
   const formShortcode = document.getElementById("contact-form-site");
   if (formShortcode) {
@@ -322,5 +325,49 @@ addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-    
+  
+  // Add event listener for the form reset button
+  const resetButton = document.querySelector(".clear-button");
+  if (resetButton) {
+    resetButton.addEventListener("click", () => {
+      // Hide all warning messages on reset
+      firstName.style.display = "none";
+      lastName.style.display = "none";
+      email.style.display = "none";
+      mobile.style.display = "none";
+      reason.style.display = "none";
+      message.style.display = "none";
+
+      // Reset border colors
+      form.firstName.style.borderColor = "";
+      form.lastName.style.borderColor = "";
+      form.email.style.borderColor = "";
+      form.mobile.style.borderColor = "";
+      form.f_reason.style.borderColor = "";
+      form.message.style.borderColor = "";
+    });
+  }
+
+  // Add event listener for the form reset button in shortcodes
+  const resetButtonShortcode = document.querySelector(".clear-button");
+  if (resetButtonShortcode) {
+    resetButtonShortcode.addEventListener("click", () => {
+      // Hide all warning messages on reset
+      firstName.style.display = "none";
+      lastName.style.display = "none";
+      email.style.display = "none";
+      mobile.style.display = "none";
+      reason.style.display = "none";
+      message.style.display = "none";
+
+      // Reset border colors
+      formShortcode.firstName.style.borderColor = "";
+      formShortcode.lastName.style.borderColor = "";
+      formShortcode.email.style.borderColor = "";
+      formShortcode.mobile.style.borderColor = "";
+      formShortcode.f_reason.style.borderColor = "";
+      formShortcode.message.style.borderColor = "";
+    });
+  }
+
 });
