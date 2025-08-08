@@ -4,67 +4,67 @@ title = 'Fotos'
 description = 'Fotos aus Australien und Neuseeland aufgenommen von M. Kettenbeil.'
 
 [params]
-[[params.gallery.sydney]]
-caption = "Sydney - Palm"
+[[params.gallery.sydney-de]]
+caption = "Sydney - Palmen"
 thumb = "/images/photos/sydney-palm-01-thumb.webp"
 image = "/images/photos/sydney-palm-01.webp"
 
-[[params.gallery.sydney]]
-caption = "Sydney - Sun rise #1"
+[[params.gallery.sydney-de]]
+caption = "Sydney - Sonnenuntergang #1"
 thumb = "/images/photos/sydney-sun-rise-01-thumb.webp"
 image = "/images/photos/sydney-sun-rise-01.webp"
 
-[[params.gallery.sydney]]
-caption = "Sydney - Sun rise #2"
+[[params.gallery.sydney-de]]
+caption = "Sydney - Sonnenuntergang #2"
 thumb = "/images/photos/sydney-sun-rise-02-thumb.webp"
 image = "/images/photos/sydney-sun-rise-02.webp"
 
 
 
-[[params.gallery.australia]]
-caption = "Australia - Beach"
+[[params.gallery.australien]]
+caption = "Australien - Strand"
 thumb = "/images/photos/australia-beach-01-thumb.webp"
 image = "/images/photos/australia-beach-01.webp"
 
-[[params.gallery.australia]]
-caption = "Australia - Gras"
+[[params.gallery.australien]]
+caption = "Australien - Gras"
 thumb = "/images/photos/australia-gras-01-thumb.webp"
 image = "/images/photos/australia-gras-01.webp"
 
-[[params.gallery.australia]]
-caption = "Australia - With Sundays #1"
+[[params.gallery.australien]]
+caption = "Australien - With Sundays #1"
 thumb = "/images/photos/with-sundays-01-thumb.webp"
 image = "/images/photos/with-sundays-01.webp"
 
-[[params.gallery.australia]]
-caption = "Australia - With Sundays #2"
+[[params.gallery.australien]]
+caption = "Australien - With Sundays #2"
 thumb = "/images/photos/with-sundays-02-thumb.webp"
 image = "/images/photos/with-sundays-02.webp"
 
 
 
-[[params.gallery.new-zealand]]
-caption = "New-Zealand - #1"
+[[params.gallery.neu-seeland]]
+caption = "Neu-Seeland - #1"
 thumb = "/images/photos/new-zealand-01-thumb.webp"
 image = "/images/photos/new-zealand-01.webp"
 
-[[params.gallery.new-zealand]]
-caption = "New-Zealand - #2"
+[[params.gallery.neu-seeland]]
+caption = "Neu-Seeland - #2"
 thumb = "/images/photos/new-zealand-02-thumb.webp"
 image = "/images/photos/new-zealand-02.webp"
 
-[[params.gallery.new-zealand]]
-caption = "New-Zealand - Flower/Sun"
+[[params.gallery.neu-seeland]]
+caption = "Neu-Seeland - Blume/Sonne"
 thumb = "/images/photos/new-zealand-flower-sun-01-thumb.webp"
 image = "/images/photos/new-zealand-flower-sun-01.webp"
 
-[[params.gallery.new-zealand]]
-caption = "New-Zealand - Smoke #1"
+[[params.gallery.neu-seeland]]
+caption = "Neu-Seeland - Rauch #1"
 thumb = "/images/photos/new-zealand-smoke-01-thumb.webp"
 image = "/images/photos/new-zealand-smoke-01.webp"
 
-[[params.gallery.new-zealand]]
-caption = "New-Zealand - Smoke #2"
+[[params.gallery.neu-seeland]]
+caption = "Neu-Seeland - Rauch #2"
 thumb = "/images/photos/new-zealand-smoke-02-thumb.webp"
 image = "/images/photos/new-zealand-smoke-02.webp"
 
@@ -72,12 +72,12 @@ image = "/images/photos/new-zealand-smoke-02.webp"
 
 
 ## Sydney
-{{< gallery sydney >}}
+{{< gallery sydney-de >}}
 
-## Australia
-{{< gallery australia >}}
+## Australien
+{{< gallery australien >}}
 
-## New-Zealand
-{{< gallery new-zealand >}}
+## Neu-Seeland
+{{< gallery neu-seeland >}}
 
 {{< modal >}}
