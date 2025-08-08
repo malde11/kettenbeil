@@ -44,27 +44,27 @@ image = "/images/photos/with-sundays-02.webp"
 
 
 [[params.gallery.neu-seeland]]
-caption = "Neu-Seeland - #1"
+caption = "Neuseeland - #1"
 thumb = "/images/photos/new-zealand-01-thumb.webp"
 image = "/images/photos/new-zealand-01.webp"
 
 [[params.gallery.neu-seeland]]
-caption = "Neu-Seeland - #2"
+caption = "Neuseeland - #2"
 thumb = "/images/photos/new-zealand-02-thumb.webp"
 image = "/images/photos/new-zealand-02.webp"
 
 [[params.gallery.neu-seeland]]
-caption = "Neu-Seeland - Blume/Sonne"
+caption = "Neuseeland - Blume/Sonne"
 thumb = "/images/photos/new-zealand-flower-sun-01-thumb.webp"
 image = "/images/photos/new-zealand-flower-sun-01.webp"
 
 [[params.gallery.neu-seeland]]
-caption = "Neu-Seeland - Rauch #1"
+caption = "Neuseeland - Rauch #1"
 thumb = "/images/photos/new-zealand-smoke-01-thumb.webp"
 image = "/images/photos/new-zealand-smoke-01.webp"
 
 [[params.gallery.neu-seeland]]
-caption = "Neu-Seeland - Rauch #2"
+caption = "Neuseeland - Rauch #2"
 thumb = "/images/photos/new-zealand-smoke-02-thumb.webp"
 image = "/images/photos/new-zealand-smoke-02.webp"
 
