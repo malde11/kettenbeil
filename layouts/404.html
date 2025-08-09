@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <h1>404 Page not found</h1>
+  <p>{{ T "error-massage" }}</p>
+  <p>
+    <a href="{{ .Site.Home.RelPermalink }}">
+      {{ T "redirect-to-home" }}
+    </a>
+  </p>
+{{ end }}

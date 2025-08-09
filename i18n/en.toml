@@ -34,6 +34,10 @@ warn_mobile = 'Phone Number: Only numbers are allowed.'
 warn_reason = 'Please select a reason.'
 warn_message = 'Please let us know your concern.'
 
+#Error 404:
+error-message = 'The page could not be loaded.'
+redirect-to-home = 'Back to Homepage.'
+
 #Noscript:
 noscript = 'Your browser does not support JavaScript!'
 noscript_enable = 'Please enable JavaScript'
