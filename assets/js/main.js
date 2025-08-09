@@ -265,7 +265,7 @@ addEventListener("DOMContentLoaded", () => {
       let valid = true;
 
       // Validate first name
-      if (!/^[a-zA-ZäöüÄÖÜß\s]{2,}$/.test(formShortcode.firstName.value)) {
+      if (!/^[a-zA-ZäöüÄÖÜß\s]{2,32}$/.test(formShortcode.firstName.value)) {
         firstName.style.display = "block";
         formShortcode.firstName.style.borderColor = "red";
         valid = false;
@@ -275,7 +275,7 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       // Validate last name
-      if (!/^[a-zA-ZäöüÄÖÜß\s]{2,}$/.test(formShortcode.lastName.value)) {
+      if (!/^[a-zA-ZäöüÄÖÜß\s]{2,32}$/.test(formShortcode.lastName.value)) {
         lastName.style.display = "block";
         formShortcode.lastName.style.borderColor = "red";
         valid = false;
