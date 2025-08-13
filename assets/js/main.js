@@ -168,7 +168,7 @@ addEventListener("DOMContentLoaded", () => {
     const mobile = document.getElementById("warn-mobile");
     const reason = document.getElementById("warn-reason");
     const message = document.getElementById("warn-message");
-    const grecaptcha_warn = document.getElementById("warn-recaptcha");
+    const recaptcha = document.querySelector(".warn-recaptcha");
 
     const form = document.getElementById("contact-form");
 
@@ -179,23 +179,23 @@ addEventListener("DOMContentLoaded", () => {
     mobile.style.display = "none";
     reason.style.display = "none";
     message.style.display = "none";
-    grecaptcha_warn.style.display = "none";
-
-
-
+    recaptcha.style.display = "none";
+    
 
     if (form) {
       form.addEventListener("submit", (e) => {
 
         let valid = true;
 
-        var response = grecaptcha.getResponse();
-        if(response.length === 0) { 
-          evt.preventDefault();
-          //reCaptcha not verified
-          alert("please verify you are humann!"); 
-          
-          valid = false;
+        // Validate reCaptcha
+        if (typeof grecaptcha !== 'undefined') {
+          var response = grecaptcha.getResponse();
+          if (response.length === 0) {
+            recaptcha.style.display = "block";
+            valid = false;
+          } else {
+            recaptcha.style.display = "none";
+          }
         }
 
         // Validate first name
@@ -267,9 +267,6 @@ addEventListener("DOMContentLoaded", () => {
         }
       });
     }
-
-
-
 
 
   // Form validation for shortcodes
