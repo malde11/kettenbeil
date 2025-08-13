@@ -254,7 +254,7 @@ addEventListener("DOMContentLoaded", () => {
 
 
         // recaptcha validation
-        if (grecaptcha.getResponse() === '') {                            
+        if (grecaptcha.getResponse() === "") {                         
           grecaptcha.style.display= "block";
           valid = false;
         } else {
@@ -267,6 +267,9 @@ addEventListener("DOMContentLoaded", () => {
         }
       });
     }
+
+
+
 
 
   // Form validation for shortcodes
