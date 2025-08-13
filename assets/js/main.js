@@ -168,9 +168,10 @@ addEventListener("DOMContentLoaded", () => {
     const mobile = document.getElementById("warn-mobile");
     const reason = document.getElementById("warn-reason");
     const message = document.getElementById("warn-message");
-    const grecaptcha = document.getElementById("warn-recaptcha");
+    const grecaptcha_warn = document.getElementById("warn-recaptcha");
 
     const form = document.getElementById("contact-form");
+    const grecaptcha = document.getElementById("g-recaptcha-response");
 
     // Hide all warning messages initially
     firstName.style.display = "none";
@@ -254,8 +255,8 @@ addEventListener("DOMContentLoaded", () => {
 
 
         // recaptcha validation
-        if (grecaptcha.getResponse() === "") {                         
-          grecaptcha.style.display= "block";
+        if (grecaptcha.value === "") {                         
+          grecaptcha_warn.style.display= "block";
           valid = false;
         } else {
           grecaptcha.style.display = "none";
@@ -342,13 +343,12 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       // recaptcha validation
-      if (grecaptcha.getResponse() === '') {                            
-        grecaptcha.style.display= "block";
-        valid = false;
-        e.preventDefault();
-      } else {
-        grecaptcha.style.display = "none";
-      }
+        if (grecaptcha.value === "") {                         
+          grecaptcha_warn.style.display= "block";
+          valid = false;
+        } else {
+          grecaptcha.style.display = "none";
+        }
 
       // If not valid, prevent form submission
       if (!valid) {
