@@ -172,6 +172,7 @@ addEventListener("DOMContentLoaded", () => {
 
     const form = document.getElementById("contact-form");
     const grecaptcha = document.getElementById("g-recaptcha-response");
+    console.log(grecaptcha);
 
     // Hide all warning messages initially
     firstName.style.display = "none";
@@ -255,8 +256,7 @@ addEventListener("DOMContentLoaded", () => {
 
 
         // recaptcha validation
-        if (grecaptcha.value === "") {  
-          e.preventDefault();                       
+        if (grecaptcha.value === "") {                         
           grecaptcha_warn.style.display= "block";
           valid = false;
         } else {
@@ -344,8 +344,7 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       // recaptcha validation
-        if (grecaptcha.value === "") {           
-          e.preventDefault();              
+        if (grecaptcha.value === "") {                        
           grecaptcha_warn.style.display= "block";
           valid = false;
         } else {
