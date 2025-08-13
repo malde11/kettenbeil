@@ -1,7 +1,19 @@
 <!-- form -->
 <div class="form-container">
-      <form name="contact-form" id="contact-form" class="form-validation" data-netlify="true" method="POST">
-
+      <form 
+        name="contact-form"
+        id="contact-form"
+        class="form-validation"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        method="POST"
+        data-netlify-recaptcha="true"
+        >
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+          </label>
+        </p>
           <label class="label-form" for="firstName">{{ T "given-name" }}:</label>
           <span id="warn-first-name" class="warn-form">{{ T "warn_first_name" }}</span>
           <input class="input-form" id="firstName" name="firstName" type="text" placeholder='{{ T "given-name" }}*' autocomplete="given-name">
@@ -32,6 +44,8 @@
           <span id="warn-message" class="warn-form">{{ T "warn_message" }}</span>
           <textarea class="input-form" id="message" name="message" placeholder='{{ T "message" }}' rows="6"></textarea>
           
+          <div data-netlify-recaptcha="true"></div>
+
           <button class="clear-button" type="reset">{{ T "clear" }}</button>
           <button class="send-button" type="submit">{{ T "send" }}</button>
       </form>
