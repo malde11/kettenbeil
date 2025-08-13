@@ -168,6 +168,7 @@ addEventListener("DOMContentLoaded", () => {
     const mobile = document.getElementById("warn-mobile");
     const reason = document.getElementById("warn-reason");
     const message = document.getElementById("warn-message");
+    const recaptcha = document.getElementById("warn-recaptcha");
 
     const form = document.getElementById("contact-form");
 
@@ -178,6 +179,8 @@ addEventListener("DOMContentLoaded", () => {
     mobile.style.display = "none";
     reason.style.display = "none";
     message.style.display = "none";
+    recaptcha.style.display = "none";
+
 
 
 
@@ -247,6 +250,16 @@ addEventListener("DOMContentLoaded", () => {
         } else {
           message.style.display = "none";
           form.message.style.borderColor = "greenyellow";
+        }
+
+
+        // recaptcha validation
+        if (recaptcha.getResponse() === '') {                            
+          recaptcha.style.display= "block";
+          formShortcode.recaptcha.style.borderColor = "red";
+          valid = false;
+        } else {
+          recaptcha.style.display = "none";formShortcode.recaptcha.style.borderColor = "greenyellow";
         }
 
         // If not valid, prevent form submission
@@ -324,6 +337,15 @@ addEventListener("DOMContentLoaded", () => {
       } else {
         message.style.display = "none";
         formShortcode.message.style.borderColor = "greenyellow";
+      }
+
+      // recaptcha validation
+      if (recaptcha.getResponse() === '') {                            
+        recaptcha.style.display= "block";
+        formShortcode.recaptcha.style.borderColor = "red";
+        valid = false;
+      } else {
+        recaptcha.style.display = "none";formShortcode.recaptcha.style.borderColor = "greenyellow";
       }
 
       // If not valid, prevent form submission

@@ -33,6 +33,7 @@ warn_email = 'E-Mail-Adresse: Das ist kein gültiges E-Mail-Format.'
 warn_mobile = 'Telefonnummer: Es sind nur Zahlen erlaubt.'
 warn_reason = 'Bitte wählen Sie einen Grund aus.'
 warn_message = 'Bitte teilen Sie uns ihr Anliegen mit.'
+warn_recaptcha = 'Bitte bestätigen Sie, dass Sie kein Roboter sind.'
 
 
 #Error 404:
