@@ -345,6 +345,7 @@ addEventListener("DOMContentLoaded", () => {
       if (grecaptcha.getResponse() === '') {                            
         grecaptcha.style.display= "block";
         valid = false;
+        e.preventDefault();
       } else {
         grecaptcha.style.display = "none";
       }
