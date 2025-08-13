@@ -191,10 +191,11 @@ addEventListener("DOMContentLoaded", () => {
 
         var response = grecaptcha.getResponse();
         if(response.length === 0) { 
+          evt.preventDefault();
           //reCaptcha not verified
           alert("please verify you are humann!"); 
-          evt.preventDefault();
-          return false;
+          
+          valid = false;
         }
 
         // Validate first name
