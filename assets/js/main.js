@@ -180,7 +180,7 @@ addEventListener("DOMContentLoaded", () => {
     mobile.style.display = "none";
     reason.style.display = "none";
     message.style.display = "none";
-    grecaptcha.style.display = "none";
+    grecaptcha_warn.style.display = "none";
 
 
 
