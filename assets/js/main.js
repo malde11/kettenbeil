@@ -171,8 +171,6 @@ addEventListener("DOMContentLoaded", () => {
     const grecaptcha_warn = document.getElementById("warn-recaptcha");
 
     const form = document.getElementById("contact-form");
-    const grecaptcha = document.getElementById("g-recaptcha-response");
-    console.log(grecaptcha);
 
     // Hide all warning messages initially
     firstName.style.display = "none";
@@ -190,6 +188,14 @@ addEventListener("DOMContentLoaded", () => {
       form.addEventListener("submit", (e) => {
 
         let valid = true;
+
+        var response = grecaptcha.getResponse();
+        if(response.length === 0) { 
+          //reCaptcha not verified
+          alert("please verify you are humann!"); 
+          evt.preventDefault();
+          valid = false;
+        }
 
         // Validate first name
         // allow umlauts and spaces, at least 2 characters
@@ -252,15 +258,6 @@ addEventListener("DOMContentLoaded", () => {
         } else {
           message.style.display = "none";
           form.message.style.borderColor = "greenyellow";
-        }
-
-
-        // recaptcha validation
-        if (grecaptcha.value === "") {                         
-          grecaptcha_warn.style.display= "block";
-          valid = false;
-        } else {
-          grecaptcha_warn.style.display = "none";
         }
 
         // If not valid, prevent form submission
@@ -342,14 +339,6 @@ addEventListener("DOMContentLoaded", () => {
         message.style.display = "none";
         formShortcode.message.style.borderColor = "greenyellow";
       }
-
-      // recaptcha validation
-        if (grecaptcha.value === "") {                        
-          grecaptcha_warn.style.display= "block";
-          valid = false;
-        } else {
-          grecaptcha_warn.style.display = "none";
-        }
 
       // If not valid, prevent form submission
       if (!valid) {
