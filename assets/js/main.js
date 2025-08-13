@@ -259,7 +259,7 @@ addEventListener("DOMContentLoaded", () => {
           grecaptcha_warn.style.display= "block";
           valid = false;
         } else {
-          grecaptcha.style.display = "none";
+          grecaptcha_warn.style.display = "none";
         }
 
         // If not valid, prevent form submission
@@ -347,7 +347,7 @@ addEventListener("DOMContentLoaded", () => {
           grecaptcha_warn.style.display= "block";
           valid = false;
         } else {
-          grecaptcha.style.display = "none";
+          grecaptcha_warn.style.display = "none";
         }
 
       // If not valid, prevent form submission
