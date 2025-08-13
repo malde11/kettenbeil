@@ -256,7 +256,6 @@ addEventListener("DOMContentLoaded", () => {
         // recaptcha validation
         if (recaptcha.getResponse() === '') {                            
           recaptcha.style.display= "block";
-          formShortcode.recaptcha.style.borderColor = "red";
           valid = false;
         } else {
           recaptcha.style.display = "none";formShortcode.recaptcha.style.borderColor = "greenyellow";
@@ -342,7 +341,6 @@ addEventListener("DOMContentLoaded", () => {
       // recaptcha validation
       if (recaptcha.getResponse() === '') {                            
         recaptcha.style.display= "block";
-        formShortcode.recaptcha.style.borderColor = "red";
         valid = false;
       } else {
         recaptcha.style.display = "none";formShortcode.recaptcha.style.borderColor = "greenyellow";
