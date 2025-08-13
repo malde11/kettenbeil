@@ -173,14 +173,27 @@ addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
 
     // Hide all warning messages initially
-    firstName.style.display = "none";
-    lastName.style.display = "none";
-    email.style.display = "none";
-    mobile.style.display = "none";
-    reason.style.display = "none";
-    message.style.display = "none";
-    recaptcha.style.display = "none";
-    
+    if (firstName) {
+      firstName.style.display = "none";
+    }
+    if (lastName) {
+      lastName.style.display = "none";
+    }
+    if (email) {
+      email.style.display = "none";
+    }
+    if (mobile) {
+      mobile.style.display = "none";
+    }
+    if (reason) {
+      reason.style.display = "none";
+    }
+    if (message) {
+      message.style.display = "none";
+    }
+    if (recaptcha) {
+      recaptcha.style.display = "none";
+    }
 
     if (form) {
       form.addEventListener("submit", (e) => {
