@@ -11,6 +11,10 @@ form-slug-3 = 'Sag'
 form-slug-4 = 'Hallo!'
 
 
+#Footer:
+copyright = 'Alle Rechte vorbehalten.'
+
+
 #Form:
 given-name = 'Vorname'
 family-name = 'Nachname'

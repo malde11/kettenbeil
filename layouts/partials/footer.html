@@ -34,7 +34,7 @@
 
 <div class="copyright">
   <p class="copyright-text">
-    Copyright {{ now.Year }}. Alle Rechte vorbehalten.
+    Copyright &copy; {{ now.Year }}. {{ T "copyright" }}
     <span>
       {{ $logicalPath := "/impressum" }}
             {{ with site.GetPage $logicalPath }}

@@ -10,6 +10,9 @@ form-slug-2 = 'Shy.'
 form-slug-3 = 'Say'
 form-slug-4 = 'Hello!'
 
+#Footer:
+copyright = 'All rights reserved.'
+
 
 #Form:
 given-name = 'Given Name'
