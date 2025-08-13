@@ -194,7 +194,7 @@ addEventListener("DOMContentLoaded", () => {
           //reCaptcha not verified
           alert("please verify you are humann!"); 
           evt.preventDefault();
-          valid = false;
+          return false;
         }
 
         // Validate first name
