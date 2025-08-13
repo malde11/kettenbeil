@@ -380,6 +380,7 @@ addEventListener("DOMContentLoaded", () => {
       mobile.style.display = "none";
       reason.style.display = "none";
       message.style.display = "none";
+      recaptcha.style.display = "none";
 
       // Reset border colors
       form.firstName.style.borderColor = "";
@@ -402,6 +403,7 @@ addEventListener("DOMContentLoaded", () => {
       mobile.style.display = "none";
       reason.style.display = "none";
       message.style.display = "none";
+      recaptcha.style.display = "none";
 
       // Reset border colors
       formShortcode.firstName.style.borderColor = "";
