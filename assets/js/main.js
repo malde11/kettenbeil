@@ -255,10 +255,10 @@ addEventListener("DOMContentLoaded", () => {
 
 
         // recaptcha validation
-        if (grecaptcha.value === "") {                         
+        if (grecaptcha.value === "") {  
+          e.preventDefault();                       
           grecaptcha_warn.style.display= "block";
           valid = false;
-          e.preventDefault();
         } else {
           grecaptcha_warn.style.display = "none";
         }
@@ -344,9 +344,9 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       // recaptcha validation
-        if (grecaptcha.value === "") {                         
+        if (grecaptcha.value === "") {           
+          e.preventDefault();              
           grecaptcha_warn.style.display= "block";
-          e.preventDefault();
           valid = false;
         } else {
           grecaptcha_warn.style.display = "none";
