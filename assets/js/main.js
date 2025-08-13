@@ -276,6 +276,17 @@ addEventListener("DOMContentLoaded", () => {
 
       let valid = true;
 
+      // Validate reCaptcha
+      if (typeof grecaptcha !== 'undefined') {
+        var response = grecaptcha.getResponse();
+        if (response.length === 0) {
+          recaptcha.style.display = "block";
+          valid = false;
+        } else {
+            recaptcha.style.display = "none";
+        }
+      }
+
       // Validate first name
       if (!/^[a-zA-ZäöüÄÖÜß\s]{2,32}$/.test(formShortcode.firstName.value)) {
         firstName.style.display = "block";
