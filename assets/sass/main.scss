@@ -672,6 +672,17 @@ footer {
   border-bottom: 1px solid white;
 }
 
+#impressum .footer-link a:visited {
+    color: rgb(130, 130, 130) !important;
+}
+
+#impressum .footer-link a {
+    color: rgb(130, 130, 130) !important;
+}
+
+#impressum .nav-link:link {
+  color: white;
+}
 
 /***********************************************
   IMAGE - GALLERY
