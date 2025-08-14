@@ -383,12 +383,14 @@ addEventListener("DOMContentLoaded", () => {
       recaptcha.style.display = "none";
 
       // Reset border colors
-      form.firstName.style.borderColor = "";
-      form.lastName.style.borderColor = "";
-      form.email.style.borderColor = "";
-      form.mobile.style.borderColor = "";
-      form.f_reason.style.borderColor = "";
-      form.message.style.borderColor = "";
+      if(form) {
+        form.firstName.style.borderColor = "";
+        form.lastName.style.borderColor = "";
+        form.email.style.borderColor = "";
+        form.mobile.style.borderColor = "";
+        form.f_reason.style.borderColor = "";
+        form.message.style.borderColor = "";
+      }
     });
   }
 
@@ -406,12 +408,14 @@ addEventListener("DOMContentLoaded", () => {
       recaptcha.style.display = "none";
 
       // Reset border colors
-      formShortcode.firstName.style.borderColor = "";
-      formShortcode.lastName.style.borderColor = "";
-      formShortcode.email.style.borderColor = "";
-      formShortcode.mobile.style.borderColor = "";
-      formShortcode.f_reason.style.borderColor = "";
-      formShortcode.message.style.borderColor = "";
+      if(formShortcode) {
+        formShortcode.firstName.style.borderColor = "";
+        formShortcode.lastName.style.borderColor = "";
+        formShortcode.email.style.borderColor = "";
+        formShortcode.mobile.style.borderColor = "";
+        formShortcode.f_reason.style.borderColor = "";
+        formShortcode.message.style.borderColor = "";
+      }
     });
   }
 
