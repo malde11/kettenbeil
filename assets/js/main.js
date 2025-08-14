@@ -2,16 +2,29 @@
 
 addEventListener("load", () => {
   /* Hide Preloader */
-  document.getElementById("loader-background").style.display = "none";
-  document.getElementById("loader").style.display = "none";
+  const loaderBackground = document.getElementById("loader-background");
+  const loader = document.getElementById("loader");
+
+  // If the loader is present, hide it after a delay
+  if (loaderBackground && loader) {
+    // If on homepage, delay hiding for 5 seconds
+    // Otherwise, hide immediately
+    if (location.pathname === "/de/" || location.pathname === "/en/") {
+      setTimeout(() => {
+        loaderBackground.style.display = "none";
+        loader.style.display = "none";
+      }, 5000);
+    } else {
+      loaderBackground.style.display = "none";
+      loader.style.display = "none";
+    }
+  }
 });
 
 
 
 
 addEventListener("DOMContentLoaded", () => {
-
-
   /* Navbar active state */
   const activeLink = document.querySelector(
     ".nav-link[href='" + window.location.pathname + "']"
