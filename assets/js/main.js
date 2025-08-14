@@ -13,7 +13,7 @@ addEventListener("load", () => {
       setTimeout(() => {
         loaderBackground.style.display = "none";
         loader.style.display = "none";
-      }, 5000);
+      }, 3000);
     } else {
       loaderBackground.style.display = "none";
       loader.style.display = "none";
