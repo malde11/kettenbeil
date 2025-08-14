@@ -171,29 +171,18 @@ addEventListener("DOMContentLoaded", () => {
     const recaptcha = document.querySelector(".warn-recaptcha");
 
     const form = document.getElementById("contact-form");
+    const formShortcode = document.getElementById("contact-form-site");
 
-    // Hide all warning messages initially
-    if (firstName) {
+    if(form || formShortcode ){
       firstName.style.display = "none";
-    }
-    if (lastName) {
       lastName.style.display = "none";
-    }
-    if (email) {
       email.style.display = "none";
-    }
-    if (mobile) {
       mobile.style.display = "none";
-    }
-    if (reason) {
       reason.style.display = "none";
-    }
-    if (message) {
       message.style.display = "none";
-    }
-    if (recaptcha) {
       recaptcha.style.display = "none";
     }
+
 
     if (form) {
       form.addEventListener("submit", (e) => {
@@ -283,7 +272,6 @@ addEventListener("DOMContentLoaded", () => {
 
 
   // Form validation for shortcodes
-  const formShortcode = document.getElementById("contact-form-site");
   if (formShortcode) {
     formShortcode.addEventListener("submit", (e) => {
 
