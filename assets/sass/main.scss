@@ -869,8 +869,8 @@ video {
 
 .g-recaptcha {
   margin-bottom: 20px;
-  margin-left: -45px;
-  margin-right: 53px;
+  transform:scale(0.77);
+  transform-origin:0 0;
 }
 
 #kontakt .g-recaptcha {
