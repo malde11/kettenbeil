@@ -421,6 +421,8 @@ addEventListener("DOMContentLoaded", () => {
 
   }
 
+
+  
   /* ReCaptcha configuration */
   let captcha = document.querySelector(".g-recaptcha");
   const actual_width = window.innerWidth;
