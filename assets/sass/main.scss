@@ -872,13 +872,11 @@ video {
 	-webkit-transform-origin:0 0;
 }
 
+/*
 body iframe {
   width: 100% !important;
 }
-
-#g-active {
-  width: 100% !important;
-}
+*/
 
 #kontakt .g-recaptcha {
     margin-bottom: 20px;
@@ -1241,6 +1239,11 @@ select option {
   }
 
   .g-recaptcha {
+    margin-bottom: 20px;
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
     margin-left: 0;
   }
 
