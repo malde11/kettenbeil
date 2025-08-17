@@ -38,7 +38,15 @@ addEventListener("DOMContentLoaded", () => {
   
   // ReCaptcha configuration
   const captcha = document.querySelector(".g-recaptcha").setAttribute("data-size", "compact");
+  const actual_width = window.innerWidth;
+
   console.log(captcha);
+
+    if(actual_width <= 768 ) {
+      captcha.setAttribute("data-size", "normal");
+    }
+
+  
 
 
 
