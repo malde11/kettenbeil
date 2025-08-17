@@ -9,9 +9,8 @@
         method="POST"
         data-netlify-recaptcha="true">
         <p class="hidden">
-          <label>
-            Don’t fill this out if you’re human: <input name="bot-field" type="text" />
-          </label>
+          <label class="label-form" for="bot-field">Don’t fill this out if you’re human: </label>
+          <input name="bot-field" type="text">
         </p>
           <label class="label-form" for="firstName">{{ $.Get "given-name" }}:</label>
           <span id="warn-first-name" class="warn-form">{{ $.Get "warn_first_name" }}</span>
