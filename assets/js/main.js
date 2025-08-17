@@ -38,11 +38,10 @@ addEventListener("DOMContentLoaded", () => {
   
   // ReCaptcha configuration
   const captcha = document.getElementsByClassName(".g-recaptcha");
+  captcha.setAttribute("data-size", "compact-normal");
 
-  captcha.setAttribute("data-size", "compact");
 
 
-  
 
 
   /* Burger-Menu toggle nav */
