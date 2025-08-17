@@ -37,11 +37,11 @@ addEventListener("DOMContentLoaded", () => {
 
   
   // ReCaptcha configuration
-  const captcha = document.getElementsByClassName(".g-recaptcha");
+  const captcha = document.querySelector(".g-recaptcha");
   console.log(captcha);
   // If the captcha element exists, set its data-size attribute
   if (captcha.length > 0) {
-    captcha[0].setAttribute("data-size", "compact-normal");
+    captcha.setAttribute("data-size", "compact");
   }
 
 
