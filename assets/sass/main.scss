@@ -254,7 +254,7 @@ header {
 }
 
 main {
-  padding: 25px;
+  padding: 0;
 }
 
 
@@ -266,11 +266,12 @@ footer {
 /* Home Site */
 .slug-wrapper {
   grid-area: slug-wrapper;
-  margin: 0;
+  margin: 25px;
 }
 
 .img-shadow {
   grid-area: img-shadow;
+  margin: 25px;
 }
 
 .main-content {
@@ -886,14 +887,14 @@ body iframe {
 }
 
 .form-container {
-  padding: 0;
+  margin: 25px;
 }
 
 .contact-section {
   background-color: white;
   color: black;
   text-align: center;
-  margin: 70px 0 50px 0;
+  margin: 70px 25px 50px 25px;
   font-family: "Smooch Sans", sans-serif;
 }
 
