@@ -426,7 +426,7 @@ addEventListener("DOMContentLoaded", () => {
 
 
   // Add recaptcha class
-  const position = document.getElementsByTagName("iframe");
+  const position = document.getElementsByTagName("iframe").parentElement.nodeName;
 
   console.log(position);
 
