@@ -427,8 +427,7 @@ addEventListener("DOMContentLoaded", () => {
 
   if (position.length > 0) {
     // Add class to the parent div of the iframe
-    position[2].parentElement.setAttribute('id', 'g-active'); 
-
+    position[0].parentElement.classList.add("g-active");
   }
 
 });
