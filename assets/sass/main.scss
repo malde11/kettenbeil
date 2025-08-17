@@ -868,6 +868,7 @@ video {
 }
 
 #rc-imageselect, .g-recaptcha {
+  width: 100%;
   transform:scale(0.77);
   -webkit-transform:scale(0.77);
   transform-origin:0 0;
@@ -879,8 +880,8 @@ video {
 }
 
 body iframe {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
 
 #kontakt .g-recaptcha {
