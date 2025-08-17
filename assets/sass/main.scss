@@ -1350,7 +1350,11 @@ select option {
     height: 100%;
     align-content: center;
     text-align: center;
-}
+  }
+
+  .main-content-2 {
+    margin-top: 0;
+  }
 
   /* NAVBAR */
   .topnav a {
