@@ -87,9 +87,7 @@ h4 {
   font-size: 1.5em;
 }
 
-h2 {
-  margin: 0 25px;
-}
+
 
 p {
   font-family: "Smooch Sans", sans-serif;
@@ -363,7 +361,7 @@ footer {
 
 .form-contact-container {
   /*grid-area: form-contact-container;*/
-  margin-top: 50px;
+  margin: 50px 25px 0 25px;
 }
 
 
@@ -1269,7 +1267,7 @@ select option {
   }
 
   .form-contact-container {
-    padding: 25px 100px;
+    margin: 0 25px;
   }
 
   #logos main {
