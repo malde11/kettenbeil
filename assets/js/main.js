@@ -29,14 +29,13 @@ addEventListener("DOMContentLoaded", () => {
   const activeLink = document.querySelector(
     ".nav-link[href='" + window.location.pathname + "']"
   );
-
   if (activeLink) activeLink.classList.add("active");
 
 
 
 
   
-  // ReCaptcha configuration
+  /* ReCaptcha configuration */
   const captcha = document.querySelector(".g-recaptcha");
   const actual_width = window.innerWidth;
 
@@ -431,6 +430,9 @@ addEventListener("DOMContentLoaded", () => {
         formShortcode.f_reason.style.borderColor = "";
         formShortcode.message.style.borderColor = "";
       }
+
     });
+
   }
+
 });
