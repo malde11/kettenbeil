@@ -868,20 +868,16 @@ video {
 }
 
 #rc-imageselect, .g-recaptcha {
-  -webkit-transform:scale(0.77);
+  /*-webkit-transform:scale(0.77);
   -ms-transform:scale(0.77);
   transform:scale(0.77);
   -webkit-transform-origin:0 0;
   -ms-transform-origin:0 0;
-  transform-origin:0 0;
+  transform-origin:0 0;*/
 }
 
 .g-recaptcha {
   margin-bottom: 20px;
-}
-
-body iframe {
-  width: 100% !important;
 }
 
 #kontakt .g-recaptcha {
@@ -1247,10 +1243,6 @@ select option {
   #rc-imageselect, .g-recaptcha {
     transform:scale(1);
     -webkit-transform:scale(1);
-  }
-
-  .g-recaptcha {
-    margin-bottom: 20px;
   }
 
   /* TEMPLATE CONTAINER */
