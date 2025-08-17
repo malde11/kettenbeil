@@ -428,6 +428,8 @@ addEventListener("DOMContentLoaded", () => {
   // Add recaptcha class
   const position = document.getElementsByTagName("iframe");
 
+  console.log(position);
+
   if (position.length > 0) {
     // Add class to the parent div of the iframe
     position[2].parentElement.setAttribute('id', 'g-active');
