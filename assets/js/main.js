@@ -41,7 +41,7 @@ addEventListener("DOMContentLoaded", () => {
   console.log(captcha);
   // If the captcha element exists, set its data-size attribute
   if (captcha.length > 0) {
-    captcha[0].setAttribute("data-size", "compact");
+    captcha[0].setAttribute("data-size", "compact-normal");
   }
 
 
