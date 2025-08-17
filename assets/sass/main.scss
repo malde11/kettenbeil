@@ -243,8 +243,6 @@ form {
   display: grid;
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 
@@ -268,7 +266,7 @@ footer {
 /* Home Site */
 .slug-wrapper {
   grid-area: slug-wrapper;
-  margin: 40px;
+  margin: 0;
 }
 
 .img-shadow {
@@ -281,6 +279,7 @@ footer {
 
 .main-content-2 {
   grid-area: main-content-2;
+  margin-top: 20px;
 }
 
 .main-content-3 {
@@ -875,12 +874,6 @@ video {
 	-webkit-transform-origin:0 0;
 }
 
-/*
-body iframe {
-  width: 100% !important;
-}
-*/
-
 #kontakt .g-recaptcha {
     margin-bottom: 20px;
     transform:scale(0.77);
@@ -888,7 +881,7 @@ body iframe {
 }
 
 .form-container {
-  padding: 25px;
+  padding: 0;
 }
 
 .contact-section {
