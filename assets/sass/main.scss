@@ -1239,13 +1239,14 @@ select option {
     font-size: 3em;
   }
 
+  #rc-imageselect, .grecaptcha {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;}
+
   .g-recaptcha {
     margin-bottom: 20px;
-    transform:scale(1);
-    -webkit-transform:scale(1);
-    transform-origin:0 0;
-    -webkit-transform-origin:0 0;
-    margin-left: 0;
   }
 
   /* TEMPLATE CONTAINER */
