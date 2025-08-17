@@ -32,20 +32,7 @@ addEventListener("DOMContentLoaded", () => {
   if (activeLink) activeLink.classList.add("active");
 
 
-
-
   
-  /* ReCaptcha configuration */
-  const actual_width = window.innerWidth;
-
-  if(actual_width >= 768 ) {
-     const captcha = document.querySelector(".g-recaptcha").setAttribute("data-size", "normal");
-  } else {
-    captcha.setAttribute("data-size", "compact");
-  }
-
-  
-
 
 
 
