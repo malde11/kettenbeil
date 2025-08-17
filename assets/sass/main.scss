@@ -868,11 +868,12 @@ video {
 }
 
 #rc-imageselect, .g-recaptcha {
-  width: 100% !important;
-  transform:scale(0.77);
   -webkit-transform:scale(0.77);
-  transform-origin:0 0;
+  -ms-transform:scale(0.77);
+  transform:scale(0.77);
   -webkit-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  transform-origin:0 0;
 }
 
 .g-recaptcha {
