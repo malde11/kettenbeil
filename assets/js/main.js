@@ -426,10 +426,10 @@ addEventListener("DOMContentLoaded", () => {
 
 
   // Add recaptcha class
-  const position = document.getElementsByTagName("iframe").parentNode;
+  const position = document.getElementsByTagName("iframe");
 
   console.log(position);
-
+/*
   if (position.length > 0) {
     // Add class to the parent div of the iframe
     position[2].parentElement.setAttribute('id', 'g-active');
@@ -446,5 +446,5 @@ addEventListener("DOMContentLoaded", () => {
     positionShortcode[2].style.transform = "scale(0.77)";
     positionShortcode[2].style.transformOrigin = "0 0";
   }
-
+*/
 });
