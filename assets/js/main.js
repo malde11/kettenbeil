@@ -423,9 +423,21 @@ addEventListener("DOMContentLoaded", () => {
   // Add recaptcha class
   const position = document.getElementsByTagName("iframe");
 
-  console.log(position);
-  // Add class to the parent div of the iframe
-  position[2].style.transform = "scale(0.77)";
-  position[2].style.transformOrigin = "0 0";
+  if (position.length > 0) {
+    // Add class to the parent div of the iframe
+    position[2].parentElement.parentElement.setAttribute('id', 'g-active');
+    position[2].style.transform = "scale(0.77)";
+    position[2].style.transformOrigin = "0 0";
+  }
+
+  // Add recaptcha class to the shortcode form
+  const positionShortcode = document.getElementsByTagName("iframe");
+
+  if (positionShortcode.length > 0) {
+    // Add class to the parent div of the iframe
+    positionShortcode[2].parentElement.parentElement.setAttribute('id', 'g-active');
+    positionShortcode[2].style.transform = "scale(0.77)";
+    positionShortcode[2].style.transformOrigin = "0 0";
+  }
 
 });
