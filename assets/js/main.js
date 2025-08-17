@@ -40,11 +40,10 @@ addEventListener("DOMContentLoaded", () => {
   const captcha = document.querySelector(".g-recaptcha").setAttribute("data-size", "compact");
   const actual_width = window.innerWidth;
 
-  console.log(captcha);
 
-    if(actual_width <= 768 ) {
-      captcha.setAttribute("data-size", "normal");
-    }
+  if(actual_width <= 768 ) {
+    const normal = document.querySelector(".g-recaptcha").setAttribute("data-size", "normal");
+  }
 
   
 
