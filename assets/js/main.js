@@ -420,12 +420,17 @@ addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
+
+
+
+
   // Add recaptcha class
   const position = document.getElementsByTagName("iframe");
 
   if (position.length > 0) {
     // Add class to the parent div of the iframe
-    position[2].parentElement.parentElement.setAttribute('id', 'g-active');
+    position[2].parentElement.setAttribute('id', 'g-active');
     position[2].style.transform = "scale(0.77)";
     position[2].style.transformOrigin = "0 0";
   }
@@ -435,7 +440,7 @@ addEventListener("DOMContentLoaded", () => {
 
   if (positionShortcode.length > 0) {
     // Add class to the parent div of the iframe
-    positionShortcode[2].parentElement.parentElement.setAttribute('id', 'g-active');
+    positionShortcode[2].parentElement.setAttribute('id', 'g-active');
     positionShortcode[2].style.transform = "scale(0.77)";
     positionShortcode[2].style.transformOrigin = "0 0";
   }
