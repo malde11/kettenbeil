@@ -43,7 +43,7 @@
           <textarea class="input-form" id="message" name="message" placeholder='{{ $.Get "message" }}' rows="6"></textarea>
           
           <span id="warn-recaptcha-contact" class="warn-form warn-recaptcha">{{ $.Get "warn_recaptcha" }}</span>
-          <div class="recaptcha-placement" data-netlify-recaptcha="true"></div>
+          <div data-size="compact" class="recaptcha-placement" data-netlify-recaptcha="true"></div>
 
           <button class="clear-button" type="reset">{{ $.Get "clear" }}</button>
           <button class="send-button" type="submit">{{ $.Get "send" }}</button>
