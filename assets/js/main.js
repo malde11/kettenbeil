@@ -37,16 +37,17 @@ addEventListener("DOMContentLoaded", () => {
 
   
   // ReCaptcha configuration
-  const captcha = document.querySelector(".g-recaptcha").setAttribute("data-size", "compact");
   const actual_width = window.innerWidth;
 
   if(actual_width >= 768 ) {
     const normal = document.querySelector(".g-recaptcha").setAttribute("data-size", "normal");
-  };
+  } else {
+    const compact = document.querySelector(".g-recaptcha").setAttribute("data-size", "compact");
+  }
 
   
 
-  
+
 
 
   /* Burger-Menu toggle nav */
