@@ -1240,10 +1240,14 @@ select option {
     font-size: 3em;
   }
 
-  #rc-imageselect, .g-recaptcha {
-    transform:scale(1);
-    -webkit-transform:scale(1);
-  }
+ #rc-imageselect, .g-recaptcha {
+  -webkit-transform:scale(0.77);
+  -ms-transform:scale(0.77);
+  transform:scale(0.77);
+  -webkit-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  transform-origin:0 0;
+}
 
   /* TEMPLATE CONTAINER */
   main {
