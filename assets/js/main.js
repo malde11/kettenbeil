@@ -32,9 +32,17 @@ addEventListener("DOMContentLoaded", () => {
 
   if (activeLink) activeLink.classList.add("active");
 
+
+
+
   
+  // ReCaptcha configuration
+  const captcha = document.getElementsByClassName(".g-recaptcha");
+
+  captcha.setAttribute("data-size", "compact");
 
 
+  
 
 
   /* Burger-Menu toggle nav */
