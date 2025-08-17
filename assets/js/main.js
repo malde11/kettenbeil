@@ -425,7 +425,7 @@ addEventListener("DOMContentLoaded", () => {
 
   console.log(position);
   // Add class to the parent div of the iframe
-  position.parentElement.style.transform = "scale(0.77)";
-  position.parentElement.style.transformOrigin = "0 0";
+  position[2].parentElement.style.transform = "scale(0.77)";
+  position[2].parentElement.style.transformOrigin = "0 0";
 
 });
