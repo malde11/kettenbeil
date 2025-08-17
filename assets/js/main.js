@@ -42,7 +42,7 @@ addEventListener("DOMContentLoaded", () => {
 
   console.log(actual_width);
 
-  if(actual_width <= 768 ) {
+  if(actual_width >= 768 ) {
     const normal = document.querySelector(".g-recaptcha").setAttribute("data-size", "normal");
     }
 
