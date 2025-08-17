@@ -420,4 +420,12 @@ addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Add recaptcha class
+  const position = document.getElementsByTagName("iframe");
+
+  if (position.length > 0) {
+    // Add class to the parent div of the iframe
+    position[0].parentElement.classList.add("g-active");
+  }
+
 });
