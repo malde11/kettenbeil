@@ -874,6 +874,11 @@ video {
 	-webkit-transform-origin:0 0;
 }
 
+body iframe {
+  width: 100%;
+  height: auto;
+}
+
 #kontakt .g-recaptcha {
     margin-bottom: 20px;
     transform:scale(0.77);
