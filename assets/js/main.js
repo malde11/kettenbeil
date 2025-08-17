@@ -424,11 +424,8 @@ addEventListener("DOMContentLoaded", () => {
   const position = document.getElementsByTagName("iframe");
 
   console.log(position);
-
-  if (position.length > 0) {
-    // Add class to the parent div of the iframe
-    position.parentElement.style.transform = "scale(0.77)";
-    position.parentElement.style.transformOrigin = "0 0";
-  }
+  // Add class to the parent div of the iframe
+  position.parentElement.style.transform = "scale(0.77)";
+  position.parentElement.style.transformOrigin = "0 0";
 
 });
