@@ -868,7 +868,7 @@ video {
 }
 
 #rc-imageselect, .g-recaptcha {
-  width: 100%;
+  width: 100% !important;
   transform:scale(0.77);
   -webkit-transform:scale(0.77);
   transform-origin:0 0;
