@@ -9,87 +9,87 @@
 
 {{ define "main" }}
   
-  <div class="slug-wrapper">
-
-    <h1 class="slug">{{ T "slug" }}<b class="slug-small"> {{ T "small-slug" }}</b></h1> 
-  
-  </div>
-
-  <div class="img-shadow">
+  <section class="slug-wrapper">
+    <h1 class="slug">{{ T "slug" }}<b class="slug-small"> {{ T "small-slug" }}</b></h1>
+  </section>
 
       <!-- LOGOS -->
-      <div class="main-content-2 card">
-          {{ $logicalPath := "/logos" }}
-            {{ with site.GetPage $logicalPath }}
-          <a href="{{ .RelPermalink }}">
-              <img class="card-headline logo-link" src="/images/logos/inexorablez/inexorablez-01-thumb.webp" alt="Link to Logos">
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
+      <section class="logos-section">
+        <div class="card">
+            {{ $logicalPath := "/logos" }}
+              {{ with site.GetPage $logicalPath }}
+            <a href="{{ .RelPermalink }}">
+                <img class="card-headline logo-link" src="/images/logos/inexorablez/inexorablez-01-thumb.webp" alt="Link to Logos">
+            </a>
+            {{ else }}
+              {{ errorf "Unable to get page %s" $logicalPath }}
+              {{ end }}
+        </div>
 
-      <div class="main-content card">
-          {{ $logicalPath := "/logos" }}
-            {{ with site.GetPage $logicalPath }}
-          <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">{{ T "logos" }}</p>
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
+        <div class="card">
+            {{ $logicalPath := "/logos" }}
+              {{ with site.GetPage $logicalPath }}
+            <a class="home-link" href="{{ .RelPermalink }}">
+                <p class="card-headline">{{ T "logos" }}</p>
+            </a>
+            {{ else }}
+              {{ errorf "Unable to get page %s" $logicalPath }}
+              {{ end }}
+        </div>
+      </section>
 
       <!-- PHOTOS -->
-      <div class="main-content-3 card">
-          {{ $logicalPath := "/fotos" }}
-            {{ with site.GetPage $logicalPath }}
-          <a href="{{ .RelPermalink }}">
-              <img class="card-headline logo-link foto-margin" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
+      <section class="photos-section">
+        <div class="card">
+            {{ $logicalPath := "/fotos" }}
+              {{ with site.GetPage $logicalPath }}
+            <a href="{{ .RelPermalink }}">
+                <img class="card-headline logo-link foto-margin" src="/images/photos/sydney-palm-01-thumb.webp" alt="Link to Photos">
+            </a>
+            {{ else }}
+              {{ errorf "Unable to get page %s" $logicalPath }}
+              {{ end }}
+        </div>
 
-      <div class="main-content-4 card">
-          {{ $logicalPath := "/fotos" }}
-            {{ with site.GetPage $logicalPath }}
-          <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">{{ T "photos" }}</p>
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
-
+        <div class="card">
+            {{ $logicalPath := "/fotos" }}
+              {{ with site.GetPage $logicalPath }}
+            <a class="home-link" href="{{ .RelPermalink }}">
+                <p class="card-headline">{{ T "photos" }}</p>
+            </a>
+            {{ else }}
+              {{ errorf "Unable to get page %s" $logicalPath }}
+              {{ end }}
+        </div>
+      </section>
 
 
       <!-- SKETCHES -->
-      <div class="main-content-5 card">
-          {{ $logicalPath := "/sketches" }}
-            {{ with site.GetPage $logicalPath }}
-          <a href="{{ .RelPermalink }}">
-              <img class="card-headline logo-link" src="/images/sketches/kz-01-thumb.webp" alt="Link to Sketches">
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
+      <section class="sketches-section">
+        <div class="card">
+            {{ $logicalPath := "/sketches" }}
+              {{ with site.GetPage $logicalPath }}
+            <a href="{{ .RelPermalink }}">
+                <img class="card-headline logo-link" src="/images/sketches/kz-01-thumb.webp" alt="Link to Sketches">
+            </a>
+            {{ else }}
+              {{ errorf "Unable to get page %s" $logicalPath }}
+              {{ end }}
+        </div>
 
-      <div class="main-content-6 card">
-          {{ $logicalPath := "/sketches" }}
-            {{ with site.GetPage $logicalPath }}
-          <a class="home-link" href="{{ .RelPermalink }}">
-              <p class="card-headline">{{ T "sketches" }}</p>
-          </a>
-          {{ else }}
-            {{ errorf "Unable to get page %s" $logicalPath }}
-            {{ end }}
-      </div>
+        <div class="card">
+            {{ $logicalPath := "/sketches" }}
+              {{ with site.GetPage $logicalPath }}
+            <a class="home-link" href="{{ .RelPermalink }}">
+                <p class="card-headline">{{ T "sketches" }}</p>
+            </a>
+            {{ else }}
+              {{ errorf "Unable to get page %s" $logicalPath }}
+              {{ end }}
+        </div>
+      </section>
 
-  </div>
-
+  <!-- CONTACT SECTION -->
   <section class="contact-section">
     <div>
       <h1 class="slug"><b class="slug-small">{{ T "form-slug" }}</b> {{ T "form-slug-2" }} <br><i class="slug-small">{{ T "form-slug-3" }} </i>{{ T "form-slug-4" }}</h1>
