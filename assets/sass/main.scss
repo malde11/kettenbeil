@@ -269,8 +269,7 @@ footer {
 
 /* Home Site */
 .slug-wrapper {
-  grid-area: slug-wrapper;
-  margin: 25px;
+  padding: 25px;
 }
 
 .img-shadow {
@@ -1266,23 +1265,62 @@ select option {
     font-size: 3em;
   }
 
- #rc-imageselect, .g-recaptcha {
-  -webkit-transform:scale(0.77);
-  -ms-transform:scale(0.77);
-  transform:scale(0.77);
-  -webkit-transform-origin:0 0;
-  -ms-transform-origin:0 0;
-  transform-origin:0 0;
-}
+  #rc-imageselect, .g-recaptcha {
+    -webkit-transform:scale(0.77);
+    -ms-transform:scale(0.77);
+    transform:scale(0.77);
+    -webkit-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    transform-origin:0 0;
+  }
 
   /* TEMPLATE CONTAINER */
   main {
     display: grid;
     grid-gap: 25px;
-    grid-template-areas:
-    "slug-wrapper"
-    "img-shadow";
   }
+
+  .logos-section {
+    display: grid;
+  }
+
+  .logos-image {
+    grid-column: 1 / 2;
+  }
+
+  .logos-link {
+    grid-column: 2 / 3;
+  }
+
+  .photos-section {
+    display: grid;
+    grid-auto-flow: dense;
+  }
+
+  .photos-image {
+    grid-column: 2 / 3;
+  }
+
+  .photos-link {
+    grid-column: 1 / 2;
+  }
+
+  .sketches-section {
+    display: grid;
+  }
+
+  .sketches-image {
+    grid-column: 1 / 2;
+  }
+
+  .sketches-link {
+    grid-column: 2 / 3;
+  }
+
+
+
+
+
 
   #kontakt main {
     display: inline;
@@ -1308,20 +1346,6 @@ select option {
     text-align: center;
   }
 
-  .img-shadow {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-areas:
-    "main-content main-content-2"
-    "main-content-3 main-content-4"
-    "main-content-6 main-content-5";
-  }
-
-  .main-content,
-  .main-content-4,
-  .main-content-6 {
-    margin-bottom: 0;
-  }
 
   .form-container {
     display: grid;
@@ -1378,10 +1402,6 @@ select option {
     text-align: center;
   }
 
-  .main-content-2 {
-    margin-top: 0;
-  }
-
   /* NAVBAR */
   .topnav a {
     font-size: 1.1em;
@@ -1414,10 +1434,6 @@ select option {
     background: linear-gradient(345deg, rgba(21, 21, 21, 1) 15%, rgba(255, 165, 0, 1) 52%, rgba(21, 21, 21, 1) 75%);
   }
 
-  .galleryimage {
-    grid-area: galleryimage;
-    width: auto;
-  }
 }
 
 
