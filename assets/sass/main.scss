@@ -1282,6 +1282,7 @@ select option {
 
   .logos-section {
     display: grid;
+    padding: 100px;
   }
 
   .logos-image {
@@ -1295,6 +1296,7 @@ select option {
   .photos-section {
     display: grid;
     grid-auto-flow: dense;
+    padding: 100px;
   }
 
   .photos-image {
@@ -1307,6 +1309,7 @@ select option {
 
   .sketches-section {
     display: grid;
+    padding: 100px;
   }
 
   .sketches-image {
@@ -1701,9 +1704,7 @@ select option {
   /* IMAGES */
   .card:hover {
     color: #fff;
-    transform: translateY(-4px);
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
-    transition-delay: 0;
   }
 
   #sydney {
@@ -1928,6 +1929,18 @@ select option {
   #fotos .galleryimage {
     margin: 0px;
   }
+
+  .logos-section {
+    padding: 110px 300px;
+  }
+
+  .photos-section {
+    padding: 110px 300px;
+  }
+
+  .sketches-section {
+    padding: 110px 300px;
+  }
 }
 
 
@@ -2055,6 +2068,22 @@ select option {
   .close-gallery {
     width: 80px;
     height: 80px;
+  }
+
+  .home-link {
+    font-size: 0.6em;
+  }
+
+  .logos-section {
+    padding: 75px 400px;
+  }
+
+  .photos-section {
+    padding: 75px 400px;
+  }
+
+  .sketches-section {
+    padding: 75px 400px;
   }
 
 }
