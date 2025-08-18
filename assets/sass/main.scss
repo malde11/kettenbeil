@@ -272,73 +272,38 @@ footer {
   padding: 25px;
 }
 
-.img-shadow {
-  grid-area: img-shadow;
-  margin: 25px;
-}
-
-.main-content {
-  grid-area: main-content;
-}
-
-.main-content-2 {
-  grid-area: main-content-2;
-  margin-top: 20px;
-}
-
-.main-content-3 {
-  grid-area: main-content-3;
-}
-
-.main-content-4 {
-  grid-area: main-content-4;
-}
-
-.main-content-5 {
-  grid-area: main-content-5;
-}
-
-.main-content-6 {
-  grid-area: main-content-6;
-}
-
 .foto-margin {
   margin-bottom: -5px;
 }
 
 /* Logos - Template */
 #inexorablez {
-  grid-area: inexorablez;
   margin-top: 40px;
   text-align: center;
 }
 
 #kettenbeil {
-  grid-area: kettenbeil;
   text-align: center;
   margin-top: 60px;
 }
 
 #superior-attack {
-  grid-area: superior-attack;
   text-align: center;
   margin-top: 60px;
 }
 
 #christian-s {
-  grid-area: christan-s;
+
   text-align: center;
   margin-top: 60px;
 }
 
 #fh-flensburg {
-  grid-area: fh-flensburg;
   text-align: center;
   margin-top: 60px;
 }
 
 .galleryimage {
-  grid-area: galleryimage;
   width: 100%;
   height: auto;
   pointer-events: none;
@@ -359,7 +324,6 @@ footer {
 }
 
 .form-contact-container {
-  /*grid-area: form-contact-container;*/
   margin: 50px 25px 0 25px;
 }
 
@@ -1327,7 +1291,6 @@ select option {
 
   #kontakt main {
     display: inline;
-    grid-template-areas: none;
   }
 
   .form-contact-container {
@@ -1336,7 +1299,6 @@ select option {
 
   #logos main {
     display: inline;
-    grid-template-areas: none;
     padding: 25px 90px;
   }
 
@@ -1821,10 +1783,6 @@ select option {
       filter: grayscale(0%);
   }
 
-  .img-shadow {
-    grid-gap: 25px;
-  }
-
    #inexorablez {
     width: 1040px;
     margin: 50px 35px 0px 25px;
@@ -2305,10 +2263,6 @@ select option {
 
   .slug-small {
     font-size: 0.5em;
-  }
-
-  .img-shadow {
-    grid-gap: 120px;
   }
 
   .card-headline {
