@@ -349,32 +349,42 @@ footer {
 }
 
 #loader {
-  position: fixed;
-  display: block;
-  top: 25%;
-  left: 25%;
-  width: 160px;
-  height: 160px;
-  background-image: url(/images/preloader/loader_small.svg);
-  background-repeat: no-repeat;
+  position: absolute;
+  top: 165px;
+  left: 35px;
+  width: 320px;
+  height: 320px;
   z-index: 999;
-  -webkit-animation: fadeinout 4s infinite forwards;
-  animation: fadeinout 4s infinite forwards;
   opacity: 0;
+  filter: invert(100%);
+  background-image: url(/images/preloader/loader.svg);
 }
 
-@-webkit-keyframes fadeinout {
-  50% {
-    opacity: 1;
-  }
+
+#loader-2 {
+  position: absolute;
+  top: 168px;
+  left: 38px;
+  width: 320px;
+  height: 320px;
+  z-index: 999;
+  opacity: 0;
+  filter: invert(66%);
+  background-image: url(/images/preloader/loader.svg);
 }
 
-@keyframes fadeinout {
-  50% {
-    opacity: 1;
-  }
-}
 
+#loader-3 {
+  position: absolute;
+  top: 171px;
+  left: 41px;
+  width: 320px;
+  height: 320px;
+  z-index: 999;
+  opacity: 0;
+  filter: invert(33%);
+  background-image: url(/images/preloader/loader.svg);
+}
 
 .top-btn {
   all: unset;
@@ -1170,10 +1180,7 @@ select option {
 @media (min-width: 576px) {
   
   /* PRELOADER */
-  #loader {
-    top: 30%;
-    left: 37%;
-  }
+
 
   /* TEMPLATE CONTAINER */
 
@@ -1206,12 +1213,7 @@ select option {
 @media (min-width: 768px) {
 
   /* PRELOADER */
-  #loader {
-    top: 32%;
-    left: 33%;
-    width: 360px;
-    height: 360px;
-  }
+
 
   #no_video {
     bottom: 0;
@@ -1277,11 +1279,11 @@ select option {
   }
 
   .photos-image {
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
   }
 
   .photos-link {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
   }
 
   .sketches-section {
@@ -1340,27 +1342,27 @@ select option {
 
   #inexorablez {
     font-size: 2.5em;
-    margin: 60px 25px 0px 25px;
+    margin: 60px 132px 0px 132px;
   }
 
   #kettenbeil {
     font-size: 2.5em;
-    margin: 60px 25px 0px 25px;
+    margin: 60px 132px 0px 132px;
   }
 
   #superior-attack {
     font-size: 2.5em;
-    margin: 60px 25px 0px 25px;
+    margin: 60px 132px 0px 132px;
   }
 
    #christian-s {
     font-size: 2.5em;
-    margin: 60px 25px 0px 25px;
+    margin: 60px 132px 0px 132px;
   }
 
    #fh-flensburg {
     font-size: 2.5em;
-    margin: 60px 25px 0px 25px;
+    margin: 60px 132px 0px 132px;
   }
 
   /* IMAGES */
@@ -1379,6 +1381,10 @@ select option {
     height: 100%;
     align-content: center;
     text-align: center;
+  }
+
+  .galleryimage {
+    width: 70%;
   }
 
   /* NAVBAR */
@@ -1427,14 +1433,14 @@ select option {
 @media (min-width: 992px) {
 
   /* PRELOADER */
-  #loader {
-    top: 30%;
-    left: 40%;
-    width: 360px;
-    height: 360px;
-  }
+ 
 
   /* TEMPLATE CONTAINER */
+
+  #logos main {
+    padding-top: 50px;
+  }
+
   #logos .container {
     display: grid;
     grid-column: 1 / 4;
@@ -1442,7 +1448,7 @@ select option {
   }
 
   #logos .gallery {
-    text-align: start;
+    text-align: center;
   }
 
   footer {
@@ -1492,59 +1498,53 @@ select option {
     grid-column: 3 / 5;
   }
 
+  .galleryimage {
+    width: 50%;
+  }
+
   #inexorablez {
-    width: 705px;
     grid-column: 1 / 5;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 2.2em;
     background:var(--secondary);
     color: white;
-    margin: 0px 25px 0px 0px;
-    padding-left: 20px;
+    margin: 0 268px;
   }
 
   #kettenbeil {
-    width: 705px;
     grid-column: 1 / 5;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 2.2em;
     color: white;
     background:var(--secondary);
-    margin: 0px 25px 0px 0px;
-    padding-left: 20px;
+    margin: 0 268px;
   }
 
   #superior-attack {
     grid-column: 1 / 5;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 2.2em;
     color: white;
     background:var(--secondary);
-    margin: 0;
-    width: 705px;
-    padding-left: 20px;
+    margin: 0 268px;
   }
 
   #christian-s {
     grid-column: 1 / 5;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 2.2em;
     color: white;
     background:var(--secondary);
-    margin: 0;
-    width: 340px;
-    padding-left: 20px;
+    margin: 0 268px;
   }
 
   #fh-flensburg {
     grid-column: 1 / 5;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 2.2em;
     color: white;
     background:var(--secondary);
-    margin: 0;
-    width: 340px;
-    padding-left: 20px;
+    margin: 0 268px;
   }
 
   .slug-wrapper {
@@ -1560,11 +1560,7 @@ select option {
   }
 
   #modal-filmstrip {
-    margin-left: 30px;
-  }
-
-  #inexorablez {
-    font-size: 1.2em;
+    margin-left: 75px;
   }
 
   /* NAVBAR */
@@ -1712,7 +1708,7 @@ select option {
   }
 
   .galleryimage {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
 }
@@ -1730,12 +1726,7 @@ select option {
 @media (min-width: 1200px) {
 
   /* PRELOADER */
-  #loader {
-    top: 29%;
-    left: 42%;
-    width: 360px;
-    height: 360px;
-  }
+
 
   #noscript {
     bottom: 50px;
@@ -1784,6 +1775,7 @@ select option {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     margin-left: 50px;
+    width: 100%;
   }
 
   #modal-filmstrip {
@@ -1799,33 +1791,38 @@ select option {
   }
 
    #inexorablez {
-    width: 1040px;
-    margin: 50px 35px 0px 25px;
-    padding: 25px 25px;
+    text-align: left;
+    width: 1008px;
+    margin: 50px 35px -0px 50px;
+    padding-left: 25px;
   }
 
   #kettenbeil {
-    width: 1040px;
-    margin: 50px 35px 0px 25px;
-    padding: 25px 25px;
+    text-align: left;
+    width: 1008px;
+    margin: 50px 35px 0px 50px;
+    padding-left: 25px;
   }
 
   #superior-attack {
-    margin: 50px 390px 0px 25px;
-    padding: 25px 25px;
-    width: 675px;
+    text-align: left;
+    margin: 50px 390px 0px 50px;
+    padding-left: 25px;
+    width: 656px;
   }
 
   #christian-s {
-    margin: 50px 390px 0px 25px;
-    padding: 25px 25px;
-    width: 310px;
+    text-align: left;
+    margin: 50px 390px 0px 50px;
+    padding-left: 25px;
+    width: 302px;
   }
 
   #fh-flensburg {
-    margin: 50px 390px 0px 25px;
-    padding: 25px 25px;
-    width: 310px;
+    text-align: left;
+    margin: 50px 390px 0px 50px;
+    padding-left: 25px;
+    width: 302px;
   }
 
   .slug-wrapper {
@@ -1870,13 +1867,27 @@ select option {
   .card-headline {
     padding: 0;
   }
+  
   #modal-container {
     padding-top: 1rem;
+  }
+
+  #modal-filmstrip {
+    display: flex !important;
+  }
+
+  #modal-filmstrip .galleryimage {
+    margin-right: 50px;
+    margin-left: 0px;  
   }
 
   .logo-link {
     width: 100%;
     height: 100%;
+  }
+
+  #logos .galleryimage {
+    width: 100%;
   }
 
   #logos main {
@@ -1925,11 +1936,11 @@ select option {
   }
 
   .photos-image {
-    grid-column: 1 / 2;
+    grid-column: 3 / 4;
   }
 
   .photos-link {
-    grid-column: 2 / 4;
+    grid-column: 1 / 3;
   }
 
   .sketches-section {
@@ -1958,14 +1969,6 @@ select option {
 *******************************************************/
 @media (min-width: 1400px) {
 
-  /* PRELOADER */
-  #loader {
-    top: 32%;
-    left: 38%;
-    width: 360px;
-    height: 360px;
-    background-image: url(/images/preloader/loader.svg);
-  }
 
   #noscript {
     left: 38%;
@@ -1983,34 +1986,34 @@ select option {
   }
 
   #inexorablez {
-    width: 1040px;
-    margin: 50px 40px 10px 25px;
-    font-size: 1em;
+    width: 1135px;
+    margin: 50px 40px 0px 50px;
+    font-size: 2.2em;
   }
 
  
   #kettenbeil {
-    width: 1040px;
-    margin: 50px 40px 10px 25px;
-    font-size: 1em;
+    width: 1135px;
+    margin: 50px 40px 0px 50px;
+    font-size: 2.2em;
   }
 
   #superior-attack {
-    margin: 50px 35px 10px 25px;
-    font-size: 1em;
-    width: 675px;
+    margin: 50px 35px 0px 50px;
+    font-size: 2.2em;
+    width: 736px;
   }
 
   #christian-s {
-    margin: 50px 35px 10px 25px;
-    font-size: 1em;
-    width: 310px;
+    margin: 50px 35px 0px 50px;
+    font-size: 2.2em;
+    width: 344px;
   }
 
   #fh-flensburg {
-    margin: 50px 35px 10px 25px;
-    font-size: 1em;
-    width: 310px;
+    margin: 50px 35px 0px 50px;
+    font-size: 2.2em;
+    width: 344px;
   }
 
   .clear-button {
@@ -2116,28 +2119,28 @@ select option {
   }
 
   #inexorablez {
-    width: 1040px;
-    margin: 50px 60px 30px 25px;
+    width: 1460px;
+    margin: 50px 60px 0px 50px;
   }
 
   #kettenbeil {
-    width: 1040px;
-    margin: 50px 60px 30px 25px;
+    width: 1460px;
+    margin: 50px 60px 0px 50px;
   }
 
   #superior-attack {
-    width: 675px;
-    margin: 50px 35px 30px 25px;
+    width: 955px;
+    margin: 50px 35px 0px 50px;
   }
 
   #christian-s {
-    width: 310px;
-    margin: 50px 35px 30px 25px;
+    width: 452px;
+    margin: 50px 35px 0px 50px;
   }
 
   #fh-flensburg {
-    width: 310px;
-    margin: 50px 35px 30px 25px;
+    width: 452px;
+    margin: 50px 35px 0px 50px;
   }
 
   .gallery {
@@ -2322,44 +2325,42 @@ select option {
   }
 
   #inexorablez {
-    margin: 50px 135px 135px 55px;
+    margin: 50px 135px 0px 200px;
     height: 60px;
     font-size: 3em;
-    width: 2186px;
+    width: 2465px;
   }
 
   #kettenbeil {
-    margin: 50px 135px 135px 55px;
+    margin: 50px 135px 0px 200px;
     height: 60px;
     font-size: 3em;
-    width:2186px
+    width: 2465px;
   }
 
   #superior-attack {
-    width: 1430px;
-    margin: 50px 35px 140px 55px;
+    width: 1630px;
+    margin: 50px 35px 0px 200px;
     font-size: 3em;
   }
 
   #christian-s {
-    width: 673px;
-    margin: 50px 35px 140px 55px;
+    width: 786px;
+    margin: 50px 35px 0px 200px;
     font-size: 3em;
   }
 
   #fh-flensburg {
-    width: 673px;
-    margin: 50px 35px 140px 55px;
+    width: 786px;
+    margin: 50px 35px 0px 200px;
     font-size: 3em;
   }
 
-  .gallery {
-    margin-top: -140px;
-  }
-
   .galleryimage {
-    width: 20%;
+    width: 100%;
     height: auto;
+    margin-left: 200px;
+    margin-bottom: 200px;
   }
 
   /* NAVBAR */
@@ -2388,10 +2389,6 @@ select option {
 
   .nav-link:hover::after {
     right: 10px;
-  }
-
-  .galleryimage {
-    margin-left: 30px;
   }
 
   .input-form {
@@ -2445,5 +2442,10 @@ select option {
 
   .form-contact-container {
     width: 1800px;
+  }
+
+  #modal-image {
+    width: 40%;
+    height: auto;
   }
 }

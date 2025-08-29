@@ -4,21 +4,66 @@ addEventListener("load", () => {
   /* Hide Preloader */
   const loaderBackground = document.getElementById("loader-background");
   const loader = document.getElementById("loader");
+  const loader2 = document.getElementById("loader-2");
+  const loader3 = document.getElementById("loader-3");
 
   // If the loader is present, hide it after a delay
-  if (loaderBackground && loader) {
+  if (loaderBackground && loader && loader2 && loader3) {
+
     // If on homepage, delay hiding for 5 seconds
     // Otherwise, hide immediately
     if (location.pathname === "/de/" || location.pathname === "/en/") {
-      setTimeout(() => {
+
+      
+        let countdown = 0; // Starting countdown value
+
+        // Start the interval
+        const timer = setInterval(() => {
+
+          loader.style.opacity = "1";
+          
+          if (countdown >= 2) {
+              loader2.style.opacity = "1";
+          }
+
+          if (countdown >= 3) {
+              loader3.style.opacity = "1";
+          }
+
+          if (countdown >= 4) {
+            loader.style.opacity = "0";
+            loader2.style.opacity = "0";
+            loader3.style.opacity = "0";
+          }
+
+          if (countdown >= 5){
+            loader.style.opacity = "1";
+          }
+
+          if(countdown >= 6) {
+            loader2.style.opacity = "1";
+          }
+
+          if(countdown >= 7) {
+            loader3.style.opacity = "1";
+          }
+
+          countdown++;
+
+          // Stop the interval when countdown reaches zero
+          if (countdown > 8) {
+              loaderBackground.style.display = "none";
+              loader.style.display = "none";
+              loader2.style.display = "none";
+              loader3.style.display = "none";
+
+              clearInterval(timer);
+          }
+        }, 600); // Executes every 1000 milliseconds (1 second)
+      } else {
         loaderBackground.style.display = "none";
-        loader.style.display = "none";
-      }, 3000);
-    } else {
-      loaderBackground.style.display = "none";
-      loader.style.display = "none";
-    }
-  }
+      }
+  };
 });
 
 
@@ -33,8 +78,6 @@ addEventListener("DOMContentLoaded", () => {
 
 
   
-
-
 
   /* Burger-Menu toggle nav */
   const topNav = document.getElementById("myTopnav");
