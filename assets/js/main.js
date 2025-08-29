@@ -52,10 +52,10 @@ addEventListener("load", () => {
 
           // Stop the interval when countdown reaches zero
           if (countdown > 8) {
-              loaderBackground.style.display = "none";
-              loader.style.display = "none";
-              loader2.style.display = "none";
-              loader3.style.display = "none";
+              loaderBackground.style.opacity = "0";
+              loader.style.opacity = "0";
+              loader2.style.opacity = "0";
+              loader3.style.opacity = "0";
 
               clearInterval(timer);
           }
