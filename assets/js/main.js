@@ -59,9 +59,12 @@ addEventListener("load", () => {
 
               clearInterval(timer);
           }
-        }, 600); // Executes every 1000 milliseconds (1 second)
+        }, 400); // Executes every 1000 milliseconds (1 second)
       } else {
         loaderBackground.style.display = "none";
+        loader.style.display = "none";
+        loader2.style.display = "none";
+        loader3.style.display = "none";
       }
   };
 });
